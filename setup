@@ -1,0 +1,35 @@
+Documentation of IT infrastructure of grml
+==========================================
+
+Preface
+-------
+
+...
+
+Server setup
+------------
+
+Setup of Mailinglists
+~~~~~~~~~~~~~~~~~~~~~
+
+Lurker...
+
+Ressources
+----------
+
+English
+~~~~~~~
+
+* link:http://ml.grml.org/splash/index.en.html[developers mailinglist of grml]
+
+German
+~~~~~~
+
+* ...
+
+About this document
+-------------------
+
+(c) Michael Prokop <mika@grml.org> and Alexander Wirt <formorer@grml.org>; HTML version powered by link:http://www.methods.co.nz/asciidoc/[asciidoc].
+
+// vim: ft=asciidoc autoindent textwidth=75 formatoptions=tcqn
