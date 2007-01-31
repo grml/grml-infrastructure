@@ -1,0 +1,35 @@
+Cookbook for the grml repository software
+==========================================
+
+Preface
+-------
+
+This is a short documentation for common tasks with the grml repository. 
+
+Recipes 
+-------
+
+Here are some common tasks: 
+
+.Add a single deb to a distribution
+=======================================
+#insert the deb +
+reprepro includedeb `<suite>` `<foo.deb>` + 
+#check the result + 
+reprepro list `<suite>` `<packagename>` + 
+=======================================
+
+.Move a package from one distribution to another
+=====================================================
+#move the package +
+reprepro copy `<source distribution>` `<target distribution>` `<packagename>` +
+#check the result + 
+reprepro list `<target distribution>` + 
+=====================================================
+
+About this document
+-------------------
+
+(c) Michael Prokop <mika@grml.org> and Alexander Wirt <formorer@grml.org>; HTML version powered by link:http://www.methods.co.nz/asciidoc/[asciidoc].
+
+// vim: ft=asciidoc autoindent textwidth=75 formatoptions=tcqn
