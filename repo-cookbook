@@ -5,6 +5,7 @@ Preface
 -------
 
 This is a short documentation for common tasks with the grml repository. 
+Notice: reprepro actions have to take place in ~/grml-repo/archive.
 
 Recipes 
 -------
