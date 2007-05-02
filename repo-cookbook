@@ -5,6 +5,7 @@ Preface
 -------
 
 This is a short documentation for common tasks with the grml repository. 
+Notice: reprepro actions have to take place in ~/grml-repo/archive.
 
 Recipes 
 -------
@@ -26,6 +27,20 @@ reprepro copy `<source distribution>` `<target distribution>` `<packagename>` +
 #check the result + 
 reprepro list `<target distribution>` + 
 =====================================================
+
+.Adding users
+=========================================================
+Prerequsites: 
+
+* GPG Key ID of the new user 
+* ssh public-key of the new user
+
+Steps to follow to allow uploading for a new user:
+
+1. Add the public-key to ~/incoming/.ssh/authorized_keys
+2. As user archive do: ~/grml-repo/bin/importkey.sh `GPGKeyid` 
+
+=========================================================
 
 About this document
 -------------------
