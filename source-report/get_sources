@@ -4,7 +4,7 @@
 # Authors:       grml-team (grml.org), (c) Alexander Wirt
 # Bug-Reports:   see http://grml.org/bugs/
 # License:       This file is licensed under the GPL v2.
-# Latest change: Sa Mai 05 23:51:35 CEST 2007 [formorer]
+# Latest change: So Mai 06 00:35:39 CEST 2007 [formorer]
 ################################################################################
 
 use strict; 
@@ -223,7 +223,7 @@ my $pnum = keys(%{$package_tree});
 my %s_hash; 
 my $errors = 0;
 foreach my $package (keys(%{$package_tree})) {
-	$errors++ if $package_tree->{$package}->{'status'} ne "OK"; 
+	$errors++ if $package_tree->{$package}->{'status'} =~ /^OK/; 
 	if (! exists  $s_hash{ $package_tree->{$package}->{'source'} }) {
 		$s_hash{$package_tree->{$package}->{'source'}} = 1; 
 	}
