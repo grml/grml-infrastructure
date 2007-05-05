@@ -223,7 +223,7 @@ my $pnum = keys(%{$package_tree});
 my %s_hash; 
 my $errors = 0;
 foreach my $package (keys(%{$package_tree})) {
-	$errors++ if $package_tree->{$package}->{'status'} eq "ERROR"; 
+	$errors++ if $package_tree->{$package}->{'status'} ne "OK"; 
 	if (! exists  $s_hash{ $package_tree->{$package}->{'source'} }) {
 		$s_hash{$package_tree->{$package}->{'source'}} = 1; 
 	}
