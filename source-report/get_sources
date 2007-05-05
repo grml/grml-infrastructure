@@ -4,7 +4,7 @@
 # Authors:       grml-team (grml.org), (c) Alexander Wirt
 # Bug-Reports:   see http://grml.org/bugs/
 # License:       This file is licensed under the GPL v2.
-# Latest change: Wed May 02 05:17:01 CEST 2007 [formorer]
+# Latest change: Sa Mai 05 23:51:35 CEST 2007 [formorer]
 ################################################################################
 
 use strict; 
