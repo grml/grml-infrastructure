@@ -18,6 +18,7 @@ use CGI qw/:standard/;
 use YAML qw( LoadFile );
 use Params::Validate qw(:all);
 use File::Copy;
+use Digest::MD5; 
 
 #validates the configfile
 sub validate_config ($) {
@@ -111,17 +112,31 @@ foreach my $package (keys %{$package_tree}) {
 		or warn "Could not launch chroot command:$!"; 
 	while (my $line = <$fh>) {
 		chomp $line;
-		if ($line =~ /^'([^']+)'/) {
+		if ($line =~ /^'([^']+)'\s+(\S+)\s+(\S+)\s+(\S+)/) {
 			my $uri = $1;
-			my ($filename) = $uri =~ /([^\/]+)$/; 
+			my $filename = $2;
+			my $size = $3; 
+			my $md5sum = $4;
 			print "Filename: $filename\n" if $debug;
 			if (! -d $config->{reportdir}."/$source") {
 				mkdir ($config->{reportdir}."/$source") 
 					or die "Could not create package dir '".$config->{reportdir}."/$source':$!"; 
 			}
+			my $status = 0; 
 			if ( -e $config->{reportdir}."/$source/$filename" ) {
-				print $config->{reportdir}."/$source already downloaded\n" if $debug;
-			} else {
+				open(FILE, $config->{reportdir}."/$source/$filename") 
+					or die "Can't open ".$config->{reportdir}."/$source/$filename: $!";
+				binmode(FILE);
+				my $tested_md5sum = Digest::MD5->new->addfile(*FILE)->hexdigest;
+				if ($md5sum eq $tested_md5sum) {
+					print $config->{reportdir}."/$source/$filename already downloaded\n" if $debug;
+					$status = 1; 
+				} else { 
+					print $config->{reportdir}."/$source/$filename corrupt - download again\n" if $debug; 
+				}
+			
+			}
+			if ($status == 0)  {
 				print "Getting uri '$uri' to ".$config->{reportdir}. "/$source/$filename\n" if $debug;
 				my $ret = getstore($uri, $config->{reportdir}."/$source/$filename");
 				if ($ret != 200) {
@@ -129,6 +144,24 @@ foreach my $package (keys %{$package_tree}) {
 					push @{$package_tree->{$package}->{'errors'}}, "$uri failed: " . status_message($ret); 
 					$error =1; 
 				} 
+				open(FILE, $config->{reportdir}."/$source/$filename")
+					or die "Can't open ".$config->{reportdir}."/$source/$filename: $!";
+				binmode(FILE);
+				my $tested_md5sum = Digest::MD5->new->addfile(*FILE)->hexdigest;
+				if ($md5sum eq $tested_md5sum) {
+					open (my $urifh, '>', $config->{reportdir}."/$source/$filename.md5") 
+						or die "Could not open " . $config->{reportdir}."/$source/$filename.md5 for writing: $!";
+					print $urifh $md5sum; 
+					close $urifh;
+					open ($urifh, '>', $config->{reportdir}."/$source/$filename.uri")
+						or die "Could not open " . $config->{reportdir}."/$source/$filename.uri for writing: $!";
+					print $urifh "$uri\n";
+					close $urifh; 
+				} else {
+					print STDERR "md5sum mismatch of $uri\n";
+					push @{$package_tree->{$package}->{'errors'}}, "$uri failed: md5sum mismatch";
+					$error =1; 
+				}
 			}
 		} elsif ($line =~ /^E: (.*)/) {
 			push @{$package_tree->{$package}->{'errors'}}, "$1";
