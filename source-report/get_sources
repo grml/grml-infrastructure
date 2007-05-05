@@ -27,6 +27,7 @@ sub validate_config ($) {
 			spec => {
 				title => { type => SCALAR },
 				statusfile => { type => SCALAR },
+				sourcedir => { type => SCALAR },
 				chroot => { type => SCALAR },
 				reportdir => { type => SCALAR },
 				debug => { type => SCALAR, regex => qr/^(1|0)$/, optional => 1},
@@ -48,6 +49,11 @@ my $debug = $config->{debug} || 0;
 if (! -d $config->{reportdir}) {
 	mkdir $config->{reportdir}
 		or die "Could not create reportdir '".$config->{reportdir}."':$!"; 
+}
+
+if (! -d $config->{sourcedir}) {
+	mkdir $config->{sourcedir}
+		or die "Could not create sourcedir '".$config->{sourcedir}."':$!"; 
 }
 
 #fsrst build a package tree 
@@ -122,39 +128,43 @@ foreach my $package (keys %{$package_tree}) {
 				mkdir ($config->{reportdir}."/$source") 
 					or die "Could not create package dir '".$config->{reportdir}."/$source':$!"; 
 			}
+			if (! -d $config->{sourcedir}."/$source") {
+				mkdir ($config->{sourcedir}."/$source") 
+					or die "Could not create package dir '".$config->{sourcedir}."/$source':$!"; 
+			}
 			my $status = 0; 
-			if ( -e $config->{reportdir}."/$source/$filename" ) {
-				open(FILE, $config->{reportdir}."/$source/$filename") 
-					or die "Can't open ".$config->{reportdir}."/$source/$filename: $!";
+			if ( -e $config->{sourcedir}."/$source/$filename" ) {
+				open(FILE, $config->{sourcedir}."/$source/$filename") 
+					or die "Can't open ".$config->{sourcedir}."/$source/$filename: $!";
 				binmode(FILE);
 				my $tested_md5sum = Digest::MD5->new->addfile(*FILE)->hexdigest;
 				if ($md5sum eq $tested_md5sum) {
-					print $config->{reportdir}."/$source/$filename already downloaded\n" if $debug;
+					print $config->{sourcedir}."/$source/$filename already downloaded\n" if $debug;
 					$status = 1; 
 				} else { 
-					print $config->{reportdir}."/$source/$filename corrupt - download again\n" if $debug; 
+					print $config->{sourcedir}."/$source/$filename corrupt - download again\n" if $debug; 
 				}
 			
 			}
 			if ($status == 0)  {
-				print "Getting uri '$uri' to ".$config->{reportdir}. "/$source/$filename\n" if $debug;
-				my $ret = getstore($uri, $config->{reportdir}."/$source/$filename");
+				print "Getting uri '$uri' to ".$config->{sourcedir}. "/$source/$filename\n" if $debug;
+				my $ret = getstore($uri, $config->{sourcedir}."/$source/$filename");
 				if ($ret != 200) {
 					print STDERR "Could not download $uri - Server returned: " . status_message($ret) . "\n"; 
 					push @{$package_tree->{$package}->{'errors'}}, "$uri failed: " . status_message($ret); 
 					$error =1; 
 				} 
-				open(FILE, $config->{reportdir}."/$source/$filename")
-					or die "Can't open ".$config->{reportdir}."/$source/$filename: $!";
+				open(FILE, $config->{sourcedir}."/$source/$filename")
+					or die "Can't open ".$config->{sourcedir}."/$source/$filename: $!";
 				binmode(FILE);
 				my $tested_md5sum = Digest::MD5->new->addfile(*FILE)->hexdigest;
 				if ($md5sum eq $tested_md5sum) {
-					open (my $urifh, '>', $config->{reportdir}."/$source/$filename.md5") 
-						or die "Could not open " . $config->{reportdir}."/$source/$filename.md5 for writing: $!";
+					open (my $urifh, '>', $config->{sourcedir}."/$source/$filename.md5") 
+						or die "Could not open " . $config->{sourcedir}."/$source/$filename.md5 for writing: $!";
 					print $urifh $md5sum; 
 					close $urifh;
-					open ($urifh, '>', $config->{reportdir}."/$source/$filename.uri")
-						or die "Could not open " . $config->{reportdir}."/$source/$filename.uri for writing: $!";
+					open ($urifh, '>', $config->{sourcedir}."/$source/$filename.uri")
+						or die "Could not open " . $config->{sourcedir}."/$source/$filename.uri for writing: $!";
 					print $urifh "$uri\n";
 					close $urifh; 
 				} else {
@@ -163,11 +173,15 @@ foreach my $package (keys %{$package_tree}) {
 					$error =1; 
 				}
 			}
+			if (! $error) {
+				print "Creating links\n" if $debug; 
+				link $config->{sourcedir}."/$source/$filename",$config->{reportdir}."/$source/$filename";
+			}
 		} elsif ($line =~ /^E: (.*)/) {
 			push @{$package_tree->{$package}->{'errors'}}, "$1";
 			print STDERR "Got an error from apt-get for package $package (Source: $source, Version: $version): $1\n";
 			$error = 1; 
-			}
+		}
 	}
 	close ($fh);
 	if ($error) {
