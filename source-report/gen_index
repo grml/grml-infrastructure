@@ -1,0 +1,49 @@
+#!/usr/bin/perl
+
+use strict; 
+use warnings;
+use English; 
+use CGI qw/:standard/;
+use HTML::Table;
+use File::Basename; 
+
+
+my $reports = '/home/sources/reports';
+my @status_files = split("\n", `find $reports -maxdepth 2 -name status.txt`); 
+
+
+open(my $fh, '>', "$reports/index.html")
+	or die "Could not open '$reports/index.html' for writing: $!"; 
+
+print $fh start_html("Source Repository for GRML"); 
+print $fh "<center><h1><a href='http://grml.org/'>GRML</a> Source Repository</h1><br><br>";
+my $t = new HTML::Table(
+                                -cols => 5,
+                                -border=>1,
+                                -head=> ['Release','Packages','Sources', 'Errors', 'Last updated', 'source.list entry'],
+                        );
+
+foreach my $releasefile (@status_files) {
+	open (my $pfh, '<', "$releasefile") 
+		or die "Could not open statusfile '$releasefile': $!"; 
+	my ($release, $packages, $sources, $errors, $lastupdated, $baseurl);
+	while (<$pfh>) {	
+		chomp;
+		if (/^Updated: (.*)$/) { $lastupdated = $1; next;}
+		if (/^Sources: (.*)$/) { $sources = $1; next; }
+		if (/^Title: (.*)$/) { $release = $1; next; }
+		if (/^Errors: (.*)$/) { $errors = $1; next; }
+		if (/^Packages: (.*)$/) { $packages = $1; next; }
+		if (/^Baseurl: (.*)$/) { $baseurl = $1; next; }
+	}
+	$t->addRow(     "<a href='$baseurl'>$release</a>", 
+			"$packages", 
+			"$sources",
+			"$errors", 
+			"$lastupdated",
+			"deb-src $baseurl ./", 
+		);
+}
+print $fh $t; 
+print $fh end_html; 
+close($fh); 
