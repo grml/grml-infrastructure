@@ -3,6 +3,7 @@ statusfile: /home/sources/source-report/grml-1.0/grep-status
 sourceslist: /home/sources/source-report/grml-1.0/sources.list
 reportdir: /home/sources/reports/grml-1.0/
 sourcedir: /home/sources/reports/sources
+baseurl: http://sources.grml.org/grml-1.0/
 updatesource: 1
 chroot: /home/sources/chroot/sid
 debug: 0

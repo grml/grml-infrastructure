@@ -30,6 +30,7 @@ sub validate_config ($) {
 				statusfile => { type => SCALAR },
 				sourcedir => { type => SCALAR },
 				sourceslist => { type => SCALAR }, 
+				baseurl => { type => SCALAR },
 				chroot => { type => SCALAR },
 				reportdir => { type => SCALAR },
 				debug => { type => SCALAR, regex => qr/^(1|0)$/, optional => 1},
@@ -264,6 +265,8 @@ print $fh "<b>Packages:</b> $pnum<br>";
 print $fh "<b>Sources:</b> $snum<br>";
 print $fh "<b>Errors:</b> $errors (" . $errors/$snum*100 . "%)<br>"; 
 print $fh "<a href='sources.list'>Sources list of the chroot</a><br><br>"; 
+print $fh "<b>Use:</b><i> deb-src " . $config->{'baseurl'} . " ./</i><br> "; 
+print $fh "in your sources.list to get files via apt-get<br><br>";
 print $fh $t;
 print $fh end_html;
 close ($fh); 
