@@ -1,258 +1,1265 @@
-Desired=Unknown/Install/Remove/Purge/Hold
-| Status=Not/Installed/Config-files/Unpacked/Failed-config/Half-installed
-|/ Err?=(none)/Hold/Reinst-required/X=both-problems (Status,Err: uppercase=bad)
-||/ Name                                         Version                                      Description
-+++-============================================-============================================-========================================================================================================
-ii  acpid                                        1.0.4-7.1                                    Utilities for using ACPI power management
-ii  adduser                                      3.102                                        Add and remove users and groups
-ii  agrep                                        4.17-5                                       text search tool with support for approximate patterns
-ii  apt                                          0.6.45                                       Advanced front-end for dpkg
-ii  atftp                                        0.7.dfsg-1.2                                 advanced TFTP client
-ii  atftpd                                       0.7.dfsg-1.2                                 advanced TFTP server
-ii  attr                                         2.4.32-1.1                                   Utilities for manipulating filesystem extended attributes
-ii  base-files                                   4.0.0                                        Debian base system miscellaneous files
-ii  base-passwd                                  3.5.11                                       Debian base system master password and group files
-ii  bash                                         3.1dfsg-8                                    The GNU Bourne Again SHell
-ii  bing                                         1.1.3-1                                      Empirical stochastic bandwidth tester
-ii  binutils                                     2.17cvs20070426-4                            The GNU assembler, linker and binary utilities
-ii  bridge-utils                                 1.2-1                                        Utilities for configuring the Linux ethernet bridge
-ii  bsdmainutils                                 6.1.6                                        collection of more utilities from FreeBSD
-ii  bsdutils                                     2.12r-19                                     Basic utilities from 4.4BSD-Lite
-ii  buffer                                       1.19-9                                       Buffering/reblocking program for tape backups, printing, etc.
-ii  busybox                                      1.1.3-4                                      Tiny utilities for small and embedded systems
-ii  bzip2                                        1.0.3-6                                      high-quality block-sorting file compressor - utilities
-ii  chntpw                                       0.99.3-1                                     NT SAM password recovery utility
-ii  console-common                               0.7.69                                       Basic infrastructure for text console configuration
-ii  console-data                                 1.01-7                                       Keymaps, fonts, charset maps, fallback tables for console-tools
-ii  console-terminus                             4.20-5.1                                     Fixed-width fonts for fast reading on the Linux console
-ii  console-tools                                0.2.3dbs-65                                  Linux console and font utilities
-ii  coreutils                                    5.97-5.3                                     The GNU core utilities
-ii  cpio                                         2.7-2                                        GNU cpio -- a program to manage archives of files
-ii  cron                                         3.0pl1-100                                   management of regular background processing
-ii  cryptsetup                                   1.0.4+svn29-1                                configures encrypted block devices
-ii  dante-client                                 1.1.18-2.1                                   SOCKS wrapper for users behind a firewall
-ii  dash                                         0.5.3-7                                      The Debian Almquist Shell
-ii  dctrl-tools                                  2.9.3                                        Command-line tools to process Debian package information
-ii  ddrescue                                     1.12-1                                       copies data from one file or block device to another
-ii  debconf                                      1.5.13                                       Debian configuration management system
-ii  debconf-i18n                                 1.5.13                                       full internationalization support for debconf
-ii  debianutils                                  2.18                                         Miscellaneous utilities specific to Debian
-ii  debootstrap                                  0.3.3.3                                      Bootstrap a basic Debian system
-ii  deborphan                                    1.7.23                                       Find orphaned libraries
-ii  dhcp-client                                  2.0pl5-19.5                                  DHCP Client
-ii  dialog                                       1.1-20070409-2                               Displays user-friendly dialog boxes from shell scripts
-ii  diff                                         2.8.1-12                                     File comparison utilities
-ii  dmidecode                                    2.8-4                                        Dump Desktop Management Interface data
-ii  dmraid                                       1.0.0.rc13-2+b1                              Device-Mapper Software RAID support tool
-ii  dmsetup                                      1.02.18-1                                    The Linux Kernel Device Mapper userspace library
-ii  dosfstools                                   2.11-2.1+b1                                  Utilities to create and check MS-DOS FAT filesystems
-ii  dpkg                                         1.13.25                                      package maintenance system for Debian
-ii  dselect                                      1.13.25                                      user tool to manage Debian packages
-ii  e2fslibs                                     1.39+1.40-WIP-2006.11.14+dfsg-2              ext2 filesystem libraries
-ii  e2fsprogs                                    1.39+1.40-WIP-2006.11.14+dfsg-2              ext2 file system utilities and libraries
-ii  e3                                           2.70-3                                       A very small editor
-ii  eject                                        2.1.4-4                                      ejects CDs and operates CD-Changers under Linux
-ii  fdisk-udeb                                   2.11u-3                                      Partition a hard drive (manual, cfdisk)
-ii  file                                         4.20-5                                       Determines file type using "magic" numbers
-ii  file-rc                                      0.8.10                                       Alternative boot mechanism using a single configuration file
-ii  findutils                                    4.2.30-1                                     utilities for finding files--find, xargs, and locate
-ii  firmware-ipw3945                             0.4                                          Binary firmware for IPW3945
-ii  fnord                                        1.10-2                                       yet another small httpd
-ii  fuse-utils                                   2.6.3-4                                      Filesystem in USErspace (utilities)
-ii  gawk                                         3.1.5.dfsg-4                                 GNU awk, a pattern scanning and processing language
-ii  gcc-3.3-base                                 3.3.6-15                                     The GNU Compiler Collection (base package)
-ii  gcc-4.1-base                                 4.1.2-5                                      The GNU Compiler Collection (base package)
-ii  gettext-base                                 0.16.1-1                                     GNU Internationalization utilities for the base system
-ii  gpm                                          1.19.6-25                                    General Purpose Mouse Interface
-ii  grep                                         2.5.1.ds2-6                                  GNU grep, egrep and fgrep
-ii  grml-autoconfig                              0.6.41                                       main bootup process of a grml system
-ii  grml-debootstrap                             0.9                                          wrapper around debootstrap for installing plain Debian via grml
-ii  grml-docs                                    0.9-6-devel02                                documentation for grml (grml.org)
-ii  grml-etc                                     0.9.21                                       ecetera files for the grml system
-ii  grml-etc-core                                0.2.50                                       core ecetera files for the grml system
-ii  grml-fixes                                   0.1-13                                       fixes for the grml system
-ii  grml-network                                 0.1.11                                       network related helper scripts
-ii  grml-rebuildfstab                            0.3.26                                       fstab-rebuilder for grml
-ii  grml-saveconfig                              0.2.3                                        utilities and documentation for saving and restoring configuration
-ii  grml-scanpartitions                          0.3-15                                       fstab-helper for grml
-ii  grml-scripts                                 0.9.47                                       some small scripts which should make life easier
-ii  grml-shlib                                   1.02.11                                      Generic shell library used in grml scripts
-ii  grml-small                                   0.3-1                                        virtual package for main grml-small system
-ii  grml-tips                                    0.3.30                                       search for tips and hints via a keyword
-ii  grml-usleep                                  0.2.1                                        sleeps for a number of microseconds
-ii  grml2hd                                      0.9.20                                       make a harddisk installation of grml
-ii  grub                                         0.97-27                                      GRand Unified Bootloader
-ii  guessnet                                     0.42-1                                       Guess which LAN a network device is connected to
-ii  gzip                                         1.3.9-2                                      The GNU compression utility
-ii  hdparm                                       7.1-2                                        tune hard disk parameters for high performance
-ii  hostname                                     2.93                                         utility to set/show the host name or domain name
-ii  ifplugd                                      0.28-2.3                                     A configuration daemon for ethernet devices
-ii  ifupdown                                     0.6.8                                        high level tools to configure network interfaces
-ii  inetutils-inetd                              1.5.dfsg.1-4                                 Internet super server
-ii  initramfs-tools                              0.87b                                        tools for generating an initramfs
-ii  initscripts                                  2.86.ds1-38                                  Scripts for initializing and shutting down the system
-ii  iproute                                      20061002-4                                   Professional tools to control the networking in Linux kernels
-ii  iputils-ping                                 20070202-1                                   Tools to test the reachability of network hosts
-ii  ipw-firmware                                 0.3-1                                        Intel PRO/Wireless 2100 and 2200 Firmware
-ii  ipw3945d                                     1.7.22-4                                     Binary userspace regulatory daemon for Intel PRO/Wireless 3945ABG cards
-ii  jed                                          0.99.18+dfsg.1-3                             editor for programmers (textmode version)
-ii  jed-common                                   0.99.18+dfsg.1-3                             S-Lang runtime files for jed and xjed
-ii  klibc-utils                                  1.5-2                                        small statically-linked utilities built with klibc
-ii  knockd                                       0.5-1.1                                      small port-knock daemon
-ii  laptop-detect                                0.12.1-0.1                                   attempt to detect a laptop
-ii  less                                         394-4                                        Pager program similar to more
-ii  libabz0                                      0.7.2                                        Miscellaneous useful routines
-ii  libacl1                                      2.2.42-1                                     Access control list shared library
-ii  libatm1                                      2.4.1-17                                     shared library for ATM (Asynchronous Transfer Mode)
-ii  libattr1                                     2.4.32-1.1                                   Extended attribute shared library
-ii  libber0                                      0.4.2                                        A Basic Encoding Rules (ITU X.690) implementation
-ii  libblkid1                                    1.39+1.40-WIP-2006.11.14+dfsg-2              block device id library
-ii  libbz2-1.0                                   1.0.3-6                                      high-quality block-sorting file compressor library - runtime
-ii  libc6                                        2.5-5                                        GNU C Library: Shared libraries
-ii  libcap1                                      1.10-14                                      support for getting/setting POSIX.1e capabilities
-ii  libcomerr2                                   1.39+1.40-WIP-2006.11.14+dfsg-2              common error description library
-ii  libconsole                                   0.2.3dbs-65                                  Shared libraries for Linux console and font manipulation
-ii  libdaemon0                                   0.10-1                                       lightweight C library for daemons
-ii  libdb1-compat                                2.1.3-9                                      The Berkeley database routines [glibc 2.0/2.1 compatibility]
-ii  libdb4.3                                     4.3.29-8                                     Berkeley v4.3 Database Libraries [runtime]
-ii  libdb4.4                                     4.4.20-8                                     Berkeley v4.4 Database Libraries [runtime]
-ii  libdbus-1-3                                  1.0.2-4                                      simple interprocess messaging system
-ii  libdebug0                                    0.4.2                                        Memory leak detection system and logging library
-ii  libdevmapper1.02                             1.02.12-1                                    The Linux Kernel Device Mapper userspace library
-ii  libdevmapper1.02.1                           1.02.18-1                                    The Linux Kernel Device Mapper userspace library
-ii  libedit2                                     2.9.cvs.20050518-3                           BSD editline and history libraries
-ii  libfuse2                                     2.6.3-4                                      Filesystem in USErspace library
-ii  libgcc1                                      4.1.2-5                                      GCC support library
-ii  libgcrypt11                                  1.2.4-2                                      LGPL Crypto library - runtime library
-ii  libgdbm3                                     1.8.3-3                                      GNU dbm database routines (runtime version)
-ii  libgpg-error0                                1.4-2                                        library for common error values and messages in GnuPG components
-ii  libgpmg1                                     1.19.6-25                                    General Purpose Mouse - shared library
-ii  libiw28                                      28-1                                         Wireless tools - library
-ii  libiw29                                      29~pre21-1                                   Wireless tools - library
-ii  libkeyutils1                                 1.2-3                                        Linux Key Management Utilities (library)
-ii  libklibc                                     1.5-2                                        minimal libc subset for use with initramfs
-ii  libkrb53                                     1.6.dfsg.1-2                                 MIT Kerberos runtime libraries
-ii  liblocale-gettext-perl                       1.05-1                                       Using libc functions for internationalization in Perl
-ii  liblockfile1                                 1.06.1                                       NFS-safe locking library, includes dotlockfile program
-ii  libmagic1                                    4.20-5                                       File type determination library using "magic" numbers
-ii  libncurses5                                  5.5-5                                        Shared libraries for terminal handling
-ii  libncursesw5                                 5.5-5                                        Shared libraries for terminal handling (wide character support)
-ii  libnet1                                      1.1.2.1-2                                    library for the construction and handling of network packets
-ii  libnewt0.52                                  0.52.2-10                                    Not Erik's Windowing Toolkit - text mode windowing with slang
-ii  libntfs9                                     1.13.1-6+b2                                  library that provides common NTFS access functions
-ii  libpam-modules                               0.79-4                                       Pluggable Authentication Modules for PAM
-ii  libpam-runtime                               0.79-4                                       Runtime support for the PAM library
-ii  libpam0g                                     0.79-4                                       Pluggable Authentication Modules library
-ii  libpcap0.7                                   0.7.2-7                                      System interface for user-level packet capture
-ii  libpcap0.8                                   0.9.5-1                                      System interface for user-level packet capture
-ii  libpci2                                      2.1.11-3                                     Obsolete shared library for accessing pci devices
-ii  libpcre3                                     6.7-1                                        Perl 5 Compatible Regular Expression Library - runtime files
-ii  libpopt0                                     1.10-3                                       lib for parsing cmdline parameters
-ii  libreadline5                                 5.2-2                                        GNU readline and history libraries, run-time libraries
-ii  libselinux1                                  2.0.8-1                                      SELinux shared libraries
-ii  libsepol1                                    2.0.1-1                                      Security Enhanced Linux policy library for changing policy binaries
-ii  libslang2                                    2.0.7-1                                      The S-Lang programming library - runtime version
-ii  libss2                                       1.39+1.40-WIP-2006.11.14+dfsg-2              command-line interface parsing library
-ii  libssl0.9.8                                  0.9.8e-4                                     SSL shared libraries
-ii  libstdc++6                                   4.1.2-5                                      The GNU Standard C++ Library v3
-ii  libterm-readkey-perl                         2.30-3                                       A perl module for simple terminal control
-ii  libtext-charwidth-perl                       0.04-4                                       get display widths of characters on the terminal
-ii  libtext-iconv-perl                           1.4-3                                        converts between character sets in Perl
-ii  libtext-wrapi18n-perl                        0.06-5                                       internationalized substitute of Text::Wrap
-ii  libusb-0.1-4                                 0.1.12-7                                     userspace USB programming library
-ii  libuuid1                                     1.39+1.40-WIP-2006.11.14+dfsg-2              universally unique id library
-ii  libvolume-id0                                0.110-0grml1                                 libvolume_id shared library
-ii  libwrap0                                     7.6.dbs-13                                   Wietse Venema's TCP wrappers library
-ii  lilo                                         22.8-3+b1                                    LInux LOader - The Classic OS loader can load Linux and others
-ii  links                                        0.99+1.00pre12-1.2                           Character mode WWW browser
-ii  linux-image-2.6.20-grml-small                grml.02                                      Linux kernel binary image for version 2.6.20-grml-small
-ii  localepurge                                  0.4.1                                        Automagically remove unnecessary locale data
-ii  lockfile-progs                               0.1.10                                       Programs for locking and unlocking files and mailboxes
-ii  login                                        4.0.18.1-7                                   system login tools
-ii  logrotate                                    3.7.1-3                                      Log rotation utility
-ii  lrzsz                                        0.12.21-4.1                                  Tools for zmodem/xmodem/ymodem file transfer
-ii  lsb-base                                     3.1-23.1                                     Linux Standard Base 3.1 init script functionality
-ii  lsof                                         4.77.dfsg.1-3                                List open files
-ii  lvm2                                         2.02.24-6                                    The Linux Logical Volume Manager
-ii  makedev                                      2.3.1-83                                     creates device files in /dev
-ii  mawk                                         1.3.3-11                                     a pattern scanning and text processing language
-ii  mbr                                          1.1.9-2                                      Master Boot Record for IBM-PC compatible computers.
-ii  mdadm                                        2.6.1-1                                      tool to administer Linux MD arrays (software RAID)
-ii  memtester                                    2.93.1-3.1                                   A utility for testing the memory subsystem
-ii  mgetty                                       1.1.35-3                                     Smart Modem getty replacement
-ii  mktemp                                       1.5-2                                        Makes unique filenames for temporary files
-ii  module-init-tools                            3.3-pre4-2                                   tools for managing Linux kernel modules
-ii  modutils                                     2.4.27.0-6                                   Linux module utilities
-ii  most                                         4.10.2-5                                     Pager program similar to more and less
-ii  mount                                        2.12r-19                                     Tools for mounting and manipulating filesystems
-ii  mpack                                        1.6-4                                        tools for encoding/decoding MIME messages
-ii  mtr-tiny                                     0.71-2                                       Full screen ncurses traceroute tool
-ii  ncftp                                        3.2.0-1                                      A user-friendly and well-featured FTP client
-ii  ncurses-base                                 5.5-5                                        Descriptions of common terminal types
-ii  ncurses-bin                                  5.5-5                                        Terminal-related programs and man pages
-ii  net-tools                                    1.60-17                                      The NET-3 networking toolkit
-ii  netbase                                      4.29                                         Basic TCP/IP networking system
-ii  netcat                                       1.10-33                                      TCP/IP swiss army knife
-ii  ntfsprogs                                    1.13.1-6+b2                                  tools for doing neat things in NTFS partitions from Linux
-ii  ntpdate                                      4.2.2.p4+dfsg-2                              client for setting system time from NTP servers
-ii  nvi                                          1.79-25                                      4.4BSD re-implementation of vi
-ii  openssh-client                               4.3p2-10                                     Secure shell client, an rlogin/rsh/rcp replacement
-ii  openssh-server                               4.3p2-10                                     Secure shell server, an rshd replacement
-ii  passwd                                       4.0.18.1-7                                   change and administer password and group data
-ii  patch                                        2.5.9-4                                      Apply a diff file to an original
-ii  pciutils                                     2.2.4-1                                      Linux PCI Utilities
-ii  perl                                         5.8.8-7                                      Larry Wall's Practical Extraction and Report Language
-ii  perl-base                                    5.8.8-7                                      The Pathologically Eclectic Rubbish Lister
-ii  perl-modules                                 5.8.8-7                                      Core Perl modules
-ii  ppp                                          2.4.4rel-9                                   Point-to-Point Protocol (PPP) daemon
-ii  pppoeconf                                    1.9                                          configures PPPoE/ADSL connections
-ii  prism54-firmware                             0.1                                          firmware images for prism54 drivers
-ii  procinfo                                     18-2                                         Displays system information from /proc
-ii  procps                                       3.2.7-3                                      /proc file system utilities
-ii  psmisc                                       22.5-1                                       Utilities that use the proc filesystem
-ii  pump                                         0.8.24-2                                     BOOTP and DHCP client for automatic IP configuration
-ii  readline-common                              5.2-2                                        GNU readline and history libraries, common files
-ii  reiserfsprogs                                3.6.19-4                                     User-level tools for ReiserFS filesystems
-ii  rsync                                        2.6.9-3                                      fast remote file copy program (like rcp)
-ii  rungetty                                     1.2-10                                       minimal console getty that can run any process
-ii  screen                                       4.0.3-0.3+b1                                 a terminal multiplexor with VT100/ANSI terminal emulation
-ii  scsiadd                                      1.95-7.1                                     add or remove SCSI devices by rescanning the bus
-ii  sed                                          4.1.5-1                                      The GNU sed stream editor
-ii  ser2net                                      2.3-1                                        Allows network connections to serial ports
-ii  setserial                                    2.17-44                                      controls configuration of serial ports
-ii  sharutils                                    4.2.1-15                                     shar, unshar, uuencode, uudecode
-ii  smartmontools                                5.37-5                                       control and monitor storage systems using S.M.A.R.T.
-ii  socket                                       1.1-8                                        Multi purpose socket tool
-ii  statserial                                   1.1-22                                       Displays serial port modem status lines
-ii  strace                                       4.5.14-2                                     A system call tracer
-ii  sudo                                         1.6.8p12-5                                   Provide limited super user privileges to specific users
-ii  symlinks                                     1.2-4.2                                      scan/change symbolic links
-ii  syslog-ng                                    2.0.0-1                                      Next generation logging daemon
-ii  sysvinit                                     2.86.ds1-38                                  System-V-like init utilities
-ii  sysvinit-utils                               2.86.ds1-38                                  System-V-like utilities
-ii  tar                                          1.16.1-1                                     GNU tar
-ii  tcpd                                         7.6.dbs-13                                   Wietse Venema's TCP wrapper utilities
-ii  tcpdump                                      3.9.5-2                                      A powerful tool for network monitoring and data acquisition
-ii  telnet                                       0.17-35                                      The telnet client
-ii  timeout                                      1.11-6.3                                     Run a command with a time limit.
-ii  tinysnmp-tools                               0.8.4                                        TinySNMP Utilities
-ii  tofrodos                                     1.7.6-2                                      Converts DOS <-> Unix text files, alias tofromdos
-ii  tzdata                                       2007e-7                                      time zone and daylight-saving time data
-ii  ucf                                          3.001                                        Update Configuration File: preserves user changes to config files.
-ii  udev                                         0.110-0grml1                                 /dev/ and hotplug management daemon
-ii  unp                                          1.0.12                                       unpack (almost) everything with one command
-ii  unzip                                        5.52-9                                       De-archiver for .zip files
-ii  unzoo                                        4.4-6                                        zoo archive extractor
-ii  update-inetd                                 4.27-0.5                                     inetd.conf updater
-ii  usbutils                                     0.72-8                                       Linux USB utilities
-ii  util-linux                                   2.12r-19                                     Miscellaneous system utilities
-ii  vlan                                         1.9-2                                        user mode programs to enable VLANs on your ethernet devices
-ii  wget                                         1.10.2-2                                     retrieves files from the web
-ii  whiptail                                     0.52.2-10                                    Displays user-friendly dialog boxes from shell scripts
-ii  wipe                                         0.21-3                                       Secure file deletion
-ii  wireless-tools                               29~pre21-1                                   Tools for manipulating Linux Wireless Extensions
-ii  wpasupplicant                                0.6.0~cvs20070224-2                          Client support for WPA and WPA2 (IEEE 802.11i)
-ii  xfsprogs                                     2.8.18-1                                     Utilities for managing the XFS filesystem
-ii  zip                                          2.32-1                                       Archiver for .zip files
-ii  zlib1g                                       1.2.3-13                                     compression library - runtime
-ii  zsh                                          4.3.4-2                                      A shell with lots of features
+Status: install ok installed
+Package: tcpd
+Version: 7.6.dbs-13
+Source: tcp-wrappers
+
+Status: install ok installed
+Package: libtext-wrapi18n-perl
+Version: 0.06-5
+Source: 
+
+Status: install ok installed
+Package: debconf
+Version: 1.5.13
+Source: 
+
+Status: install ok installed
+Package: unzoo
+Version: 4.4-6
+Source: 
+
+Status: install ok installed
+Package: dash
+Version: 0.5.3-7
+Source: 
+
+Status: install ok installed
+Package: grml-scanpartitions
+Version: 0.3-15
+Source: 
+
+Status: install ok installed
+Package: vlan
+Version: 1.9-2
+Source: 
+
+Status: install ok installed
+Package: mktemp
+Version: 1.5-2
+Source: 
+
+Status: install ok installed
+Package: coreutils
+Version: 5.97-5.3
+Source: 
+
+Status: install ok installed
+Package: firmware-ipw3945
+Version: 0.4
+Source: firmware-nonfree
+
+Status: install ok installed
+Package: sudo
+Version: 1.6.8p12-5
+Source: 
+
+Status: install ok installed
+Package: debianutils
+Version: 2.18
+Source: 
+
+Status: install ok installed
+Package: bridge-utils
+Version: 1.2-1
+Source: 
+
+Status: install ok installed
+Package: libdb1-compat
+Version: 2.1.3-9
+Source: db1-compat
+
+Status: install ok installed
+Package: initramfs-tools
+Version: 0.87b
+Source: 
+
+Status: install ok installed
+Package: makedev
+Version: 2.3.1-83
+Source: 
+
+Status: install ok installed
+Package: laptop-detect
+Version: 0.12.1-0.1
+Source: 
+
+Status: install ok installed
+Package: most
+Version: 4.10.2-5
+Source: 
+
+Status: install ok installed
+Package: rungetty
+Version: 1.2-10
+Source: 
+
+Status: install ok installed
+Package: telnet
+Version: 0.17-35
+Source: netkit-telnet
+
+Status: install ok installed
+Package: login
+Version: 1:4.0.18.1-7
+Source: shadow
+
+Status: install ok installed
+Package: chntpw
+Version: 0.99.3-1
+Source: 
+
+Status: install ok installed
+Package: libdbus-1-3
+Version: 1.0.2-4
+Source: dbus
+
+Status: install ok installed
+Package: gettext-base
+Version: 0.16.1-1
+Source: gettext
+
+Status: install ok installed
+Package: module-init-tools
+Version: 3.3-pre4-2
+Source: 
+
+Status: install ok installed
+Package: libgdbm3
+Version: 1.8.3-3
+Source: gdbm
+
+Status: install ok installed
+Package: sharutils
+Version: 1:4.2.1-15
+Source: 
+
+Status: install ok installed
+Package: libgcrypt11
+Version: 1.2.4-2
+Source: 
+
+Status: install ok installed
+Package: file-rc
+Version: 0.8.10
+Source: 
+
+Status: install ok installed
+Package: buffer
+Version: 1.19-9
+Source: 
+
+Status: install ok installed
+Package: grml-docs
+Version: 0.9-6-devel02
+Source: 
+
+Status: install ok installed
+Package: inetutils-inetd
+Version: 2:1.5.dfsg.1-4
+Source: inetutils
+
+Status: install ok installed
+Package: libuuid1
+Version: 1.39+1.40-WIP-2006.11.14+dfsg-2
+Source: e2fsprogs
+
+Status: install ok installed
+Package: lsb-base
+Version: 3.1-23.1
+Source: lsb
+
+Status: install ok installed
+Package: procps
+Version: 1:3.2.7-3
+Source: 
+
+Status: install ok installed
+Package: wpasupplicant
+Version: 0.6.0~cvs20070224-2
+Source: 
+
+Status: install ok installed
+Package: grml-debootstrap
+Version: 0.9
+Source: 
+
+Status: install ok installed
+Package: console-tools
+Version: 1:0.2.3dbs-65
+Source: 
+
+Status: install ok installed
+Package: libfuse2
+Version: 2.6.3-4
+Source: fuse
+
+Status: install ok installed
+Package: ncurses-base
+Version: 5.5-5
+Source: ncurses
+
+Status: install ok installed
+Package: tinysnmp-tools
+Version: 0.8.4
+Source: tinysnmp
+
+Status: install ok installed
+Package: libpopt0
+Version: 1.10-3
+Source: popt
+
+Status: install ok installed
+Package: libpam0g
+Version: 0.79-4
+Source: pam
+
+Status: install ok installed
+Package: procinfo
+Version: 18-2
+Source: 
+
+Status: install ok installed
+Package: libpci2
+Version: 2:2.1.11-3
+Source: 
+
+Status: install ok installed
+Package: libusb-0.1-4
+Version: 2:0.1.12-7
+Source: libusb
+
+Status: install ok installed
+Package: libgpg-error0
+Version: 1.4-2
+Source: libgpg-error
+
+Status: install ok installed
+Package: psmisc
+Version: 22.5-1
+Source: 
+
+Status: install ok installed
+Package: ucf
+Version: 3.001
+Source: 
+
+Status: install ok installed
+Package: perl-modules
+Version: 5.8.8-7
+Source: perl
+
+Status: install ok installed
+Package: bsdutils
+Version: 1:2.12r-19
+Source: util-linux (2.12r-19)
+
+Status: install ok installed
+Package: lrzsz
+Version: 0.12.21-4.1
+Source: 
+
+Status: install ok installed
+Package: grml-autoconfig
+Version: 0.6.41
+Source: 
+
+Status: install ok installed
+Package: socket
+Version: 1.1-8
+Source: 
+
+Status: install ok installed
+Package: update-inetd
+Version: 4.27-0.5
+Source: 
+
+Status: install ok installed
+Package: ser2net
+Version: 2.3-1
+Source: 
+
+Status: install ok installed
+Package: dctrl-tools
+Version: 2.9.3
+Source: 
+
+Status: install ok installed
+Package: libssl0.9.8
+Version: 0.9.8e-4
+Source: openssl
+
+Status: install ok installed
+Package: bzip2
+Version: 1.0.3-6
+Source: 
+
+Status: install ok installed
+Package: xfsprogs
+Version: 2.8.18-1
+Source: 
+
+Status: install ok installed
+Package: console-common
+Version: 0.7.69
+Source: 
+
+Status: install ok installed
+Package: prism54-firmware
+Version: 0.1
+Source: 
+
+Status: install ok installed
+Package: lvm2
+Version: 2.02.24-6
+Source: 
+
+Status: install ok installed
+Package: ncurses-bin
+Version: 5.5-5
+Source: ncurses
+
+Status: install ok installed
+Package: perl-base
+Version: 5.8.8-7
+Source: perl
+
+Status: install ok installed
+Package: apt
+Version: 0.6.45
+Source: 
+
+Status: install ok installed
+Package: dmraid
+Version: 1.0.0.rc13-2+b1
+Source: dmraid (1.0.0.rc13-2)
+
+Status: install ok installed
+Package: pciutils
+Version: 1:2.2.4-1
+Source: 
+
+Status: install ok installed
+Package: mtr-tiny
+Version: 0.71-2
+Source: mtr
+
+Status: install ok installed
+Package: wipe
+Version: 0.21-3
+Source: 
+
+Status: install ok installed
+Package: netbase
+Version: 4.29
+Source: 
+
+Status: install ok installed
+Package: libmagic1
+Version: 4.20-5
+Source: file
+
+Status: install ok installed
+Package: unp
+Version: 1.0.12
+Source: 
+
+Status: install ok installed
+Package: whiptail
+Version: 0.52.2-10
+Source: newt
+
+Status: install ok installed
+Package: timeout
+Version: 1.11-6.3
+Source: tct
+
+Status: install ok installed
+Package: libsepol1
+Version: 2.0.1-1
+Source: libsepol
+
+Status: install ok installed
+Package: dmidecode
+Version: 2.8-4
+Source: 
+
+Status: install ok installed
+Package: libpam-modules
+Version: 0.79-4
+Source: pam
+
+Status: install ok installed
+Package: tzdata
+Version: 2007e-7
+Source: 
+
+Status: install ok installed
+Package: ncftp
+Version: 2:3.2.0-1
+Source: 
+
+Status: install ok installed
+Package: ifupdown
+Version: 0.6.8
+Source: 
+
+Status: install ok installed
+Package: console-data
+Version: 2:1.01-7
+Source: 
+
+Status: install ok installed
+Package: mbr
+Version: 1.1.9-2
+Source: 
+
+Status: install ok installed
+Package: dhcp-client
+Version: 2.0pl5-19.5
+Source: dhcp
+
+Status: install ok installed
+Package: gawk
+Version: 1:3.1.5.dfsg-4
+Source: 
+
+Status: install ok installed
+Package: guessnet
+Version: 0.42-1
+Source: 
+
+Status: install ok installed
+Package: tar
+Version: 1.16.1-1
+Source: 
+
+Status: install ok installed
+Package: file
+Version: 4.20-5
+Source: 
+
+Status: install ok installed
+Package: grml-tips
+Version: 0.3.30
+Source: 
+
+Status: install ok installed
+Package: zlib1g
+Version: 1:1.2.3-13
+Source: zlib
+
+Status: install ok installed
+Package: fnord
+Version: 1.10-2
+Source: 
+
+Status: install ok installed
+Package: ipw-firmware
+Version: 0.3-1
+Source: 
+
+Status: install ok installed
+Package: adduser
+Version: 3.102
+Source: 
+
+Status: install ok installed
+Package: dante-client
+Version: 1.1.18-2.1
+Source: dante
+
+Status: install ok installed
+Package: modutils
+Version: 2.4.27.0-6
+Source: 
+
+Status: install ok installed
+Package: e3
+Version: 1:2.70-3
+Source: 
+
+Status: install ok installed
+Package: libgcc1
+Version: 1:4.1.2-5
+Source: gcc-4.1 (4.1.2-5)
+
+Status: install ok installed
+Package: libklibc
+Version: 1.5-2
+Source: klibc
+
+Status: install ok installed
+Package: grub
+Version: 0.97-27
+Source: 
+
+Status: install ok installed
+Package: base-files
+Version: 4.0.0
+Source: 
+
+Status: install ok installed
+Package: mount
+Version: 2.12r-19
+Source: util-linux
+
+Status: install ok installed
+Package: knockd
+Version: 0.5-1.1
+Source: 
+
+Status: install ok installed
+Package: libtext-iconv-perl
+Version: 1.4-3
+Source: 
+
+Status: install ok installed
+Package: syslog-ng
+Version: 2.0.0-1
+Source: 
+
+Status: install ok installed
+Package: libreadline5
+Version: 5.2-2
+Source: readline5
+
+Status: install ok installed
+Package: libncurses5
+Version: 5.5-5
+Source: ncurses
+
+Status: install ok installed
+Package: rsync
+Version: 2.6.9-3
+Source: 
+
+Status: install ok installed
+Package: lockfile-progs
+Version: 0.1.10
+Source: 
+
+Status: install ok installed
+Package: ppp
+Version: 2.4.4rel-9
+Source: 
+
+Status: install ok installed
+Package: libkeyutils1
+Version: 1.2-3
+Source: keyutils
+
+Status: install ok installed
+Package: logrotate
+Version: 3.7.1-3
+Source: 
+
+Status: install ok installed
+Package: libdebug0
+Version: 0.4.2
+Source: libdebug
+
+Status: install ok installed
+Package: memtester
+Version: 2.93.1-3.1
+Source: 
+
+Status: install ok installed
+Package: iproute
+Version: 20061002-4
+Source: 
+
+Status: install ok installed
+Package: fdisk-udeb
+Version: 2.11u-3
+Source: util-linux
+
+Status: install ok installed
+Package: libterm-readkey-perl
+Version: 2.30-3
+Source: 
+
+Status: install ok installed
+Package: grml-network
+Version: 0.1.11
+Source: 
+
+Status: install ok installed
+Package: patch
+Version: 2.5.9-4
+Source: 
+
+Status: install ok installed
+Package: usbutils
+Version: 0.72-8
+Source: 
+
+Status: install ok installed
+Package: libdevmapper1.02.1
+Version: 2:1.02.18-1
+Source: devmapper
+
+Status: install ok installed
+Package: libattr1
+Version: 1:2.4.32-1.1
+Source: attr
+
+Status: install ok installed
+Package: libdaemon0
+Version: 0.10-1
+Source: libdaemon
+
+Status: install ok installed
+Package: libpcap0.8
+Version: 0.9.5-1
+Source: 
+
+Status: install ok installed
+Package: libpcap0.7
+Version: 0.7.2-7
+Source: libpcap
+
+Status: install ok installed
+Package: sed
+Version: 4.1.5-1
+Source: 
+
+Status: install ok installed
+Package: grml2hd
+Version: 0.9.20
+Source: 
+
+Status: install ok installed
+Package: ddrescue
+Version: 1.12-1
+Source: 
+
+Status: install ok installed
+Package: libatm1
+Version: 2.4.1-17
+Source: linux-atm
+
+Status: install ok installed
+Package: hdparm
+Version: 7.1-2
+Source: 
+
+Status: install ok installed
+Package: tcpdump
+Version: 3.9.5-2
+Source: 
+
+Status: install ok installed
+Package: tofrodos
+Version: 1.7.6-2
+Source: 
+
+Status: install ok installed
+Package: grml-shlib
+Version: 1.02.11
+Source: 
+
+Status: install ok installed
+Package: ntfsprogs
+Version: 1.13.1-6+b2
+Source: linux-ntfs (1.13.1-6)
+
+Status: install ok installed
+Package: setserial
+Version: 2.17-44
+Source: 
+
+Status: install ok installed
+Package: klibc-utils
+Version: 1.5-2
+Source: klibc
+
+Status: install ok installed
+Package: e2fslibs
+Version: 1.39+1.40-WIP-2006.11.14+dfsg-2
+Source: e2fsprogs
+
+Status: install ok installed
+Package: scsiadd
+Version: 1.95-7.1
+Source: 
+
+Status: install ok installed
+Package: jed-common
+Version: 0.99.18+dfsg.1-3
+Source: jed
+
+Status: install ok installed
+Package: wget
+Version: 1.10.2-2
+Source: 
+
+Status: install ok installed
+Package: base-passwd
+Version: 3.5.11
+Source: 
+
+Status: install ok installed
+Package: gcc-4.1-base
+Version: 4.1.2-5
+Source: gcc-4.1
+
+Status: install ok installed
+Package: libcomerr2
+Version: 1.39+1.40-WIP-2006.11.14+dfsg-2
+Source: e2fsprogs
+
+Status: install ok installed
+Package: mawk
+Version: 1.3.3-11
+Source: 
+
+Status: install ok installed
+Package: links
+Version: 0.99+1.00pre12-1.2
+Source: 
+
+Status: install ok installed
+Package: libnewt0.52
+Version: 0.52.2-10
+Source: newt
+
+Status: install ok installed
+Package: debootstrap
+Version: 0.3.3.3
+Source: 
+
+Status: install ok installed
+Package: libdb4.3
+Version: 4.3.29-8
+Source: db4.3
+
+Status: install ok installed
+Package: libdb4.4
+Version: 4.4.20-8
+Source: db4.4
+
+Status: install ok installed
+Package: linux-image-2.6.20-grml-small
+Version: grml.02
+Source: linux-source-2.6.20-grml-small
+
+Status: install ok installed
+Package: net-tools
+Version: 1.60-17
+Source: 
+
+Status: install ok installed
+Package: grml-usleep
+Version: 0.2.1
+Source: 
+
+Status: install ok installed
+Package: grml-rebuildfstab
+Version: 0.3.26
+Source: 
+
+Status: install ok installed
+Package: debconf-i18n
+Version: 1.5.13
+Source: debconf
+
+Status: install ok installed
+Package: acpid
+Version: 1.0.4-7.1
+Source: 
+
+Status: install ok installed
+Package: grep
+Version: 2.5.1.ds2-6
+Source: 
+
+Status: install ok installed
+Package: libiw28
+Version: 28-1
+Source: wireless-tools
+
+Status: install ok installed
+Package: libiw29
+Version: 29~pre21-1
+Source: wireless-tools
+
+Status: install ok installed
+Package: attr
+Version: 1:2.4.32-1.1
+Source: 
+
+Status: install ok installed
+Package: grml-etc-core
+Version: 0.2.50
+Source: 
+
+Status: install ok installed
+Package: passwd
+Version: 1:4.0.18.1-7
+Source: shadow
+
+Status: install ok installed
+Package: bsdmainutils
+Version: 6.1.6
+Source: 
+
+Status: install ok installed
+Package: hostname
+Version: 2.93
+Source: 
+
+Status: install ok installed
+Package: libacl1
+Version: 2.2.42-1
+Source: acl
+
+Status: install ok installed
+Package: screen
+Version: 4.0.3-0.3+b1
+Source: screen (4.0.3-0.3)
+
+Status: install ok installed
+Package: libpam-runtime
+Version: 0.79-4
+Source: pam
+
+Status: install ok installed
+Package: sysvinit
+Version: 2.86.ds1-38
+Source: 
+
+Status: install ok installed
+Package: libslang2
+Version: 2.0.7-1
+Source: slang2
+
+Status: install ok installed
+Package: initscripts
+Version: 2.86.ds1-38
+Source: sysvinit
+
+Status: install ok installed
+Package: libblkid1
+Version: 1.39+1.40-WIP-2006.11.14+dfsg-2
+Source: e2fsprogs
+
+Status: install ok installed
+Package: gpm
+Version: 1.19.6-25
+Source: 
+
+Status: install ok installed
+Package: libss2
+Version: 1.39+1.40-WIP-2006.11.14+dfsg-2
+Source: e2fsprogs
+
+Status: install ok installed
+Package: findutils
+Version: 4.2.30-1
+Source: 
+
+Status: install ok installed
+Package: dosfstools
+Version: 2.11-2.1+b1
+Source: dosfstools (2.11-2.1)
+
+Status: install ok installed
+Package: jed
+Version: 0.99.18+dfsg.1-3
+Source: 
+
+Status: install ok installed
+Package: e2fsprogs
+Version: 1.39+1.40-WIP-2006.11.14+dfsg-2
+Source: 
+
+Status: install ok installed
+Package: symlinks
+Version: 1.2-4.2
+Source: 
+
+Status: install ok installed
+Package: openssh-server
+Version: 1:4.3p2-10
+Source: openssh
+
+Status: install ok installed
+Package: bing
+Version: 1.1.3-1
+Source: 
+
+Status: install ok installed
+Package: gzip
+Version: 1.3.9-2
+Source: 
+
+Status: install ok installed
+Package: dpkg
+Version: 1.13.25
+Source: 
+
+Status: install ok installed
+Package: libgpmg1
+Version: 1.19.6-25
+Source: gpm
+
+Status: install ok installed
+Package: libpcre3
+Version: 6.7-1
+Source: pcre3
+
+Status: install ok installed
+Package: mdadm
+Version: 2.6.1-1
+Source: 
+
+Status: install ok installed
+Package: libncursesw5
+Version: 5.5-5
+Source: ncurses
+
+Status: install ok installed
+Package: liblocale-gettext-perl
+Version: 1.05-1
+Source: 
+
+Status: install ok installed
+Package: dmsetup
+Version: 2:1.02.18-1
+Source: devmapper
+
+Status: install ok installed
+Package: eject
+Version: 2.1.4-4
+Source: 
+
+Status: install ok installed
+Package: dialog
+Version: 1.1-20070409-2
+Source: 
+
+Status: install ok installed
+Package: iputils-ping
+Version: 3:20070202-1
+Source: iputils
+
+Status: install ok installed
+Package: diff
+Version: 2.8.1-12
+Source: diffutils
+
+Status: install ok installed
+Package: ifplugd
+Version: 0.28-2.3
+Source: 
+
+Status: install ok installed
+Package: libbz2-1.0
+Version: 1.0.3-6
+Source: bzip2
+
+Status: install ok installed
+Package: mgetty
+Version: 1.1.35-3
+Source: 
+
+Status: install ok installed
+Package: grml-scripts
+Version: 0.9.47
+Source: 
+
+Status: install ok installed
+Package: perl
+Version: 5.8.8-7
+Source: 
+
+Status: install ok installed
+Package: grml-small
+Version: 0.3-1
+Source: 
+
+Status: install ok installed
+Package: console-terminus
+Version: 4.20-5.1
+Source: xfonts-terminus
+
+Status: install ok installed
+Package: ipw3945d
+Version: 1.7.22-4
+Source: 
+
+Status: install ok installed
+Package: wireless-tools
+Version: 29~pre21-1
+Source: 
+
+Status: install ok installed
+Package: lilo
+Version: 1:22.8-3+b1
+Source: lilo (1:22.8-3)
+
+Status: install ok installed
+Package: cryptsetup
+Version: 2:1.0.4+svn29-1
+Source: 
+
+Status: install ok installed
+Package: unzip
+Version: 5.52-9
+Source: 
+
+Status: install ok installed
+Package: statserial
+Version: 1.1-22
+Source: 
+
+Status: install ok installed
+Package: dselect
+Version: 1.13.25
+Source: dpkg
+
+Status: install ok installed
+Package: libvolume-id0
+Version: 0.110-0grml1
+Source: udev
+
+Status: install ok installed
+Package: sysvinit-utils
+Version: 2.86.ds1-38
+Source: sysvinit
+
+Status: install ok installed
+Package: libntfs9
+Version: 1.13.1-6+b2
+Source: linux-ntfs (1.13.1-6)
+
+Status: install ok installed
+Package: cron
+Version: 3.0pl1-100
+Source: 
+
+Status: install ok installed
+Package: libedit2
+Version: 2.9.cvs.20050518-3
+Source: libedit
+
+Status: install ok installed
+Package: grml-fixes
+Version: 0.1-13
+Source: 
+
+Status: install ok installed
+Package: fuse-utils
+Version: 2.6.3-4
+Source: fuse
+
+Status: install ok installed
+Package: pppoeconf
+Version: 1.9
+Source: 
+
+Status: install ok installed
+Package: libselinux1
+Version: 2.0.8-1
+Source: libselinux
+
+Status: install ok installed
+Package: mpack
+Version: 1.6-4
+Source: 
+
+Status: install ok installed
+Package: openssh-client
+Version: 1:4.3p2-10
+Source: openssh
+
+Status: install ok installed
+Package: ntpdate
+Version: 1:4.2.2.p4+dfsg-2
+Source: ntp
+
+Status: install ok installed
+Package: libc6
+Version: 2.5-5
+Source: glibc
+
+Status: install ok installed
+Package: gcc-3.3-base
+Version: 1:3.3.6-15
+Source: gcc-3.3 (1:3.3.6ds1-15)
+
+Status: install ok installed
+Package: libconsole
+Version: 1:0.2.3dbs-65
+Source: console-tools
+
+Status: install ok installed
+Package: udev
+Version: 0.110-0grml1
+Source: 
+
+Status: install ok installed
+Package: bash
+Version: 3.1dfsg-8
+Source: 
+
+Status: install ok installed
+Package: util-linux
+Version: 2.12r-19
+Source: 
+
+Status: install ok installed
+Package: libkrb53
+Version: 1.6.dfsg.1-2
+Source: krb5
+
+Status: install ok installed
+Package: grml-etc
+Version: 0.9.21
+Source: 
+
+Status: install ok installed
+Package: reiserfsprogs
+Version: 1:3.6.19-4
+Source: 
+
+Status: install ok installed
+Package: pump
+Version: 0.8.24-2
+Source: 
+
+Status: install ok installed
+Package: zsh
+Version: 4.3.4-2
+Source: 
+
+Status: install ok installed
+Package: cpio
+Version: 2.7-2
+Source: 
+
+Status: install ok installed
+Package: libstdc++6
+Version: 4.1.2-5
+Source: gcc-4.1
+
+Status: install ok installed
+Package: zip
+Version: 2.32-1
+Source: 
+
+Status: install ok installed
+Package: busybox
+Version: 1:1.1.3-4
+Source: 
+
+Status: install ok installed
+Package: agrep
+Version: 4.17-5
+Source: 
+
+Status: install ok installed
+Package: strace
+Version: 4.5.14-2
+Source: 
+
+Status: install ok installed
+Package: atftpd
+Version: 0.7.dfsg-1.2
+Source: atftp
+
+Status: install ok installed
+Package: binutils
+Version: 2.17cvs20070426-4
+Source: 
+
+Status: install ok installed
+Package: nvi
+Version: 1.79-25
+Source: 
+
+Status: install ok installed
+Package: grml-saveconfig
+Version: 0.2.3
+Source: 
+
+Status: install ok installed
+Package: libnet1
+Version: 1.1.2.1-2
+Source: libnet
+
+Status: install ok installed
+Package: libber0
+Version: 0.4.2
+Source: libber
+
+Status: install ok installed
+Package: libdevmapper1.02
+Version: 2:1.02.12-1
+Source: devmapper
+
+Status: install ok installed
+Package: less
+Version: 394-4
+Source: 
+
+Status: install ok installed
+Package: atftp
+Version: 0.7.dfsg-1.2
+Source: 
+
+Status: install ok installed
+Package: deborphan
+Version: 1.7.23
+Source: 
+
+Status: install ok installed
+Package: libtext-charwidth-perl
+Version: 0.04-4
+Source: 
+
+Status: install ok installed
+Package: readline-common
+Version: 5.2-2
+Source: readline5
+
+Status: install ok installed
+Package: libcap1
+Version: 1:1.10-14
+Source: libcap
+
+Status: install ok installed
+Package: localepurge
+Version: 0.4.1
+Source: 
+
+Status: install ok installed
+Package: libwrap0
+Version: 7.6.dbs-13
+Source: tcp-wrappers
+
+Status: install ok installed
+Package: libabz0
+Version: 0.7.2
+Source: libabz
+
+Status: install ok installed
+Package: netcat
+Version: 1.10-33
+Source: 
+
+Status: install ok installed
+Package: smartmontools
+Version: 5.37-5
+Source: 
+
+Status: install ok installed
+Package: lsof
+Version: 4.77.dfsg.1-3
+Source: 
+
+Status: install ok installed
+Package: liblockfile1
+Version: 1.06.1
+Source: liblockfile
+
