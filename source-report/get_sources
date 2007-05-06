@@ -115,12 +115,12 @@ close ($fh);
 #if we provide our own sources list it will be copied into the chroot
 if ($config->{sourceslist} && -f $config->{sourceslist}) {
 	print "Copy sourceslist into chroot\n" if $debug; 
-	system ("sudo cp " . $config->{sourceslist} . " " . $config->{chroot}."/etc/apt/sources.list") == 0
+	system ("cp " . $config->{sourceslist} . " " . $config->{chroot}."/etc/apt/sources.list") == 0
 		or die "Could not copy sourceslist into chroot: $!"; 
 }
 
 #update chroot
-system ("sudo chroot " . $config->{chroot} . " apt-get update") if $config->{updatesource}; 
+system ("sudo /usr/sbin/chroot " . $config->{chroot} . " apt-get update") if $config->{updatesource}; 
 
 foreach my $package (keys %{$package_tree}) {
 	print "Working on $package\n" if $debug;
