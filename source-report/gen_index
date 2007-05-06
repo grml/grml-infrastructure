@@ -1,4 +1,12 @@
 #!/usr/bin/perl
+# Filename:      gen_index
+# Purpose:       Generates the index.html overview of all source repos 
+# Authors:       grml-team (grml.org), (c) Alexander Wirt
+# Bug-Reports:   see http://grml.org/bugs/
+# License:       This file is licensed under the GPL v2.
+# Latest change: So Mai 06 22:06:09 CEST 2007 [formorer]
+################################################################################
+
 
 use strict; 
 use warnings;
@@ -20,7 +28,8 @@ print $fh "<center><h1><a href='http://grml.org/'>GRML</a> Source Repository</h1
 my $t = new HTML::Table(
                                 -cols => 5,
                                 -border=>1,
-                                -head=> ['Release','Packages','Sources', 'Errors', 'Last updated', 'source.list entry'],
+                                -head=> ['Release','Packages','Sources',
+				'Errors', 'Last updated', 'sources.list entry'],
                         );
 
 foreach my $releasefile (@status_files) {
