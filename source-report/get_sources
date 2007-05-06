@@ -4,7 +4,7 @@
 # Authors:       grml-team (grml.org), (c) Alexander Wirt
 # Bug-Reports:   see http://grml.org/bugs/
 # License:       This file is licensed under the GPL v2.
-# Latest change: So Mai 06 00:35:39 CEST 2007 [formorer]
+# Latest change: So Mai 06 02:18:45 CEST 2007 [formorer]
 ################################################################################
 
 use strict; 
@@ -28,6 +28,7 @@ sub validate_config ($) {
 				title => { type => SCALAR },
 				statusfile => { type => SCALAR },
 				sourcedir => { type => SCALAR },
+				sourceslist => { type => SCALAR }, 
 				chroot => { type => SCALAR },
 				reportdir => { type => SCALAR },
 				debug => { type => SCALAR, regex => qr/^(1|0)$/, optional => 1},
@@ -98,6 +99,13 @@ while (my $line = <$fh>) {
 }
 
 close ($fh); 
+
+#if we provide our own sources list it will be copied into the chroot
+if ($config->{sourceslist} && -f $config->{sourceslist}) {
+	print "Copy sourceslist into chroot\n" if $debug; 
+	system ("sudo cp " . $config->{sourceslist} . " " . $config->{chroot}."/etc/apt/sources.list") == 0
+		or die "Could not copy sourceslist into chroot: $!"; 
+}
 
 #update chroot
 system ("sudo chroot " . $config->{chroot} . " apt-get update") if $config->{updatesource}; 
