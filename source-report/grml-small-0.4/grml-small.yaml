@@ -8,4 +8,4 @@ updatesource: 1
 chroot: /home/sources/chroot/sid
 debug: 0
 alternativeurl:
-        linux-image-2.6.20-grml-small: http://grml.org/sources/linux-2.6.20.tar.bz2
+        linux-source-2.6.20-grml-small: http://grml.org/sources/linux-2.6.20.tar.bz2
