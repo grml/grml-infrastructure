@@ -1,0 +1,10 @@
+title: GRML64 rc1
+statusfile: /home/sources/source-report/grml-64-1.0/grep-status.grml64
+sourceslist: /home/sources/source-report/grml-64-1.0/sources.list
+reportdir: /home/sources/reports/grml-64-1.0/
+sourcedir: /home/sources/reports/sources
+updatesource: 1
+chroot: /home/formorer/chroot/sid
+debug: 0
+alternativeurl:
+        linux-source-2.6.20-grml64: http://grml.org/sources/linux-2.6.20.tar.bz2
