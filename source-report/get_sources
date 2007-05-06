@@ -190,6 +190,8 @@ foreach my $package (keys %{$package_tree}) {
 			if (! $error) {
 				print "Creating links\n" if $debug; 
 				link $config->{sourcedir}."/$source/$filename",$config->{reportdir}."/$source/$filename";
+				link $config->{sourcedir}."/$source/$filename.uri",$config->{reportdir}."/$source/$filename.uri";
+				link $config->{sourcedir}."/$source/$filename.md5",$config->{reportdir}."/$source/$filename.md5";
 			}
 		} elsif ($line =~ /^E: (.*)/) {
 			push @{$package_tree->{$package}->{'errors'}}, "$1";
