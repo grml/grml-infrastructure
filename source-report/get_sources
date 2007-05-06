@@ -20,6 +20,7 @@ use Params::Validate qw(:all);
 use File::Copy;
 use Digest::MD5; 
 
+
 #validates the configfile
 sub validate_config ($) {
 	validate_with(
@@ -39,6 +40,17 @@ sub validate_config ($) {
 
 			)
 }
+
+sub md5_from_file($) {
+	my $file = shift;
+	die "'$file' does not exist" unless -f $file;
+	open(my $fh, '<', $file)
+		or die "Can't open '$file': $!";     
+	binmode($fh); 
+	my $md5sum = Digest::MD5->new->addfile(*$fh)->hexdigest;
+	return $md5sum; 
+}
+
 my $configfile = shift; 
 die "Usage: $0 <configfile>" unless $configfile && -f $configfile; 
 
@@ -142,11 +154,7 @@ foreach my $package (keys %{$package_tree}) {
 			}
 			my $status = 0; 
 			if ( -e $config->{sourcedir}."/$source/$filename" ) {
-				open(FILE, $config->{sourcedir}."/$source/$filename") 
-					or die "Can't open ".$config->{sourcedir}."/$source/$filename: $!";
-				binmode(FILE);
-				my $tested_md5sum = Digest::MD5->new->addfile(*FILE)->hexdigest;
-				if ($md5sum eq $tested_md5sum) {
+				if ($md5sum eq md5_from_file($config->{sourcedir}."/$source/$filename")) {
 					print $config->{sourcedir}."/$source/$filename already downloaded\n" if $debug;
 					$status = 1; 
 				} else { 
@@ -162,11 +170,8 @@ foreach my $package (keys %{$package_tree}) {
 					push @{$package_tree->{$package}->{'errors'}}, "$uri failed: " . status_message($ret); 
 					$error =1; 
 				} 
-				open(FILE, $config->{sourcedir}."/$source/$filename")
-					or die "Can't open ".$config->{sourcedir}."/$source/$filename: $!";
-				binmode(FILE);
-				my $tested_md5sum = Digest::MD5->new->addfile(*FILE)->hexdigest;
-				if ($md5sum eq $tested_md5sum) {
+
+				if ($md5sum eq md5_from_file($config->{sourcedir}."/$source/$filename") ) {
 					open (my $urifh, '>', $config->{sourcedir}."/$source/$filename.md5") 
 						or die "Could not open " . $config->{sourcedir}."/$source/$filename.md5 for writing: $!";
 					print $urifh $md5sum; 
@@ -262,3 +267,7 @@ print $fh "<a href='sources.list'>Sources list of the chroot</a><br><br>";
 print $fh $t;
 print $fh end_html;
 close ($fh); 
+
+
+
+
