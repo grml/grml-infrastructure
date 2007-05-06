@@ -1,8 +1,10 @@
 title: GRML 1.0rc1
-statusfile: /home/formorer/sources/grep-status
-reportdir: /home/formorer/public_html/report
-updatesource: 1 
-chroot: /home/formorer/chroot/sid
+statusfile: /home/sources/source-report/grml-1.0/grep-status
+sourceslist: /home/sources/source-report/grml-1.0/sources.list
+reportdir: /home/sources/reports/grml-1.0/
+sourcedir: /home/sources/reports/sources
+updatesource: 1
+chroot: /home/sources/chroot/sid
 debug: 0
 alternativeurl:
         nozomi: http://grml.org/sources/nozomi-2.1-2.grml07.tar.gz
