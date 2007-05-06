@@ -276,6 +276,7 @@ open ($fh, '>', $config->{reportdir}."/status.txt")
 
 print $fh "Updated: " . localtime() . "\n"; 
 print $fh "Title: " . $config->{title} . "\n"; 
+print $fh "Baseurl: " . $config->{baseurl} . "\n"; 
 print $fh "Packages: $pnum\n";
 print $fh "Sources: $snum\n";
 print $fh "Errors: $errors\n"; 
