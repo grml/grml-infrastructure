@@ -64,11 +64,6 @@ Version: 1.2-1
 Source: 
 
 Status: install ok installed
-Package: libdb1-compat
-Version: 2.1.3-9
-Source: db1-compat
-
-Status: install ok installed
 Package: initramfs-tools
 Version: 0.87b
 Source: 
@@ -150,7 +145,7 @@ Source:
 
 Status: install ok installed
 Package: grml-docs
-Version: 0.9-6-devel02
+Version: 0.9-7.2
 Source: 
 
 Status: install ok installed
@@ -569,11 +564,6 @@ Version: 20061002-4
 Source: 
 
 Status: install ok installed
-Package: fdisk-udeb
-Version: 2.11u-3
-Source: util-linux
-
-Status: install ok installed
 Package: libterm-readkey-perl
 Version: 2.30-3
 Source: 
@@ -772,11 +762,6 @@ Status: install ok installed
 Package: grep
 Version: 2.5.1.ds2-6
 Source: 
-
-Status: install ok installed
-Package: libiw28
-Version: 28-1
-Source: wireless-tools
 
 Status: install ok installed
 Package: libiw29
@@ -1042,11 +1027,6 @@ Status: install ok installed
 Package: libedit2
 Version: 2.9.cvs.20050518-3
 Source: libedit
-
-Status: install ok installed
-Package: grml-fixes
-Version: 0.1-13
-Source: 
 
 Status: install ok installed
 Package: fuse-utils
