@@ -1,0 +1,11 @@
+title: GRML-small 0.4
+statusfile: /home/sources/source-report/grml-small-0.4/grep-status
+sourceslist: /home/sources/source-report/grml-small-0.4/sources.list
+reportdir: /home/sources/reports/grml-small-0.4/
+sourcedir: /home/sources/reports/sources
+baseurl: http://sources.grml.org/grml-small-0.4/
+updatesource: 1
+chroot: /home/sources/chroot/sid
+debug: 0
+alternativeurl:
+        linux-source-2.6.20-grml-small: http://grml.org/sources/linux-2.6.20.tar.bz2
