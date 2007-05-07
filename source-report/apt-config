@@ -1,0 +1,23 @@
+Dir "/home/sources/source-report/apt/"
+{
+	// Location of the state dir
+	State "lists"
+	{
+		Lists "lists/";
+		xstatus "xstatus";
+		userstatus "status.user";
+		status "/home/sources/source-report/apt/status";
+		cdroms "cdroms.list";
+	};
+	Cache "cache" {
+		Archives "archives/";
+		srcpkgcache "srcpkgcache.bin";
+		pkgcache "pkgcache.bin";
+	};
+	Etc "etc/" {
+		SourceList "sources.list";
+		Preferences "preferences";
+		Parts "apt.conf.d/";
+	};
+
+}
