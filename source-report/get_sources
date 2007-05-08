@@ -116,12 +116,11 @@ close ($fh);
 #if we provide our own sources list it will be copied into the chroot
 if ($config->{sourceslist} && -f $config->{sourceslist}) {
 	print "Copy sourceslist into chroot\n" if $debug; 
-	system ("cp " . $config->{sourceslist} . " " . $config->{chroot}."/etc/apt/sources.list") == 0
-		or die "Could not copy sourceslist into chroot: $!"; 
+	copy($config->{sourceslist},"apt/etc/sources.list") or die "Sources list cannot be copied: $!";
 }
 
 #update chroot
-system ("sudo /usr/sbin/chroot " . $config->{chroot} . " apt-get update") if $config->{updatesource}; 
+system ("apt-get -c=apt-config update") if $config->{updatesource}; 
 
 foreach my $package (keys %{$package_tree}) {
 	print "Working on $package\n" if $debug;
@@ -135,8 +134,8 @@ foreach my $package (keys %{$package_tree}) {
 			next; 
 	}
 	$package_tree->{$package}->{'errors'} = (); 
-	open (my $fh, '-|', "sudo chroot " . $config->{chroot} . " apt-get --print-uris -d source $source=$version 2>&1 ") 
-		or warn "Could not launch chroot command:$!"; 
+	open (my $fh, '-|', "apt-get -c=apt-config --print-uris -d source $source=$version 2>&1 ") 
+		or warn "Could not launch apt-get command:$!"; 
 	while (my $line = <$fh>) {
 		chomp $line;
 		if ($line =~ /^'([^']+)'\s+(\S+)\s+(\S+)\s+(\S+)/) {
@@ -190,6 +189,8 @@ foreach my $package (keys %{$package_tree}) {
 			if (! $error) {
 				print "Creating links\n" if $debug; 
 				link $config->{sourcedir}."/$source/$filename",$config->{reportdir}."/$source/$filename";
+				link $config->{sourcedir}."/$source/$filename.uri",$config->{reportdir}."/$source/$filename.uri";
+				link $config->{sourcedir}."/$source/$filename.md5",$config->{reportdir}."/$source/$filename.md5";
 			}
 		} elsif ($line =~ /^E: (.*)/) {
 			push @{$package_tree->{$package}->{'errors'}}, "$1";
@@ -244,7 +245,7 @@ foreach my $package (sort(keys %{$package_tree})) {
 }
 
 
-copy($config->{chroot}."/etc/apt/sources.list", $config->{reportdir}."/sources.list") or die "Sources list cannot be copied: $!";
+copy("apt/etc/sources.list", $config->{reportdir}."/sources.list") or die "Sources list cannot be copied: $!";
 
 #first some statistics 
 my $pnum = keys(%{$package_tree}); 
