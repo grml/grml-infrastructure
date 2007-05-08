@@ -1,9 +1,9 @@
 title: GRML64 rc1
-statusfile: /home/sources/source-report/grml-64-1.0/grep-status.grml64
-sourceslist: /home/sources/source-report/grml-64-1.0/sources.list
-reportdir: /home/sources/reports/grml-64-1.0/
+statusfile: /home/sources/source-report/grml-64-0.1/grep-status.grml64
+sourceslist: /home/sources/source-report/grml-64-0.1/sources.list
+reportdir: /home/sources/reports/grml-64-0.1/
 sourcedir: /home/sources/reports/sources
-baseurl: http://sources.grml.org/grml-64-1.0/
+baseurl: http://sources.grml.org/grml-64-0.1/
 updatesource: 1
 chroot: /home/sources/chroot/sid
 debug: 0
