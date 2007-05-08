@@ -250,7 +250,7 @@ Source:
 
 Status: install ok installed
 Package: cdrecord
-Version: 9:1.1.5.1-1
+Version: 9:1.1.6-1
 Source: cdrkit
 
 Status: install ok installed
@@ -975,7 +975,7 @@ Source:
 
 Status: install ok installed
 Package: grml-docs
-Version: 0.9-6-devel02
+Version: 1.0.0-rc1
 Source: 
 
 Status: install ok installed
@@ -1150,7 +1150,7 @@ Source:
 
 Status: install ok installed
 Package: mkisofs
-Version: 9:1.1.5.1-1
+Version: 9:1.1.6-1
 Source: cdrkit
 
 Status: install ok installed
@@ -2114,11 +2114,6 @@ Version: 0.1.5-2
 Source: libmtp
 
 Status: install ok installed
-Package: python-selinux
-Version: 2.0.8-1
-Source: libselinux
-
-Status: install ok installed
 Package: vim-gui-common
 Version: 1:7.0-219+1
 Source: vim
@@ -2170,7 +2165,7 @@ Source: gtk+1.2
 
 Status: install ok installed
 Package: libc6-dev
-Version: 2.5-5
+Version: 2.5-6
 Source: glibc
 
 Status: install ok installed
@@ -2385,7 +2380,7 @@ Source:
 
 Status: install ok installed
 Package: gphoto2
-Version: 2.2.0-3
+Version: 2.3.1-2
 Source: 
 
 Status: install ok installed
@@ -2645,7 +2640,7 @@ Source:
 
 Status: install ok installed
 Package: zsh-static
-Version: 4.3.4-2
+Version: 4.3.4-3
 Source: zsh
 
 Status: install ok installed
@@ -2805,7 +2800,7 @@ Source: net-snmp
 
 Status: install ok installed
 Package: bittornado
-Version: 0.3.18-1
+Version: 0.3.18-2
 Source: 
 
 Status: install ok installed
@@ -2910,7 +2905,7 @@ Source:
 
 Status: install ok installed
 Package: cdda2wav
-Version: 9:1.1.5.1-1
+Version: 9:1.1.6-1
 Source: cdrkit
 
 Status: install ok installed
@@ -3090,7 +3085,7 @@ Source:
 
 Status: install ok installed
 Package: tzdata
-Version: 2007e-7
+Version: 2007e-8
 Source: 
 
 Status: install ok installed
@@ -3179,11 +3174,6 @@ Version: 0.5-17
 Source: 
 
 Status: install ok installed
-Package: libsemanage1
-Version: 2.0.1-1
-Source: libsemanage
-
-Status: install ok installed
 Package: perforate
 Version: 1.2-5
 Source: 
@@ -3235,7 +3225,7 @@ Source:
 
 Status: install ok installed
 Package: grml64
-Version: 0.0.1-2
+Version: 0.1.0-rc1
 Source: 
 
 Status: install ok installed
@@ -3390,7 +3380,7 @@ Source: dhcp3
 
 Status: install ok installed
 Package: xserver-xorg-video-savage
-Version: 1:2.1.2-3
+Version: 1:2.1.2-5
 Source: 
 
 Status: install ok installed
@@ -3675,7 +3665,7 @@ Source:
 
 Status: install ok installed
 Package: apt-listbugs
-Version: 0.0.75
+Version: 0.0.76
 Source: 
 
 Status: install ok installed
@@ -3735,7 +3725,7 @@ Source: libgsf
 
 Status: install ok installed
 Package: libc6-i386
-Version: 2.5-5
+Version: 2.5-6
 Source: glibc
 
 Status: install ok installed
@@ -3880,7 +3870,7 @@ Source: powertweak
 
 Status: install ok installed
 Package: testdisk
-Version: 6.5-1
+Version: 6.6-1
 Source: 
 
 Status: install ok installed
@@ -4200,7 +4190,7 @@ Source:
 
 Status: install ok installed
 Package: locales
-Version: 2.5-5
+Version: 2.5-6
 Source: glibc
 
 Status: install ok installed
@@ -4570,7 +4560,7 @@ Source: gpgme1.0
 
 Status: install ok installed
 Package: grml-x
-Version: 0.3.23
+Version: 0.3.24
 Source: 
 
 Status: install ok installed
@@ -4680,7 +4670,7 @@ Source: libxtrap
 
 Status: install ok installed
 Package: libmrss0
-Version: 0.17.1-1
+Version: 0.17.2-1
 Source: libmrss
 
 Status: install ok installed
@@ -4776,6 +4766,11 @@ Source:
 Status: install ok installed
 Package: ras
 Version: 1.03-2.1
+Source: 
+
+Status: install ok installed
+Package: gcolor2
+Version: 0.4-2
 Source: 
 
 Status: install ok installed
@@ -5745,7 +5740,7 @@ Source:
 
 Status: install ok installed
 Package: genisoimage
-Version: 9:1.1.5.1-1
+Version: 9:1.1.6-1
 Source: cdrkit
 
 Status: install ok installed
@@ -5900,7 +5895,7 @@ Source:
 
 Status: install ok installed
 Package: tor
-Version: 0.1.2.13-2
+Version: 0.1.2.13-3
 Source: 
 
 Status: install ok installed
@@ -6470,7 +6465,7 @@ Source: gmp
 
 Status: install ok installed
 Package: sitecopy
-Version: 1:0.16.3-8
+Version: 1:0.16.3-9
 Source: 
 
 Status: install ok installed
@@ -7400,7 +7395,7 @@ Source:
 
 Status: install ok installed
 Package: icedax
-Version: 9:1.1.5.1-1
+Version: 9:1.1.6-1
 Source: cdrkit
 
 Status: install ok installed
@@ -7465,7 +7460,7 @@ Source: snmpkit
 
 Status: install ok installed
 Package: fakeroot
-Version: 1.7
+Version: 1.7.0.2
 Source: 
 
 Status: install ok installed
@@ -7799,6 +7794,11 @@ Version: 1.1a-2
 Source: libevent
 
 Status: install ok installed
+Package: fakechroot
+Version: 2.5-1.1
+Source: 
+
+Status: install ok installed
 Package: libnet-telnet-perl
 Version: 3.03-1
 Source: 
@@ -7835,7 +7835,7 @@ Source:
 
 Status: install ok installed
 Package: libc6-dev-i386
-Version: 2.5-5
+Version: 2.5-6
 Source: glibc
 
 Status: install ok installed
@@ -8260,7 +8260,7 @@ Source: drbd8
 
 Status: install ok installed
 Package: checkinstall
-Version: 1.6.1-2
+Version: 1.6.1-3
 Source: 
 
 Status: install ok installed
@@ -8575,7 +8575,7 @@ Source:
 
 Status: install ok installed
 Package: mdadm
-Version: 2.5.6-9
+Version: 2.6.1-1
 Source: 
 
 Status: install ok installed
@@ -8665,7 +8665,7 @@ Source:
 
 Status: install ok installed
 Package: zsh-doc
-Version: 4.3.4-2
+Version: 4.3.4-3
 Source: zsh
 
 Status: install ok installed
@@ -8715,7 +8715,7 @@ Source: gs-gpl
 
 Status: install ok installed
 Package: gv
-Version: 1:3.6.2-3
+Version: 1:3.6.2-4
 Source: 
 
 Status: install ok installed
@@ -8827,6 +8827,11 @@ Status: install ok installed
 Package: libopencdk8
 Version: 0.5.13-2
 Source: opencdk8
+
+Status: install ok installed
+Package: scrot
+Version: 0.8-7
+Source: 
 
 Status: install ok installed
 Package: libsbc0
@@ -9185,7 +9190,7 @@ Source: gnutls13
 
 Status: install ok installed
 Package: grml-scripts
-Version: 0.9.44
+Version: 0.9.47
 Source: 
 
 Status: install ok installed
@@ -9530,7 +9535,7 @@ Source:
 
 Status: install ok installed
 Package: archivemail
-Version: 0.7.0-1
+Version: 0.7.0-2
 Source: 
 
 Status: install ok installed
@@ -9605,7 +9610,7 @@ Source:
 
 Status: install ok installed
 Package: rake
-Version: 0.7.1-2
+Version: 0.7.3-1
 Source: 
 
 Status: install ok installed
@@ -10195,7 +10200,7 @@ Source: gkrellm
 
 Status: install ok installed
 Package: libc6
-Version: 2.5-5
+Version: 2.5-6
 Source: glibc
 
 Status: install ok installed
@@ -10705,7 +10710,7 @@ Source: scapy
 
 Status: install ok installed
 Package: tcpreplay
-Version: 2.99+3.0.rc1-1
+Version: 3.0.1-1
 Source: 
 
 Status: install ok installed
@@ -10930,7 +10935,7 @@ Source:
 
 Status: install ok installed
 Package: zsh
-Version: 4.3.4-2
+Version: 4.3.4-3
 Source: 
 
 Status: install ok installed
@@ -10950,7 +10955,7 @@ Source:
 
 Status: install ok installed
 Package: grml-desktop
-Version: 0.1-4
+Version: 0.1-6
 Source: 
 
 Status: install ok installed
@@ -11046,11 +11051,6 @@ Source: pcsc-lite
 Status: install ok installed
 Package: w3-url-e21
 Version: 2005.10.23-5
-Source: 
-
-Status: install ok installed
-Package: policycoreutils
-Version: 1.32-3
 Source: 
 
 Status: install ok installed
@@ -11245,7 +11245,7 @@ Source:
 
 Status: install ok installed
 Package: libglib2.0-dev
-Version: 2.12.11-3
+Version: 2.12.12-1
 Source: glib2.0
 
 Status: install ok installed
@@ -11345,7 +11345,7 @@ Source: libgphoto2
 
 Status: install ok installed
 Package: libglib2.0-0
-Version: 2.12.11-3
+Version: 2.12.12-1
 Source: glib2.0
 
 Status: install ok installed
@@ -11380,7 +11380,7 @@ Source:
 
 Status: install ok installed
 Package: wodim
-Version: 9:1.1.5.1-1
+Version: 9:1.1.6-1
 Source: cdrkit
 
 Status: install ok installed
@@ -11595,7 +11595,7 @@ Source:
 
 Status: install ok installed
 Package: lsof
-Version: 4.77.dfsg.1-3
+Version: 4.78.dfsg.1-1
 Source: 
 
 Status: install ok installed
@@ -11650,7 +11650,7 @@ Source:
 
 Status: install ok installed
 Package: rkhunter
-Version: 1.2.9-3
+Version: 1.2.9-4
 Source: 
 
 Status: install ok installed
