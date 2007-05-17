@@ -20,6 +20,15 @@ reprepro includedeb `<suite>` `<foo.deb>` +
 reprepro list `<suite>` `<packagename>` + 
 =======================================
 
+.Copy all packages from one repo to another 
+================================================
+reprepro dumptracks grml-testing  | \ +
+awk '/ pool\/.*\/.*\.deb/ {print $1}' | \ +
+xargs -n 1 basename | cut -d _ -f 1 | \ +
+sort -u | xargs reprepro copy \ +
+grml-test grml-testing 
+=============================================
+
 .Move a package from one distribution to another
 =====================================================
 #move the package +
