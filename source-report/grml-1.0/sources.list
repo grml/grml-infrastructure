@@ -3,4 +3,11 @@ deb-src http://debian.netcologne.de/debian sid main contrib non-free
 deb-src http://snapshot.debian.net/archive/2007/04/29/debian unstable main contrib non-free
 deb-src http://snapshot.debian.net/archive/2007/01/04/debian unstable main contrib non-free
 deb-src http://snapshot.debian.net/archive/2006/12/13/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/03/10/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/05/10/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/04/30/debian unstable main contrib non-free
+
+
+
+
 deb-src http://deb.grml.org/ grml-testing main
