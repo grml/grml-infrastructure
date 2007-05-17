@@ -505,7 +505,7 @@ Source: freetype
 
 Status: install ok installed
 Package: debianutils
-Version: 2.18.1
+Version: 2.18.2
 Source: 
 
 Status: install ok installed
@@ -5220,8 +5220,8 @@ Source:
 
 Status: install ok installed
 Package: ipw3945-modules-2.6.20-grml64
-Version: 1.2.0-0-grml05
-Source: ipw3945
+Version: 1.2.1-1+grml.04
+Source: ipw3945 (1.2.1-1)
 
 Status: install ok installed
 Package: libosp5
