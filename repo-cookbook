@@ -13,20 +13,29 @@ Recipes
 Here are some common tasks: 
 
 .Add a single deb to a distribution
-=======================================
-#insert the deb +
-reprepro includedeb `<suite>` `<foo.deb>` + 
-#check the result + 
-reprepro list `<suite>` `<packagename>` + 
-=======================================
+---------------------------------------
+#insert the deb   
+reprepro includedeb `<suite>` `<foo.deb>`  
+#check the result  
+reprepro list `<suite>` `<packagename>`  
+---------------------------------------
+
+.Copy all packages from one repo to another 
+------------------------------------------------
+reprepro dumptracks grml-testing  | \ 
+awk '/ pool\/.*\/.*\.deb/ {print $1}' | \ 
+xargs -n 1 basename | cut -d _ -f 1 | \ 
+sort -u | xargs reprepro copy \ 
+grml-test grml-testing 
+------------------------------------------------
 
 .Move a package from one distribution to another
-=====================================================
-#move the package +
-reprepro copy `<source distribution>` `<target distribution>` `<packagename>` +
-#check the result + 
-reprepro list `<target distribution>` + 
-=====================================================
+-----------------------------------------------------
+#move the package 
+reprepro copy `<source distribution>` `<target distribution>` `<packagename>` 
+#check the result  
+reprepro list `<target distribution>`  
+------------------------------------------------------
 
 .Adding users
 =========================================================
