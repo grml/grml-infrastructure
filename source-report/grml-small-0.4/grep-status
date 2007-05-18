@@ -145,7 +145,7 @@ Source:
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.0.0-rc2.0
+Version: 1.0.1
 Source: 
 
 Status: install ok installed
@@ -780,7 +780,7 @@ Source:
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.2
+Version: 0.3.3
 Source: 
 
 Status: install ok installed
@@ -980,7 +980,7 @@ Source:
 
 Status: install ok installed
 Package: grml-small
-Version: 0.4.2
+Version: 0.4.4
 Source: 
 
 Status: install ok installed
