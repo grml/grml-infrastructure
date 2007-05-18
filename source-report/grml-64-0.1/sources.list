@@ -10,6 +10,7 @@ deb-src http://snapshot.debian.net/archive/2007/01/24/debian unstable main contr
 deb-src http://snapshot.debian.net/archive/2007/05/03/debian unstable main contrib non-free
 deb-src http://snapshot.debian.net/archive/2007/05/10/debian unstable main contrib non-free
 deb-src http://snapshot.debian.net/archive/2007/05/13/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/04/17/debian unstable main contrib non-free
 deb-src http://snapshot.debian.net/archive/2007/04/30/debian unstable main contrib non-free
 
 
