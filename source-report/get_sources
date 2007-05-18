@@ -63,6 +63,12 @@ my $debug = $config->{debug} || 0;
 if (! -d $config->{reportdir}) {
 	mkdir $config->{reportdir}
 		or die "Could not create reportdir '".$config->{reportdir}."':$!"; 
+} else {
+    #if the sourcedir already exists we have to clean it up first
+    system("rm -rf ".$config->{reportdir}."/*"); 
+    if ($? == -1) {
+	die "Could not remove old reportdir '".$config->{reportdir}.":$!"; 
+    }
 }
 
 if (! -d $config->{sourcedir}) {
