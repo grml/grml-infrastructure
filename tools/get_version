@@ -1,0 +1,74 @@
+#!/usr/bin/perl
+
+=head1 NAME
+
+get_version - get released upstream versions
+
+=cut
+
+use strict; 
+use warnings; 
+
+use Pod::Usage;
+use LWP::Simple;
+use Compress::Zlib;
+use Getopt::Long; 
+
+=head1 SYNOPSIS
+
+get_version [OPTIONS] <packagenames>
+
+=head1 OPTIONS
+
+=item B<--release>=VERSION
+
+Releaseversion where you are looking for (e.g. 1.0, grml-testing would also
+work).
+
+=back EXAMPLES
+
+  get_version --release 1.0 zsh-lovers
+
+  get_version --release grml-testing grml2hd
+
+=cut
+
+my ($grml_release, $package); 
+
+GetOptions(
+    "release=s" => \$grml_release,
+    "help" => sub { pod2usage(-exitval => 0, -verbose => 2); },
+);
+
+pod2usage("$0: Please provide a releasename.\n") unless $grml_release;
+pod2usage("$0: Need a packagename to process.\n")  unless @ARGV;
+
+if ($grml_release =~ /[0-9]/) {
+    $grml_release = "grml-$grml_release"; 
+}
+
+my $sources_file =
+    get("http://deb.grml.org/dists/$grml_release/main/source/Sources.gz")
+	or die "Could not open Sources.gz: $!"; 
+
+$sources_file = Compress::Zlib::memGunzip($sources_file);
+
+foreach my $package (@ARGV) {
+    my ($found_version,$found); 
+
+    foreach my $line (split("\n", $sources_file)) {
+	if ($line =~ /^Package: $package/) {
+	    $found = 1; 
+	}
+	if ($line =~ /^Version: (.*)/ && $found) { 
+	    $found_version = $1; 
+	    last;
+	}
+    }
+
+    if ($found) {
+	print "$package: $found_version\n";
+    } else {
+	print "$package not found in GRML $grml_release\n"; 
+    }
+}
