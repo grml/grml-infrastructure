@@ -20,6 +20,8 @@ get_version [OPTIONS] <packagenames>
 
 =head1 OPTIONS
 
+=over 8
+
 =item B<--release>=VERSION
 
 Releaseversion where you are looking for (e.g. 1.0, grml-testing would also
