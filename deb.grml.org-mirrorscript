@@ -111,7 +111,7 @@ fi
 # If that's the case on your system, make sure hostname prints the full
 # hostname, and remove the -f option. If there's no hostname command,
 # explicitly replace `hostname -f` with the hostname.
-HOSTNAME=YOUR.HOSTNAME
+HOSTNAME=`hostname -f`
 
 LOCK="${TO}/Archive-Update-in-Progress-${HOSTNAME}"
 
