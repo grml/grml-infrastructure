@@ -1,0 +1,3 @@
+deb http://debian.netcologne.de/debian sid main contrib non-free
+deb-src http://debian.netcologne.de/debian sid main contrib non-free
+deb-src http://deb.grml.org/ grml-testing main
