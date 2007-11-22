@@ -1,0 +1,10 @@
+title: GRML 1.1-heise
+statusfile: /home/sources/source-report/grml-1.1-heise/grep-status
+sourceslist: /home/sources/source-report/grml-1.1-heise/sources.list
+reportdir: /home/sources/reports/grml-1.1-heise/
+sourcedir: /home/sources/reports/sources
+baseurl: http://sources.grml.org/grml-1.1-heise/
+updatesource: 1
+chroot: /home/sources/chroot/sid
+debug: 1
+alternativeurl:
