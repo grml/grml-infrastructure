@@ -1,3 +1,44 @@
 deb http://debian.netcologne.de/debian sid main contrib non-free
 deb-src http://debian.netcologne.de/debian sid main contrib non-free
 deb-src http://deb.grml.org/ grml-testing main
+deb-src http://snapshot.debian.net/archive/2008/02/25/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/12/25/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/12/18/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/12/22/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/10/28/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/12/26/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/06/20/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2008/01/28/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2008/01/24/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/12/29/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/12/30/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/11/01/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2008/02/11/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/01/03/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/01/08/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2005/10/30/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2008/01/15/debian unstable main contrib non-free
+
+deb-src http://snapshot.debian.net/archive/2007/04/10/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/11/14/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/12/17/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/10/31/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/10/30/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2006/08/10/debian unstable main contrib non-free
+
+
+
+
+
+
+
+
+
+
+
+deb-src http://snapshot.debian.net/archive/2006/07/14/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive/2007/09/28/debian unstable main contrib non-free
+deb-src http://snapshot.debian.net/archive pool thinkfinger
+deb-src http://snapshot.debian.net/archive pool emelfm
+
+
