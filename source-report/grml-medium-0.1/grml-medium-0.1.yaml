@@ -1,0 +1,20 @@
+title: GRML medium 0.1
+statusfile: /home/sources/source-report/grml-medium-0.1/grep-status
+sourceslist: /home/sources/source-report/grml-mediun-0.1/sources.list
+reportdir: /home/sources/reports/grml-medium-0.1/
+sourcedir: /home/sources/reports/sources
+baseurl: http://sources.grml.org/grml-medium-0.1/
+updatesource: 1
+chroot: /home/sources/chroot/sid
+debug: 1
+alternativeurl:
+        linux-source-2.6.23-grml: http://deb.grml.org/pool/main/l/linux-source-2.6.23-grml/linux-source-2.6.23-grml_grml.06_all.deb
+        squashfs: http://grml.org/squashfs/squashfs-source_3.2r2-9exp1_all.deb
+        tp-smapi-source: http://snapshot.debian.net/archive/2007/12/17/debian/pool/main/t/tp-smapi/tp-smapi-source_0.32-3_all.deb
+        at76-usb-modules-2.6.23-grml: http://grml.org/sources/at76-usb-source_0.17.dfsg-1_all.deb
+        madwifi: http://grml.org/sources/madwifi-source_0.9.3.2-2+eee_i386.deb
+        kvm: http://deb.grml.org/pool/main/k/kvm/kvm_12.orig.tar.gz
+        rt73-source: http://grml.org/sources/rt73-source_1.0.3.6-cvs20071123-dfsg1-3_all.deb
+        tp-smapi: http://grml.org/sources/tp-smapi-source_0.32-3_all.deb
+        r6040-source: http://grml.org/sources/r6040-source_0.17-1_all.deb
+        zsh: http://grml.org/sources/zsh_4.3.4-dev-6.orig.tar.gz
