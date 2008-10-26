@@ -2,7 +2,7 @@ all: doc_html
 
 doc_html: html-stamp
 
-html-stamp: setup repo-cookbook ml-mmj 
+html-stamp: setup repo-cookbook ml 
 	asciidoc -a toc -a numbered setup
 	asciidoc -a toc -a numbered repo-cookbook 
 	asciidoc -a toc -a numbered ml
