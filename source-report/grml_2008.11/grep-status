@@ -78,7 +78,7 @@ Source: xulrunner
 
 Status: install ok installed
 Package: gocr
-Version: 0.45-2
+Version: 0.46-2
 
 Status: install ok installed
 Package: slurm
@@ -298,7 +298,7 @@ Source: t1lib
 
 Status: install ok installed
 Package: libpq5
-Version: 8.3.4-2
+Version: 8.3.5-1
 Source: postgresql-8.3
 
 Status: install ok installed
@@ -373,7 +373,7 @@ Version: 3:4.22-1.1
 
 Status: install ok installed
 Package: ndiswrapper-common
-Version: 1.53-1
+Version: 1.53-2
 Source: ndiswrapper
 
 Status: install ok installed
@@ -488,7 +488,7 @@ Source: bash
 
 Status: install ok installed
 Package: ecryptfs-utils
-Version: 63-1
+Version: 66-2
 
 Status: install ok installed
 Package: netmask
@@ -877,7 +877,7 @@ Source: cairo
 
 Status: install ok installed
 Package: snort-common-libraries
-Version: 2.7.0-21
+Version: 2.7.0-22
 Source: snort
 
 Status: install ok installed
@@ -940,7 +940,7 @@ Source: libupnp
 
 Status: install ok installed
 Package: libgcrypt11
-Version: 1.4.1-1
+Version: 1.4.1-2
 
 Status: install ok installed
 Package: file-rc
@@ -1154,7 +1154,7 @@ Version: 2.5-2
 
 Status: install ok installed
 Package: tk8.5
-Version: 8.5.3-3
+Version: 8.5.3-4
 
 Status: install ok installed
 Package: tart
@@ -1203,7 +1203,7 @@ Source: curl
 
 Status: install ok installed
 Package: fontconfig
-Version: 2.6.0-1
+Version: 2.6.0-2
 
 Status: install ok installed
 Package: libjpeg62
@@ -1261,7 +1261,7 @@ Version: 1.20-8
 
 Status: install ok installed
 Package: debian-reference-common
-Version: 2.16
+Version: 2.17
 Source: debian-reference
 
 Status: install ok installed
@@ -1305,7 +1305,7 @@ Version: 0.6.4-2
 
 Status: install ok installed
 Package: opencryptoki
-Version: 2.2.6+dfsg-5
+Version: 2.2.6+dfsg2-1
 
 Status: install ok installed
 Package: beep
@@ -1503,7 +1503,7 @@ Source: mesa
 
 Status: install ok installed
 Package: dwm-tools
-Version: 28-2
+Version: 29-1
 
 Status: install ok installed
 Package: whois
@@ -1554,7 +1554,7 @@ Version: 5.43.0-17
 
 Status: install ok installed
 Package: ncurses-base
-Version: 5.6+20081025-1
+Version: 5.7+2008115-1
 Source: ncurses
 
 Status: install ok installed
@@ -1650,7 +1650,7 @@ Version: 3.0.3.0.cvs.20010909-15.1
 
 Status: install ok installed
 Package: zec
-Version: 0.11.1-3
+Version: 0.12-1
 
 Status: install ok installed
 Package: hpijs
@@ -1747,7 +1747,7 @@ Version: 0.2-3
 
 Status: install ok installed
 Package: lftp
-Version: 3.7.4-1
+Version: 3.7.5-1
 
 Status: install ok installed
 Package: viewglob
@@ -1819,7 +1819,7 @@ Version: 1.3.3-2.1
 
 Status: install ok installed
 Package: grml-autoconfig
-Version: 0.8.15
+Version: 0.8.16
 
 Status: install ok installed
 Package: retty
@@ -1906,7 +1906,7 @@ Version: 1.1.3-8
 
 Status: install ok installed
 Package: python-libgmail
-Version: 0.1.10-3
+Version: 0.1.11-1
 
 Status: install ok installed
 Package: zenmap
@@ -2086,7 +2086,7 @@ Source: qt-x11-free
 
 Status: install ok installed
 Package: dpkg-dev
-Version: 1.14.22
+Version: 1.14.23
 Source: dpkg
 
 Status: install ok installed
@@ -2105,6 +2105,11 @@ Source: wvstreams
 Status: install ok installed
 Package: pymacs
 Version: 0.23-1.1
+
+Status: install ok installed
+Package: evms-cli
+Version: 2.5.5-26
+Source: evms
 
 Status: install ok installed
 Package: ext2resize
@@ -2182,7 +2187,7 @@ Version: 0.3-1
 
 Status: install ok installed
 Package: darcs
-Version: 2.0.2-3
+Version: 2.1.0-1
 
 Status: install ok installed
 Package: libgtk1.2
@@ -2191,7 +2196,7 @@ Source: gtk+1.2
 
 Status: install ok installed
 Package: libc6-dev
-Version: 2.7-15
+Version: 2.7-16
 Source: glibc
 
 Status: install ok installed
@@ -2214,7 +2219,7 @@ Source: ncurses-ruby
 
 Status: install ok installed
 Package: nfs-common
-Version: 1:1.1.3-2
+Version: 1:1.1.4-1
 Source: nfs-utils
 
 Status: install ok installed
@@ -2358,7 +2363,7 @@ Version: 0.7.80
 
 Status: install ok installed
 Package: mpg321
-Version: 0.2.10.4
+Version: 0.2.10.5
 
 Status: install ok installed
 Package: ophcrack
@@ -2427,12 +2432,12 @@ Version: 3.7.3-4.2
 
 Status: install ok installed
 Package: python2.5-minimal
-Version: 2.5.2-11.1
+Version: 2.5.2-14
 Source: python2.5
 
 Status: install ok installed
 Package: ncurses-bin
-Version: 5.6+20081025-1
+Version: 5.7+2008115-1
 Source: ncurses
 
 Status: install ok installed
@@ -2501,8 +2506,7 @@ Version: 0.5-2
 
 Status: install ok installed
 Package: apt
-Version: 0.7.16+b1
-Source: apt (0.7.16)
+Version: 0.7.18
 
 Status: install ok installed
 Package: libunix-syslog-perl
@@ -2536,7 +2540,7 @@ Version: 1.2.0-5
 
 Status: install ok installed
 Package: dmraid
-Version: 1.0.0.rc14-5
+Version: 1.0.0.rc14-6
 
 Status: install ok installed
 Package: fdutils
@@ -2625,7 +2629,7 @@ Source: db4.3
 
 Status: install ok installed
 Package: libopencryptoki0
-Version: 2.2.6+dfsg-5
+Version: 2.2.6+dfsg2-1
 Source: opencryptoki
 
 Status: install ok installed
@@ -2692,7 +2696,7 @@ Source: libdumbnet
 
 Status: install ok installed
 Package: vorbisgain
-Version: 0.36-3
+Version: 0.36-3.1
 
 Status: install ok installed
 Package: mt-st
@@ -2716,7 +2720,7 @@ Version: 0.6.7-2
 
 Status: install ok installed
 Package: gfs2-tools
-Version: 2.20080801-4
+Version: 2.20081102-1
 Source: redhat-cluster
 
 Status: install ok installed
@@ -2734,7 +2738,7 @@ Version: 0.10.49-intl-4
 
 Status: install ok installed
 Package: manpages-dev
-Version: 3.07-1
+Version: 3.11-1
 Source: manpages
 
 Status: install ok installed
@@ -2769,7 +2773,7 @@ Version: 1.0.17-1
 
 Status: install ok installed
 Package: grub-common
-Version: 1.96+20080724-11
+Version: 1.96+20080724-12
 Source: grub2
 
 Status: install ok installed
@@ -2801,7 +2805,7 @@ Version: 2.015-1
 
 Status: install ok installed
 Package: bittornado
-Version: 0.3.18-7
+Version: 0.3.18-8
 
 Status: install ok installed
 Package: gnuhtml2latex
@@ -2873,7 +2877,7 @@ Source: mtr
 
 Status: install ok installed
 Package: xserver-xorg-core
-Version: 2:1.4.2-7
+Version: 2:1.4.2-9
 Source: xorg-server
 
 Status: install ok installed
@@ -2903,7 +2907,7 @@ Version: 1.002-1
 
 Status: install ok installed
 Package: dnsmasq-base
-Version: 2.45-1
+Version: 2.46-1
 Source: dnsmasq
 
 Status: install ok installed
@@ -3101,8 +3105,8 @@ Source: gtkmm2.4
 
 Status: install ok installed
 Package: apt-transport-https
-Version: 0.7.16+b1
-Source: apt (0.7.16)
+Version: 0.7.18
+Source: apt
 
 Status: install ok installed
 Package: autossh
@@ -3141,7 +3145,7 @@ Version: 1:10.16.2-1
 
 Status: install ok installed
 Package: tzdata
-Version: 2008i-2
+Version: 2008i-3
 
 Status: install ok installed
 Package: paxctl
@@ -3229,7 +3233,7 @@ Version: 1.0-5
 
 Status: install ok installed
 Package: postgresql-client-common
-Version: 91
+Version: 93
 Source: postgresql-common
 
 Status: install ok installed
@@ -3252,7 +3256,7 @@ Source: libxxf86dga
 
 Status: install ok installed
 Package: libglade2-0
-Version: 1:2.6.2-1
+Version: 1:2.6.3-1
 Source: libglade2
 
 Status: install ok installed
@@ -3337,7 +3341,7 @@ Version: 1.1-7
 
 Status: install ok installed
 Package: bsdgames
-Version: 2.17-15
+Version: 2.17-16
 
 Status: install ok installed
 Package: snownews
@@ -3454,7 +3458,7 @@ Version: 1:0.4.0-1
 
 Status: install ok installed
 Package: loadlin
-Version: 1.6c.really1.6c-1.2
+Version: 1.6c.really1.6c.nobin-1
 
 Status: install ok installed
 Package: git-core
@@ -3529,7 +3533,7 @@ Version: 0.4.2-1
 
 Status: install ok installed
 Package: libslp1
-Version: 1.2.1-7.4
+Version: 1.2.1-7.5
 Source: openslp-dfsg
 
 Status: install ok installed
@@ -3538,7 +3542,7 @@ Version: 2.2008.06.25
 
 Status: install ok installed
 Package: libgettext-ruby1.8
-Version: 1.91.0-2
+Version: 1.91.0-2.1
 Source: libgettext-ruby
 
 Status: install ok installed
@@ -3572,7 +3576,7 @@ Version: 1.29-5
 
 Status: install ok installed
 Package: libsnmp-base
-Version: 5.4.1~dfsg-10
+Version: 5.4.1~dfsg-11
 Source: net-snmp
 
 Status: install ok installed
@@ -3638,7 +3642,7 @@ Source: libstatgrab
 
 Status: install ok installed
 Package: live-initramfs
-Version: 1.139.1-2grml.01
+Version: 1.139.1-4grml.01
 
 Status: install ok installed
 Package: libdpkg-ruby1.8
@@ -3651,7 +3655,7 @@ Version: 1.1.0-1
 
 Status: install ok installed
 Package: clamav
-Version: 0.94.dfsg-1
+Version: 0.94.dfsg.1-1
 
 Status: install ok installed
 Package: info2www
@@ -3801,6 +3805,11 @@ Version: 1.1-3
 Source: libnl
 
 Status: install ok installed
+Package: evms-bootdebug
+Version: 2.5.5-26
+Source: evms
+
+Status: install ok installed
 Package: elfkickers
 Version: 2.0a-3
 
@@ -3852,7 +3861,7 @@ Source: firestring
 
 Status: install ok installed
 Package: libpam-mount
-Version: 0.48-1
+Version: 1.2+gitaa4791f-1
 
 Status: install ok installed
 Package: isakmpd
@@ -3881,7 +3890,7 @@ Version: 0.9.5-2
 
 Status: install ok installed
 Package: snort-common
-Version: 2.7.0-21
+Version: 2.7.0-22
 Source: snort
 
 Status: install ok installed
@@ -3930,7 +3939,7 @@ Version: 0.6.13
 
 Status: install ok installed
 Package: linuxlogo
-Version: 5.03-4
+Version: 5.03-5
 
 Status: install ok installed
 Package: fvwm-crystal-minimal
@@ -4103,7 +4112,7 @@ Source: mesa
 
 Status: install ok installed
 Package: libnss-ldap
-Version: 261-2
+Version: 261-2.1
 
 Status: install ok installed
 Package: yaird
@@ -4228,7 +4237,7 @@ Source: gsmlib
 
 Status: install ok installed
 Package: locales
-Version: 2.7-15
+Version: 2.7-16
 Source: glibc
 
 Status: install ok installed
@@ -4266,7 +4275,7 @@ Version: 0.11.1+svn-r3965-2
 
 Status: install ok installed
 Package: python2.5
-Version: 2.5.2-11.1
+Version: 2.5.2-14
 
 Status: install ok installed
 Package: traceroute
@@ -4287,11 +4296,11 @@ Version: 1.27
 
 Status: install ok installed
 Package: ed
-Version: 0.7-2
+Version: 0.7-3
 
 Status: install ok installed
 Package: manpages
-Version: 3.07-1
+Version: 3.11-1
 
 Status: install ok installed
 Package: pxfw
@@ -4338,7 +4347,7 @@ Version: 0.90beta1-10.1
 
 Status: install ok installed
 Package: tasksel
-Version: 2.76
+Version: 2.77
 
 Status: install ok installed
 Package: uni2ascii
@@ -4372,7 +4381,7 @@ Source: gcc-4.3 (4.3.2-1)
 
 Status: install ok installed
 Package: grml-files
-Version: 1.2.1
+Version: 1.2.2
 
 Status: install ok installed
 Package: id3v2
@@ -4393,7 +4402,7 @@ Version: 0.0.20051128-4
 
 Status: install ok installed
 Package: pmount
-Version: 0.9.18-1
+Version: 0.9.18-2
 
 Status: install ok installed
 Package: libclass-accessor-chained-perl
@@ -4593,7 +4602,7 @@ Source: sl-modem
 
 Status: install ok installed
 Package: grub
-Version: 0.97-47
+Version: 0.97-47lenny1
 
 Status: install ok installed
 Package: figlet
@@ -4619,7 +4628,7 @@ Version: 0.4
 
 Status: install ok installed
 Package: grml-x
-Version: 0.4.0
+Version: 0.4.1
 
 Status: install ok installed
 Package: libieee1284-3
@@ -4647,7 +4656,7 @@ Source: bluez-libs
 
 Status: install ok installed
 Package: reprepro
-Version: 3.5.2-4
+Version: 3.5.2-5
 
 Status: install ok installed
 Package: bsdiff
@@ -4670,7 +4679,7 @@ Source: amanda
 
 Status: install ok installed
 Package: base-files
-Version: 4.0.5
+Version: 4.0.6
 
 Status: install ok installed
 Package: cryptcat
@@ -4682,7 +4691,7 @@ Version: 1:0.2-pre3-9
 
 Status: install ok installed
 Package: snmp
-Version: 5.4.1~dfsg-10
+Version: 5.4.1~dfsg-11
 Source: net-snmp
 
 Status: install ok installed
@@ -4768,7 +4777,7 @@ Version: 1.11b-7
 
 Status: install ok installed
 Package: sysstat
-Version: 8.1.2-2
+Version: 8.1.7-1
 
 Status: install ok installed
 Package: tcng
@@ -4847,7 +4856,7 @@ Version: 0.15
 
 Status: install ok installed
 Package: shorewall
-Version: 4.0.14-3
+Version: 4.0.14-4
 Source: shorewall-common
 
 Status: install ok installed
@@ -4945,7 +4954,7 @@ Version: 47-6
 
 Status: install ok installed
 Package: libncurses5
-Version: 5.6+20081025-1
+Version: 5.7+2008115-1
 Source: ncurses
 
 Status: install ok installed
@@ -4997,8 +5006,8 @@ Version: 1:1.2.2-17
 
 Status: install ok installed
 Package: mailx
-Version: 1:20071201-3
-Source: bsd-mailx (8.1.2-0.20071201cvs-3)
+Version: 1:20081101-2
+Source: bsd-mailx (8.1.2-0.20081101cvs-2)
 
 Status: install ok installed
 Package: cvs-buildpackage
@@ -5057,7 +5066,7 @@ Version: 0.1.11-0.1
 
 Status: install ok installed
 Package: tasksel-data
-Version: 2.76
+Version: 2.77
 Source: tasksel
 
 Status: install ok installed
@@ -5079,7 +5088,7 @@ Version: 2.3-10
 
 Status: install ok installed
 Package: spell
-Version: 1.0-20
+Version: 1.0-21
 
 Status: install ok installed
 Package: cdck
@@ -5146,7 +5155,7 @@ Source: keyutils
 
 Status: install ok installed
 Package: libclamav5
-Version: 0.94.dfsg-1
+Version: 0.94.dfsg.1-1
 Source: clamav
 
 Status: install ok installed
@@ -5163,7 +5172,7 @@ Version: 0.29-2
 
 Status: install ok installed
 Package: flashrom
-Version: 0.0+r3613-1
+Version: 0.0+r3734-1
 
 Status: install ok installed
 Package: netsurf
@@ -5290,7 +5299,7 @@ Source: brltty (3.10~r3724-1)
 
 Status: install ok installed
 Package: fetchmail
-Version: 6.3.9~rc2-3
+Version: 6.3.9~rc2-4
 
 Status: install ok installed
 Package: iproute
@@ -5337,7 +5346,7 @@ Source: git-core
 
 Status: install ok installed
 Package: emacs22-common
-Version: 22.2+2-4
+Version: 22.2+2-5
 Source: emacs22
 
 Status: install ok installed
@@ -5401,7 +5410,7 @@ Source: vde2
 
 Status: install ok installed
 Package: debian-reference-en
-Version: 2.16
+Version: 2.17
 Source: debian-reference
 
 Status: install ok installed
@@ -5423,7 +5432,7 @@ Version: 0.10
 
 Status: install ok installed
 Package: grml-network
-Version: 0.2.4
+Version: 0.2.5
 
 Status: install ok installed
 Package: swapd
@@ -5435,7 +5444,7 @@ Version: 0.5.1-2
 
 Status: install ok installed
 Package: clamav-testfiles
-Version: 0.94.dfsg-1
+Version: 0.94.dfsg.1-1
 Source: clamav
 
 Status: install ok installed
@@ -5622,7 +5631,7 @@ Version: 0.5.2-5
 
 Status: install ok installed
 Package: libxi6
-Version: 2:1.1.3-1
+Version: 2:1.1.4-1
 Source: libxi
 
 Status: install ok installed
@@ -5674,7 +5683,7 @@ Version: 1:0.9.0-1
 
 Status: install ok installed
 Package: rxvt-unicode
-Version: 9.05-4
+Version: 9.06-1
 
 Status: install ok installed
 Package: lighttpd
@@ -5760,7 +5769,7 @@ Source: speex
 
 Status: install ok installed
 Package: libsnmp15
-Version: 5.4.1~dfsg-10
+Version: 5.4.1~dfsg-11
 Source: net-snmp
 
 Status: install ok installed
@@ -5900,6 +5909,10 @@ Package: athena-jot
 Version: 9.0-5
 
 Status: install ok installed
+Package: latencytop
+Version: 0.4
+
+Status: install ok installed
 Package: tor
 Version: 0.2.0.31-1
 
@@ -5933,7 +5946,7 @@ Source: gtk+2.0
 
 Status: install ok installed
 Package: clamav-freshclam
-Version: 0.94.dfsg-1
+Version: 0.94.dfsg.1-1
 Source: clamav
 
 Status: install ok installed
@@ -5986,7 +5999,7 @@ Source: linux-ntfs
 
 Status: install ok installed
 Package: shorewall-common
-Version: 4.0.14-3
+Version: 4.0.14-4
 
 Status: install ok installed
 Package: unicode
@@ -5999,7 +6012,7 @@ Source: edac-utils
 
 Status: install ok installed
 Package: stealth
-Version: 1.47.2-1
+Version: 1.47.2-2
 
 Status: install ok installed
 Package: videogen
@@ -6083,7 +6096,7 @@ Version: 2.03-1
 
 Status: install ok installed
 Package: pterm
-Version: 0.60-3
+Version: 0.60-4
 Source: putty
 
 Status: install ok installed
@@ -6229,7 +6242,7 @@ Source: xfonts-biznet
 
 Status: install ok installed
 Package: dictionaries-common
-Version: 0.98.12
+Version: 0.98.13
 
 Status: install ok installed
 Package: xaw3dg
@@ -6266,7 +6279,7 @@ Version: 2.0-1
 
 Status: install ok installed
 Package: jed-common
-Version: 1:0.99.18+dfsg.1-10
+Version: 1:0.99.18+dfsg.1-11
 Source: jed
 
 Status: install ok installed
@@ -6396,6 +6409,10 @@ Package: ppmd
 Version: 9.1-15
 
 Status: install ok installed
+Package: evms
+Version: 2.5.5-26
+
+Status: install ok installed
 Package: libxml-namespacesupport-perl
 Version: 1.09-3
 
@@ -6490,7 +6507,7 @@ Version: 1:0.16.6-1
 
 Status: install ok installed
 Package: nfs-kernel-server
-Version: 1:1.1.3-2
+Version: 1:1.1.4-1
 Source: nfs-utils
 
 Status: install ok installed
@@ -6553,7 +6570,7 @@ Version: 0.07-4
 
 Status: install ok installed
 Package: bacula-common
-Version: 2.4.2-3.1
+Version: 2.4.3-1
 Source: bacula
 
 Status: install ok installed
@@ -6588,7 +6605,7 @@ Source: pdns
 
 Status: install ok installed
 Package: clamav-base
-Version: 0.94.dfsg-1
+Version: 0.94.dfsg.1-1
 Source: clamav
 
 Status: install ok installed
@@ -6598,7 +6615,7 @@ Source: links2
 
 Status: install ok installed
 Package: libbobcat1
-Version: 1.21.1-1
+Version: 1.21.1-2
 Source: bobcat
 
 Status: install ok installed
@@ -6629,7 +6646,7 @@ Source: groff
 
 Status: install ok installed
 Package: emacs22-bin-common
-Version: 22.2+2-4
+Version: 22.2+2-5
 Source: emacs22
 
 Status: install ok installed
@@ -6795,16 +6812,16 @@ Source: openal-soft
 
 Status: install ok installed
 Package: snort-rules-default
-Version: 2.7.0-21
+Version: 2.7.0-22
 Source: snort
 
 Status: install ok installed
 Package: net-tools
-Version: 1.60-21
+Version: 1.60-22
 
 Status: install ok installed
 Package: jhead
-Version: 2.84-2
+Version: 2.85-1
 
 Status: install ok installed
 Package: grml-usleep
@@ -6939,7 +6956,7 @@ Version: 1.8-1.2
 
 Status: install ok installed
 Package: acpid
-Version: 1.0.6-16
+Version: 1.0.8-1
 
 Status: install ok installed
 Package: libxosd2
@@ -6993,7 +7010,7 @@ Version: 0.9.7-0.1
 
 Status: install ok installed
 Package: emacs22
-Version: 22.2+2-4
+Version: 22.2+2-5
 
 Status: install ok installed
 Package: ara
@@ -7036,6 +7053,11 @@ Package: attr
 Version: 1:2.4.43-1
 
 Status: install ok installed
+Package: libevms-2.5
+Version: 2.5.5-26
+Source: evms
+
+Status: install ok installed
 Package: autopsy
 Version: 2.08-2.1
 
@@ -7054,7 +7076,7 @@ Version: 1.6.11
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.59
+Version: 0.3.60
 
 Status: install ok installed
 Package: gparted
@@ -7367,7 +7389,7 @@ Source: kqemu
 
 Status: install ok installed
 Package: snort
-Version: 2.7.0-21
+Version: 2.7.0-22
 
 Status: install ok installed
 Package: vbindiff
@@ -7494,7 +7516,7 @@ Version: 3.07-1.1
 
 Status: install ok installed
 Package: apt-file
-Version: 2.1.5
+Version: 2.1.6
 
 Status: install ok installed
 Package: stegdetect
@@ -7502,7 +7524,7 @@ Version: 0.6-6
 
 Status: install ok installed
 Package: bsd-mailx
-Version: 8.1.2-0.20071201cvs-3
+Version: 8.1.2-0.20081101cvs-2
 
 Status: install ok installed
 Package: libnetfilter-conntrack1
@@ -7524,7 +7546,7 @@ Version: 2.25b-6
 
 Status: install ok installed
 Package: xkb-data
-Version: 1.3-2
+Version: 1.4-1
 Source: xkeyboard-config
 
 Status: install ok installed
@@ -7688,7 +7710,7 @@ Version: 1.0.1-5.1
 
 Status: install ok installed
 Package: xvfb
-Version: 2:1.4.2-7
+Version: 2:1.4.2-9
 Source: xorg-server
 
 Status: install ok installed
@@ -7715,7 +7737,7 @@ Version: 1.1.0-1
 
 Status: install ok installed
 Package: netdiag
-Version: 1.0-11
+Version: 1.0-12
 
 Status: install ok installed
 Package: pydb
@@ -7893,7 +7915,7 @@ Version: 0.5-1
 
 Status: install ok installed
 Package: dns2tcp
-Version: 0.4.dfsg-4
+Version: 0.4.dfsg-5
 
 Status: install ok installed
 Package: aview
@@ -7984,7 +8006,7 @@ Source: tidy
 
 Status: install ok installed
 Package: devscripts
-Version: 2.10.39
+Version: 2.10.40
 
 Status: install ok installed
 Package: wiggle
@@ -8009,8 +8031,7 @@ Source: openldap
 
 Status: install ok installed
 Package: jed
-Version: 1:0.99.18+dfsg.1-10+b1
-Source: jed (1:0.99.18+dfsg.1-10)
+Version: 1:0.99.18+dfsg.1-11
 
 Status: install ok installed
 Package: libx11-6
@@ -8069,7 +8090,7 @@ Version: 1.2-3
 
 Status: install ok installed
 Package: ncurses-term
-Version: 5.6+20081025-1
+Version: 5.7+2008115-1
 Source: ncurses
 
 Status: install ok installed
@@ -8224,11 +8245,11 @@ Version: 0.8.1.2-2
 
 Status: install ok installed
 Package: dnsmasq
-Version: 2.45-1
+Version: 2.46-1
 
 Status: install ok installed
 Package: apt-dpkg-ref
-Version: 5.2
+Version: 5.3
 
 Status: install ok installed
 Package: vfu
@@ -8267,7 +8288,7 @@ Source: glibmm2.4
 
 Status: install ok installed
 Package: ndiswrapper-utils-1.9
-Version: 1.53-1
+Version: 1.53-2
 Source: ndiswrapper
 
 Status: install ok installed
@@ -8337,7 +8358,7 @@ Version: 1.1.4-1
 
 Status: install ok installed
 Package: netrik
-Version: 1.15.7-2
+Version: 1.15.7-2.1
 
 Status: install ok installed
 Package: libavahi-common3
@@ -8372,7 +8393,7 @@ Source: openldap
 
 Status: install ok installed
 Package: drbd8-utils
-Version: 2:8.0.14~rc1-1
+Version: 2:8.0.14-2
 Source: drbd8
 
 Status: install ok installed
@@ -8386,7 +8407,7 @@ Version: 20080519-2
 
 Status: install ok installed
 Package: libgnutls26
-Version: 2.4.2-1
+Version: 2.4.2-3
 Source: gnutls26
 
 Status: install ok installed
@@ -8511,7 +8532,7 @@ Version: 1.3.12-6
 
 Status: install ok installed
 Package: libwww-perl
-Version: 5.813-1
+Version: 5.820-1
 
 Status: install ok installed
 Package: xserver-xorg-video-vga
@@ -8533,7 +8554,7 @@ Source: vim
 
 Status: install ok installed
 Package: dpkg
-Version: 1.14.22
+Version: 1.14.23
 
 Status: install ok installed
 Package: reiser4progs
@@ -8614,7 +8635,7 @@ Version: 6.6.7-1
 
 Status: install ok installed
 Package: dh-make
-Version: 0.46
+Version: 0.47
 
 Status: install ok installed
 Package: xtail
@@ -8721,7 +8742,7 @@ Version: 2.6.7.1-1
 
 Status: install ok installed
 Package: libncursesw5
-Version: 5.6+20081025-1
+Version: 5.7+2008115-1
 Source: ncurses
 
 Status: install ok installed
@@ -8740,7 +8761,7 @@ Source: isdnutils
 
 Status: install ok installed
 Package: zsh-lovers
-Version: 0.8.0
+Version: 0.8.1
 
 Status: install ok installed
 Package: cddb
@@ -8879,7 +8900,7 @@ Version: 1.2.2-1
 
 Status: install ok installed
 Package: reportbug
-Version: 3.46
+Version: 3.47
 
 Status: install ok installed
 Package: tshark
@@ -8947,7 +8968,7 @@ Source: olsrd
 
 Status: install ok installed
 Package: scrot
-Version: 0.8-7
+Version: 0.8-8
 
 Status: install ok installed
 Package: dmsetup
@@ -9012,7 +9033,7 @@ Version: 1.02-1
 
 Status: install ok installed
 Package: gpart
-Version: 0.1h-5
+Version: 0.1h-6
 
 Status: install ok installed
 Package: libpam-chroot
@@ -9025,7 +9046,7 @@ Source: edbrowse (3.3.4-1)
 
 Status: install ok installed
 Package: irqbalance
-Version: 0.55-2.3
+Version: 0.55-2.4
 
 Status: install ok installed
 Package: xmms2-plugin-id3v2
@@ -9038,7 +9059,7 @@ Version: 1.21-2
 
 Status: install ok installed
 Package: bacula-console
-Version: 2.4.2-3.1
+Version: 2.4.3-1
 Source: bacula
 
 Status: install ok installed
@@ -9055,7 +9076,7 @@ Version: 1.0.16-2
 
 Status: install ok installed
 Package: swaks
-Version: 0+20061116.0-2
+Version: 0+20061116.0-3
 
 Status: install ok installed
 Package: libexporter-tidy-perl
@@ -9063,7 +9084,7 @@ Version: 0.07-1
 
 Status: install ok installed
 Package: piuparts
-Version: 0.32
+Version: 0.33
 
 Status: install ok installed
 Package: gcc
@@ -9161,7 +9182,7 @@ Source: atl2 (2.0.5-1)
 
 Status: install ok installed
 Package: virtualbox-ose-guest-utils
-Version: 1.6.6-dfsg-2
+Version: 1.6.6-dfsg-3
 Source: virtualbox-ose
 
 Status: install ok installed
@@ -9263,6 +9284,10 @@ Package: juke
 Version: 0.7-4
 
 Status: install ok installed
+Package: qiv
+Version: 2.1~pre12-5
+
+Status: install ok installed
 Package: libasn1-8-heimdal
 Version: 1.2.dfsg.1-2.1
 Source: heimdal
@@ -9282,7 +9307,7 @@ Source: bzip2
 
 Status: install ok installed
 Package: nedit
-Version: 1:5.5-2
+Version: 1:5.5-3
 
 Status: install ok installed
 Package: openvpn-blacklist
@@ -9301,6 +9326,11 @@ Status: install ok installed
 Package: libnet-telnet-cisco-perl
 Version: 1.10-5
 Source: net-telnet-cisco
+
+Status: install ok installed
+Package: evms-ncurses
+Version: 2.5.5-26
+Source: evms
 
 Status: install ok installed
 Package: im-switch
@@ -9325,16 +9355,16 @@ Source: zvbi
 
 Status: install ok installed
 Package: timelimit
-Version: 1.3-1
+Version: 1.4-1
 
 Status: install ok installed
 Package: gnutls-bin
-Version: 2.4.2-1
+Version: 2.4.2-3
 Source: gnutls26
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.1.12
+Version: 1.1.13
 
 Status: install ok installed
 Package: scalpel
@@ -9458,7 +9488,7 @@ Source: ddccontrol
 
 Status: install ok installed
 Package: xnest
-Version: 2:1.4.2-7
+Version: 2:1.4.2-9
 Source: xorg-server
 
 Status: install ok installed
@@ -9600,7 +9630,7 @@ Version: 1.5c.debian.1-3
 
 Status: install ok installed
 Package: lilo
-Version: 1:22.8-6.3
+Version: 1:22.8-7
 
 Status: install ok installed
 Package: libopenipmi0
@@ -9789,7 +9819,7 @@ Source: apf
 
 Status: install ok installed
 Package: dselect
-Version: 1.14.22
+Version: 1.14.23
 Source: dpkg
 
 Status: install ok installed
@@ -9886,7 +9916,7 @@ Version: 0.12
 
 Status: install ok installed
 Package: kernel-package
-Version: 11.0011
+Version: 11.012
 
 Status: install ok installed
 Package: sysvinit-utils
@@ -9989,7 +10019,7 @@ Source: fontconfig
 
 Status: install ok installed
 Package: bacula-fd
-Version: 2.4.2-3.1
+Version: 2.4.3-1
 Source: bacula
 
 Status: install ok installed
@@ -10154,7 +10184,7 @@ Source: esound
 
 Status: install ok installed
 Package: tex-common
-Version: 1.11.2
+Version: 1.11.3
 
 Status: install ok installed
 Package: pppoeconf
@@ -10218,12 +10248,12 @@ Source: openbox
 
 Status: install ok installed
 Package: emacs
-Version: 22.2+2-4
+Version: 22.2+2-5
 Source: emacs22
 
 Status: install ok installed
 Package: dpkg-awk
-Version: 1.0.1.0.0.2
+Version: 1.0.3
 
 Status: install ok installed
 Package: netwox
@@ -10343,7 +10373,7 @@ Version: 4.06-1
 
 Status: install ok installed
 Package: mcelog
-Version: 0.8~pre-6
+Version: 0.8~pre-7
 
 Status: install ok installed
 Package: vbetool
@@ -10417,7 +10447,7 @@ Source: gkrellm
 
 Status: install ok installed
 Package: libc6
-Version: 2.7-15
+Version: 2.7-16
 Source: glibc
 
 Status: install ok installed
@@ -10518,8 +10548,8 @@ Version: 2.1.0-4
 
 Status: install ok installed
 Package: xjed
-Version: 1:0.99.18+dfsg.1-10+b1
-Source: jed (1:0.99.18+dfsg.1-10)
+Version: 1:0.99.18+dfsg.1-11
+Source: jed
 
 Status: install ok installed
 Package: mplayer
@@ -10657,8 +10687,8 @@ Source: libdigest-md4-perl (1.5.dfsg-1.2)
 
 Status: install ok installed
 Package: apt-utils
-Version: 0.7.16+b1
-Source: apt (0.7.16)
+Version: 0.7.18
+Source: apt
 
 Status: install ok installed
 Package: ash
@@ -10667,7 +10697,7 @@ Source: dash
 
 Status: install ok installed
 Package: gfs-tools
-Version: 2.20080801-4
+Version: 2.20081102-1
 Source: redhat-cluster
 
 Status: install ok installed
@@ -10718,7 +10748,7 @@ Version: 1.4.6-7
 
 Status: install ok installed
 Package: libsplashy1
-Version: 0.3.10-2.1
+Version: 0.3.12-1
 Source: splashy
 
 Status: install ok installed
@@ -10832,7 +10862,7 @@ Version: 0.01
 
 Status: install ok installed
 Package: clamav-daemon
-Version: 0.94.dfsg-1
+Version: 0.94.dfsg.1-1
 Source: clamav
 
 Status: install ok installed
@@ -10889,7 +10919,7 @@ Source: scapy
 
 Status: install ok installed
 Package: tcpreplay
-Version: 3.3.1-1
+Version: 3.3.2-1
 
 Status: install ok installed
 Package: patchutils
@@ -10938,7 +10968,7 @@ Version: 0.6.7~rc1-1
 
 Status: install ok installed
 Package: 9base
-Version: 1:2-8
+Version: 1:2-9
 
 Status: install ok installed
 Package: libxcursor1
@@ -10977,7 +11007,7 @@ Version: 1.95.1+dfsg-3
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.1.8
+Version: 1.1.10
 
 Status: install ok installed
 Package: dupload
@@ -11035,7 +11065,7 @@ Version: 1:3.6.19-6
 
 Status: install ok installed
 Package: mg
-Version: 20070918-2
+Version: 20080610-1
 
 Status: install ok installed
 Package: dov4l
@@ -11224,7 +11254,7 @@ Version: 2008.10.10-123053-2
 
 Status: install ok installed
 Package: pekwm
-Version: 0.1.7-3
+Version: 0.1.8-2
 
 Status: install ok installed
 Package: sleuthkit
@@ -11295,7 +11325,7 @@ Version: 0.5.3-2
 
 Status: install ok installed
 Package: python-debian
-Version: 0.1.11
+Version: 0.1.12
 
 Status: install ok installed
 Package: atftpd
@@ -11367,7 +11397,7 @@ Version: 0.14-10
 
 Status: install ok installed
 Package: grml-live
-Version: 0.9.5
+Version: 0.9.6
 
 Status: install ok installed
 Package: nvi
@@ -11539,7 +11569,7 @@ Source: libxt
 
 Status: install ok installed
 Package: libmodplug0c2
-Version: 1:0.8.4-2
+Version: 1:0.8.4-3
 Source: libmodplug
 
 Status: install ok installed
@@ -11617,7 +11647,7 @@ Version: 3.7.1-9
 
 Status: install ok installed
 Package: libecryptfs0
-Version: 63-1
+Version: 66-2
 Source: ecryptfs-utils
 
 Status: install ok installed
@@ -11715,7 +11745,7 @@ Source: eyed3
 
 Status: install ok installed
 Package: rinse
-Version: 1.3-2
+Version: 1.4-1
 
 Status: install ok installed
 Package: xvkbd
@@ -11744,7 +11774,7 @@ Source: pyogg
 
 Status: install ok installed
 Package: liblockfile1
-Version: 1.08-2
+Version: 1.08-3
 Source: liblockfile
 
 Status: install ok installed
@@ -11767,7 +11797,7 @@ Version: 0.25.1-0.1
 
 Status: install ok installed
 Package: wwwconfig-common
-Version: 0.1.2
+Version: 0.2.0
 
 Status: install ok installed
 Package: rkhunter

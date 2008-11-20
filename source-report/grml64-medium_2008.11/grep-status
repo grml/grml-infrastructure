@@ -193,7 +193,7 @@ Version: 0.2.0-1
 
 Status: install ok installed
 Package: libgcrypt11
-Version: 1.4.1-1
+Version: 1.4.1-2
 
 Status: install ok installed
 Package: file-rc
@@ -299,7 +299,7 @@ Version: 0.3.6
 
 Status: install ok installed
 Package: ncurses-base
-Version: 5.6+20081025-1
+Version: 5.7+2008115-1
 Source: ncurses
 
 Status: install ok installed
@@ -377,7 +377,7 @@ Version: 0.12.21-4.1
 
 Status: install ok installed
 Package: grml-autoconfig
-Version: 0.8.15
+Version: 0.8.16
 
 Status: install ok installed
 Package: hwinfo
@@ -444,7 +444,7 @@ Source: gtk+1.2
 
 Status: install ok installed
 Package: libc6-dev
-Version: 2.7-15
+Version: 2.7-16
 Source: glibc
 
 Status: install ok installed
@@ -454,7 +454,7 @@ Source: openssl
 
 Status: install ok installed
 Package: nfs-common
-Version: 1:1.1.3-2
+Version: 1:1.1.4-1
 Source: nfs-utils
 
 Status: install ok installed
@@ -493,12 +493,12 @@ Version: 2.02.39-2
 
 Status: install ok installed
 Package: python2.5-minimal
-Version: 2.5.2-11.1
+Version: 2.5.2-14
 Source: python2.5
 
 Status: install ok installed
 Package: ncurses-bin
-Version: 5.6+20081025-1
+Version: 5.7-2
 Source: ncurses
 
 Status: install ok installed
@@ -513,11 +513,11 @@ Source: gcc-4.3 (4.3.2-1)
 
 Status: install ok installed
 Package: apt
-Version: 0.7.16
+Version: 0.7.18
 
 Status: install ok installed
 Package: dmraid
-Version: 1.0.0.rc14-5
+Version: 1.0.0.rc14-6
 
 Status: install ok installed
 Package: pciutils
@@ -525,7 +525,7 @@ Version: 1:3.0.0-6
 
 Status: install ok installed
 Package: grub-common
-Version: 1.96+20080724-11
+Version: 1.96+20080724-12
 Source: grub2
 
 Status: install ok installed
@@ -559,7 +559,7 @@ Source: mtr
 
 Status: install ok installed
 Package: xserver-xorg-core
-Version: 2:1.4.2-7
+Version: 2:1.4.2-9
 Source: xorg-server
 
 Status: install ok installed
@@ -573,6 +573,10 @@ Version: 1.06.94-3
 Status: install ok installed
 Package: grml-crypt
 Version: 0.17
+
+Status: install ok installed
+Package: powertop
+Version: 1.10-2
 
 Status: install ok installed
 Package: madwifi-tools
@@ -648,7 +652,7 @@ Version: 1:10.16.2-1
 
 Status: install ok installed
 Package: tzdata
-Version: 2008i-2
+Version: 2008i-3
 
 Status: install ok installed
 Package: python
@@ -661,7 +665,7 @@ Version: 2:3.2.1-1
 
 Status: install ok installed
 Package: libfontconfig1
-Version: 2.6.0-1
+Version: 2.6.0-3
 Source: fontconfig
 
 Status: install ok installed
@@ -754,7 +758,7 @@ Version: 1:3.1.5.dfsg-4.1
 
 Status: install ok installed
 Package: linux-libc-dev
-Version: 2.6.26-9
+Version: 2.6.26-10
 Source: linux-2.6
 
 Status: install ok installed
@@ -767,7 +771,7 @@ Version: 0.49-1
 
 Status: install ok installed
 Package: live-initramfs
-Version: 1.139.1-2grml.01
+Version: 1.139.1-4grml.01
 
 Status: install ok installed
 Package: libxpm4
@@ -784,7 +788,7 @@ Version: 4.26-1
 
 Status: install ok installed
 Package: libc6-i386
-Version: 2.7-15
+Version: 2.7-16
 Source: glibc
 
 Status: install ok installed
@@ -870,7 +874,7 @@ Source: linux-source-2.6.26-grml64
 
 Status: install ok installed
 Package: locales
-Version: 2.7-15
+Version: 2.7-16
 Source: glibc
 
 Status: install ok installed
@@ -879,7 +883,7 @@ Version: 1:2.71-1
 
 Status: install ok installed
 Package: python2.5
-Version: 2.5.2-11.1
+Version: 2.5.2-14
 
 Status: install ok installed
 Package: traceroute
@@ -887,15 +891,15 @@ Version: 2.0.12-1
 
 Status: install ok installed
 Package: manpages
-Version: 3.07-1
+Version: 3.11-1
 
 Status: install ok installed
 Package: ed
-Version: 0.7-2
+Version: 0.7-3
 
 Status: install ok installed
 Package: tasksel
-Version: 2.76
+Version: 2.77
 
 Status: install ok installed
 Package: libgcc1
@@ -904,7 +908,7 @@ Source: gcc-4.3 (4.3.2-1)
 
 Status: install ok installed
 Package: grml-files
-Version: 1.2.1
+Version: 1.2.2
 
 Status: install ok installed
 Package: xserver-xorg-input-hyperpen
@@ -947,7 +951,7 @@ Version: 0.7-1
 
 Status: install ok installed
 Package: grub
-Version: 0.97-47
+Version: 0.97-47lenny1
 
 Status: install ok installed
 Package: libasound2
@@ -956,11 +960,11 @@ Source: alsa-lib
 
 Status: install ok installed
 Package: grml-x
-Version: 0.4.0
+Version: 0.4.1
 
 Status: install ok installed
 Package: base-files
-Version: 4.0.5
+Version: 4.0.6
 
 Status: install ok installed
 Package: libxtrap6
@@ -1015,7 +1019,7 @@ Source: readline5
 
 Status: install ok installed
 Package: libncurses5
-Version: 5.6+20081025-1
+Version: 5.7-2
 Source: ncurses
 
 Status: install ok installed
@@ -1036,7 +1040,7 @@ Version: 0.1.11-0.1
 
 Status: install ok installed
 Package: tasksel-data
-Version: 2.76
+Version: 2.77
 Source: tasksel
 
 Status: install ok installed
@@ -1089,7 +1093,7 @@ Version: 2.30-4
 
 Status: install ok installed
 Package: grml-network
-Version: 0.2.4
+Version: 0.2.5
 
 Status: install ok installed
 Package: idesk
@@ -1114,7 +1118,7 @@ Version: 1:1.1.2-1
 
 Status: install ok installed
 Package: libxi6
-Version: 2:1.1.3-1
+Version: 2:1.1.4-1
 Source: libxi
 
 Status: install ok installed
@@ -1195,6 +1199,10 @@ Package: xserver-xorg-input-elographics
 Version: 1:1.2.1-1
 
 Status: install ok installed
+Package: latencytop
+Version: 0.4
+
+Status: install ok installed
 Package: tofrodos
 Version: 1.7.8.debian.1-1
 
@@ -1250,7 +1258,7 @@ Version: 1:1.0.0-4
 
 Status: install ok installed
 Package: jed-common
-Version: 1:0.99.18+dfsg.1-10
+Version: 1:0.99.18+dfsg.1-11
 Source: jed
 
 Status: install ok installed
@@ -1351,7 +1359,7 @@ Source: xorg
 
 Status: install ok installed
 Package: net-tools
-Version: 1.60-21
+Version: 1.60-22
 
 Status: install ok installed
 Package: grml-usleep
@@ -1392,7 +1400,7 @@ Source: libxmu
 
 Status: install ok installed
 Package: acpid
-Version: 1.0.6-16
+Version: 1.0.8-1
 
 Status: install ok installed
 Package: libxosd2
@@ -1419,7 +1427,7 @@ Source: libxcb
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.59
+Version: 0.3.60
 
 Status: install ok installed
 Package: libx86-1
@@ -1507,7 +1515,7 @@ Source: libnetfilter-conntrack
 
 Status: install ok installed
 Package: xkb-data
-Version: 1.3-2
+Version: 1.4-1
 Source: xkeyboard-config
 
 Status: install ok installed
@@ -1585,12 +1593,12 @@ Source: libnfsidmap
 
 Status: install ok installed
 Package: libc6-dev-i386
-Version: 2.7-15
+Version: 2.7-16
 Source: glibc
 
 Status: install ok installed
 Package: dns2tcp
-Version: 0.4.dfsg-4
+Version: 0.4.dfsg-5
 
 Status: install ok installed
 Package: dosfstools
@@ -1610,8 +1618,7 @@ Version: 1:1.0.2-3
 
 Status: install ok installed
 Package: jed
-Version: 1:0.99.18+dfsg.1-10+b1
-Source: jed (1:0.99.18+dfsg.1-10)
+Version: 1:0.99.18+dfsg.1-11
 
 Status: install ok installed
 Package: libx11-6
@@ -1679,7 +1686,7 @@ Source: acpi-support
 
 Status: install ok installed
 Package: libgnutls26
-Version: 2.4.2-1
+Version: 2.4.2-3
 Source: gnutls26
 
 Status: install ok installed
@@ -1709,7 +1716,7 @@ Version: 1.3.12-6
 
 Status: install ok installed
 Package: libwww-perl
-Version: 5.813-1
+Version: 5.820-1
 
 Status: install ok installed
 Package: xserver-xorg-video-vga
@@ -1739,7 +1746,7 @@ Version: 2.6.7.1-1
 
 Status: install ok installed
 Package: libncursesw5
-Version: 5.6+20081025-1
+Version: 5.7-2
 Source: ncurses
 
 Status: install ok installed
@@ -1780,6 +1787,10 @@ Source: devmapper
 Status: install ok installed
 Package: eject
 Version: 2.1.5+deb1-4
+
+Status: install ok installed
+Package: irqbalance
+Version: 0.55-2.4
 
 Status: install ok installed
 Package: alsa-utils
@@ -1840,7 +1851,7 @@ Version: 1.1.36-1.5
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.1.12
+Version: 1.1.13
 
 Status: install ok installed
 Package: xserver-xorg-video-intel
@@ -1892,7 +1903,7 @@ Version: 29-1.1
 
 Status: install ok installed
 Package: lilo
-Version: 1:22.8-6.3
+Version: 1:22.8-7
 
 Status: install ok installed
 Package: xserver-xorg-input-void
@@ -1959,7 +1970,7 @@ Source: xorg
 
 Status: install ok installed
 Package: fontconfig-config
-Version: 2.6.0-1
+Version: 2.6.0-3
 Source: fontconfig
 
 Status: install ok installed
@@ -2057,7 +2068,7 @@ Source: vim
 
 Status: install ok installed
 Package: libc6
-Version: 2.7-15
+Version: 2.7-16
 Source: glibc
 
 Status: install ok installed
@@ -2100,7 +2111,7 @@ Source: console-tools
 
 Status: install ok installed
 Package: apt-utils
-Version: 0.7.16
+Version: 0.7.18
 Source: apt
 
 Status: install ok installed
@@ -2177,7 +2188,7 @@ Version: 1.95.1+dfsg-3
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.1.8
+Version: 1.1.10
 
 Status: install ok installed
 Package: reiserfsprogs
@@ -2282,7 +2293,7 @@ Version: 2.18.1~cvs20080103-7
 
 Status: install ok installed
 Package: grml-live
-Version: 0.9.5
+Version: 0.9.6
 
 Status: install ok installed
 Package: nvi
@@ -2412,7 +2423,7 @@ Version: 4.78.dfsg.1-4
 
 Status: install ok installed
 Package: liblockfile1
-Version: 1.08-2
+Version: 1.08-3
 Source: liblockfile
 
 Status: install ok installed
