@@ -17,7 +17,7 @@ Version: 0.06-6
 
 Status: install ok installed
 Package: rt2500-modules-2.6.26-grml
-Version: 1:1.1.0-b4+cvs20080623-2+grml.06
+Version: 1:1.1.0-b4+cvs20080623-2+grml.08
 Source: rt2500 (1:1.1.0-b4+cvs20080623-2)
 
 Status: install ok installed
@@ -219,7 +219,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.1.4
+Version: 1.2.1
 
 Status: install ok installed
 Package: xserver-xorg-video-sis
@@ -282,7 +282,7 @@ Version: 0.6.4-2
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.22
+Version: 0.23
 
 Status: install ok installed
 Package: libhd15
@@ -371,11 +371,6 @@ Status: install ok installed
 Package: bsdutils
 Version: 1:2.13.1.1-1
 Source: util-linux (2.13.1.1-1)
-
-Status: install ok installed
-Package: xbase-clients
-Version: 1:7.3+18
-Source: xorg
 
 Status: install ok installed
 Package: xserver-xorg-video-apm
@@ -559,7 +554,7 @@ Source: xorg-server
 
 Status: install ok installed
 Package: rt2400-modules-2.6.26-grml
-Version: 1.2.2+cvs20080623-2+grml.07
+Version: 1.2.2+cvs20080623-2+grml.08
 Source: rt2400 (1.2.2+cvs20080623-2)
 
 Status: install ok installed
@@ -707,10 +702,6 @@ Version: 1:6.9.0-1+lenny4
 Source: xserver-xorg-video-ati
 
 Status: install ok installed
-Package: x11-session-utils
-Version: 7.3+1
-
-Status: install ok installed
 Package: keychain
 Version: 2.6.8-2
 
@@ -726,7 +717,7 @@ Source: libxrender
 
 Status: install ok installed
 Package: linux-image-2.6.26-grml
-Version: grml.07
+Version: grml.08
 Source: linux-source-2.6.26-grml
 
 Status: install ok installed
@@ -781,7 +772,7 @@ Version: 0.49-1
 
 Status: install ok installed
 Package: live-initramfs
-Version: 1.139.1-4grml.01
+Version: 1.139.1-4grml.03
 
 Status: install ok installed
 Package: libxpm4
@@ -806,7 +797,7 @@ Version: 1.35.dfsg.1-1
 
 Status: install ok installed
 Package: grml-tips
-Version: 0.4.11
+Version: 0.4.12
 
 Status: install ok installed
 Package: eterm
@@ -916,7 +907,7 @@ Source: klibc
 
 Status: install ok installed
 Package: grml-terminalserver
-Version: 0.98
+Version: 0.99
 
 Status: install ok installed
 Package: libxv1
@@ -954,7 +945,7 @@ Version: 0.4.1
 
 Status: install ok installed
 Package: at76-usb-modules-2.6.26-grml
-Version: 0.17.dfsg+grml.07
+Version: 0.17.dfsg+grml.08
 
 Status: install ok installed
 Package: base-files
@@ -1177,7 +1168,7 @@ Version: 1.12-1
 
 Status: install ok installed
 Package: madwifi-modules-2.6.26-grml
-Version: 1:0.9.4+r3772.20080716-1+grml.07
+Version: 1:0.9.4+r3772.20080716-1+grml.08
 Source: madwifi (1:0.9.4+r3772.20080716-1)
 
 Status: install ok installed
@@ -1272,6 +1263,11 @@ Package: base-passwd
 Version: 3.5.19
 
 Status: install ok installed
+Package: nfs-kernel-server
+Version: 1:1.1.4-1
+Source: nfs-utils
+
+Status: install ok installed
 Package: libcomerr2
 Version: 1.41.3-1
 Source: e2fsprogs
@@ -1327,10 +1323,6 @@ Version: 4.5.20-13
 Source: db4.5
 
 Status: install ok installed
-Package: x11-apps
-Version: 7.3+4
-
-Status: install ok installed
 Package: x11-common
 Version: 1:7.3+18
 Source: xorg
@@ -1360,11 +1352,6 @@ Status: install ok installed
 Package: libntfs10
 Version: 2.0.0-1
 Source: linux-ntfs
-
-Status: install ok installed
-Package: libfs6
-Version: 2:1.0.1-1
-Source: libfs
 
 Status: install ok installed
 Package: debconf-i18n
@@ -1618,7 +1605,7 @@ Source: libsigc++-2.0
 
 Status: install ok installed
 Package: aufs-modules-2.6.26-grml
-Version: 0+20080719-4+grml.07
+Version: 0+20080719-4+grml.08
 Source: aufs (0+20080719-4)
 
 Status: install ok installed
@@ -1780,7 +1767,7 @@ Version: 1.1-20080819-1
 
 Status: install ok installed
 Package: atl2-modules-2.6.26-grml
-Version: 2.0.5-1+grml.07
+Version: 2.0.5-1+grml.08
 Source: atl2 (2.0.5-1)
 
 Status: install ok installed
@@ -1830,7 +1817,7 @@ Version: 1.1.36-1.5
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.1.13
+Version: 1.1.14
 
 Status: install ok installed
 Package: xserver-xorg-video-intel
@@ -2006,7 +1993,7 @@ Version: 0.7.7.1+nmu1
 
 Status: install ok installed
 Package: rt73-modules-2.6.26-grml
-Version: 1:1.0.3.6-cvs20080623-dfsg1-2+grml.06
+Version: 1:1.0.3.6-cvs20080623-dfsg1-2+grml.08
 Source: rt73 (1:1.0.3.6-cvs20080623-dfsg1-2)
 
 Status: install ok installed
@@ -2073,6 +2060,10 @@ Status: install ok installed
 Package: dhcp3-common
 Version: 3.1.1-5
 Source: dhcp3
+
+Status: install ok installed
+Package: genext2fs
+Version: 1.4.1-2.1
 
 Status: install ok installed
 Package: libxxf86vm1
@@ -2143,6 +2134,11 @@ Package: bash
 Version: 3.2-4
 
 Status: install ok installed
+Package: make
+Version: 3.81-5
+Source: make-dfsg
+
+Status: install ok installed
 Package: util-linux
 Version: 2.13.1.1-1
 
@@ -2155,11 +2151,6 @@ Status: install ok installed
 Package: libdsocksd0
 Version: 1.1.19.dfsg-2
 Source: dante
-
-Status: install ok installed
-Package: libxcursor1
-Version: 1:1.1.9-1
-Source: libxcursor
 
 Status: install ok installed
 Package: xfonts-utils
@@ -2224,10 +2215,6 @@ Status: install ok installed
 Package: libpcsclite1
 Version: 1.4.102-1
 Source: pcsc-lite
-
-Status: install ok installed
-Package: x11-xfs-utils
-Version: 7.3+1
 
 Status: install ok installed
 Package: xserver-xorg-video-i740
@@ -2298,7 +2285,7 @@ Source: libast
 
 Status: install ok installed
 Package: grml-saveconfig
-Version: 0.2.5
+Version: 0.2.6
 
 Status: install ok installed
 Package: libnet1

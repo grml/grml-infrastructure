@@ -120,7 +120,7 @@ Source: gmp
 
 Status: install ok installed
 Package: rt2500-modules-2.6.26-grml
-Version: 1:1.1.0-b4+cvs20080623-2+grml.06
+Version: 1:1.1.0-b4+cvs20080623-2+grml.08
 Source: rt2500 (1:1.1.0-b4+cvs20080623-2)
 
 Status: install ok installed
@@ -983,7 +983,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.1.4
+Version: 1.2.1
 
 Status: install ok installed
 Package: cvs
@@ -1203,7 +1203,7 @@ Source: curl
 
 Status: install ok installed
 Package: fontconfig
-Version: 2.6.0-2
+Version: 2.6.0-3
 
 Status: install ok installed
 Package: libjpeg62
@@ -1330,7 +1330,7 @@ Source: geoip
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.22
+Version: 0.23
 
 Status: install ok installed
 Package: dnsutils
@@ -2315,7 +2315,7 @@ Version: 0.2
 
 Status: install ok installed
 Package: acx100-2.6.26-grml
-Version: 20070101-3+grml.07
+Version: 20070101-3+grml.08
 Source: acx100 (20070101-3)
 
 Status: install ok installed
@@ -2519,7 +2519,7 @@ Source: mysql-dfsg-5.0
 
 Status: install ok installed
 Package: tp-smapi-modules-2.6.26-grml
-Version: 0.37-3+grml.07
+Version: 0.37-3+grml.08
 Source: tp-smapi (0.37-3)
 
 Status: install ok installed
@@ -2886,7 +2886,7 @@ Version: 20040531-1
 
 Status: install ok installed
 Package: rt2400-modules-2.6.26-grml
-Version: 1.2.2+cvs20080623-2+grml.07
+Version: 1.2.2+cvs20080623-2+grml.08
 Source: rt2400 (1.2.2+cvs20080623-2)
 
 Status: install ok installed
@@ -3382,7 +3382,7 @@ Version: 1.91.2-2
 
 Status: install ok installed
 Package: linux-image-2.6.26-grml
-Version: grml.07
+Version: grml.08
 Source: linux-source-2.6.26-grml
 
 Status: install ok installed
@@ -3642,7 +3642,7 @@ Source: libstatgrab
 
 Status: install ok installed
 Package: live-initramfs
-Version: 1.139.1-4grml.01
+Version: 1.139.1-4grml.03
 
 Status: install ok installed
 Package: libdpkg-ruby1.8
@@ -3793,7 +3793,7 @@ Version: 1.35.dfsg.1-1
 
 Status: install ok installed
 Package: grml-tips
-Version: 0.4.11
+Version: 0.4.12
 
 Status: install ok installed
 Package: gaffitter
@@ -3827,7 +3827,7 @@ Version: 4.5-4
 
 Status: install ok installed
 Package: loop-aes-modules-2.6.26-grml
-Version: 3.2c-2+grml.07
+Version: 3.2c-2+grml.08
 Source: loop-aes (3.2c-2)
 
 Status: install ok installed
@@ -4388,6 +4388,10 @@ Package: id3v2
 Version: 0.1.11-3
 
 Status: install ok installed
+Package: radvd
+Version: 1:1.1-3
+
+Status: install ok installed
 Package: mixmaster
 Version: 3.0.0-1
 
@@ -4505,7 +4509,7 @@ Version: 0.4-2
 
 Status: install ok installed
 Package: grml-terminalserver
-Version: 0.98
+Version: 0.99
 
 Status: install ok installed
 Package: libxv1
@@ -4642,7 +4646,7 @@ Source: samba
 
 Status: install ok installed
 Package: at76-usb-modules-2.6.26-grml
-Version: 0.17.dfsg+grml.07
+Version: 0.17.dfsg+grml.08
 
 Status: install ok installed
 Package: powertweakd
@@ -5360,7 +5364,7 @@ Source: libstatgrab
 
 Status: install ok installed
 Package: ndiswrapper-modules-2.6.26-grml
-Version: 1.53-1+grml.07
+Version: 1.53-1+grml.08
 Source: ndiswrapper (1.53-1)
 
 Status: install ok installed
@@ -5816,7 +5820,7 @@ Version: 1.12-1
 
 Status: install ok installed
 Package: madwifi-modules-2.6.26-grml
-Version: 1:0.9.4+r3772.20080716-1+grml.07
+Version: 1:0.9.4+r3772.20080716-1+grml.08
 Source: madwifi (1:0.9.4+r3772.20080716-1)
 
 Status: install ok installed
@@ -5891,7 +5895,7 @@ Source: libxcb
 
 Status: install ok installed
 Package: openafs-modules-2.6.26-grml
-Version: 1.4.7.dfsg1-6+grml.07
+Version: 1.4.7.dfsg1-6+grml.08
 Source: openafs (1.4.7.dfsg1-6)
 
 Status: install ok installed
@@ -6493,7 +6497,7 @@ Version: 0.5-1
 
 Status: install ok installed
 Package: virtualbox-ose-guest-modules-2.6.26-grml
-Version: 1.6.6-dfsg-2+grml.07
+Version: 1.6.6-dfsg-2+grml.08
 Source: virtualbox-ose (1.6.6-dfsg-2)
 
 Status: install ok installed
@@ -6543,7 +6547,7 @@ Version: 3.6-15
 
 Status: install ok installed
 Package: kqemu-modules-2.6.26-grml
-Version: 1.4.0~pre1-1+grml.07
+Version: 1.4.0~pre1-1+grml.08
 Source: kqemu (1.4.0~pre1-1)
 
 Status: install ok installed
@@ -6875,7 +6879,7 @@ Source: pperl (0.25-5)
 
 Status: install ok installed
 Package: drbd8-2.6.26-grml
-Version: 2:8.0.13-2+grml.07
+Version: 2:8.0.13-2+grml.08
 Source: drbd8 (2:8.0.13-2)
 
 Status: install ok installed
@@ -7111,7 +7115,7 @@ Version: 2.3.99.6-1
 
 Status: install ok installed
 Package: iscsitarget-module-2.6.26-grml
-Version: 0.4.16+svn162-2+grml.07
+Version: 0.4.16+svn162-2+grml.08
 Source: iscsitarget (0.4.16+svn162-2)
 
 Status: install ok installed
@@ -7135,7 +7139,7 @@ Source: ghostscript
 
 Status: install ok installed
 Package: qc-usb-modules-2.6.26-grml
-Version: 0.6.6-6+grml.07
+Version: 0.6.6-6+grml.08
 Source: qc-usb (0.6.6-6)
 
 Status: install ok installed
@@ -7325,7 +7329,7 @@ Version: 0.8-1
 
 Status: install ok installed
 Package: speakup-modules-2.6.26-grml
-Version: 3.0.3+git20080724.dfsg.1-1+grml.07
+Version: 3.0.3+git20080724.dfsg.1-1+grml.08
 Source: speakup (3.0.3+git20080724.dfsg.1-1)
 
 Status: install ok installed
@@ -7870,7 +7874,7 @@ Source: libbsd
 
 Status: install ok installed
 Package: zfs-fuse
-Version: 0.4.hg20071104-1
+Version: 0.5.hg20081120-1
 
 Status: install ok installed
 Package: libevent1
@@ -8170,7 +8174,7 @@ Source: libsigc++-2.0
 
 Status: install ok installed
 Package: aufs-modules-2.6.26-grml
-Version: 0+20080719-4+grml.07
+Version: 0+20080719-4+grml.08
 Source: aufs (0+20080719-4)
 
 Status: install ok installed
@@ -8209,7 +8213,7 @@ Version: 1.2.4-1
 
 Status: install ok installed
 Package: linux-headers-2.6.26-grml
-Version: grml.07
+Version: grml.08
 Source: linux-source-2.6.26-grml
 
 Status: install ok installed
@@ -9177,7 +9181,7 @@ Source: xfonts-bolkhov
 
 Status: install ok installed
 Package: atl2-modules-2.6.26-grml
-Version: 2.0.5-1+grml.07
+Version: 2.0.5-1+grml.08
 Source: atl2 (2.0.5-1)
 
 Status: install ok installed
@@ -9364,7 +9368,7 @@ Source: gnutls26
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.1.13
+Version: 1.1.14
 
 Status: install ok installed
 Package: scalpel
@@ -9721,6 +9725,10 @@ Source: libgphoto2
 Status: install ok installed
 Package: libpam-pwgen
 Version: 0.1-2
+
+Status: install ok installed
+Package: aiccu
+Version: 20070115-9
 
 Status: install ok installed
 Package: apache2.2-common
@@ -10196,7 +10204,7 @@ Version: 0.7.7.1+nmu1
 
 Status: install ok installed
 Package: rt73-modules-2.6.26-grml
-Version: 1:1.0.3.6-cvs20080623-dfsg1-2+grml.06
+Version: 1:1.0.3.6-cvs20080623-dfsg1-2+grml.08
 Source: rt73 (1:1.0.3.6-cvs20080623-dfsg1-2)
 
 Status: install ok installed
@@ -10609,6 +10617,10 @@ Package: hostap-utils
 Version: 1:0.4.7-1
 
 Status: install ok installed
+Package: genext2fs
+Version: 1.4.1-2.1
+
+Status: install ok installed
 Package: xfaces
 Version: 3.3-26
 
@@ -10677,7 +10689,7 @@ Source: xdelta
 
 Status: install ok installed
 Package: linux-doc-2.6.26-grml
-Version: grml.07
+Version: grml.08
 Source: linux-source-2.6.26-grml
 
 Status: install ok installed
@@ -11423,7 +11435,7 @@ Source: libast
 
 Status: install ok installed
 Package: grml-saveconfig
-Version: 0.2.5
+Version: 0.2.6
 
 Status: install ok installed
 Package: xdialog
@@ -11713,7 +11725,7 @@ Version: 4.58~dfsg.1-1
 
 Status: install ok installed
 Package: gspca-modules-2.6.26-grml
-Version: 01.00.20-1+grml.07
+Version: 01.00.20-1+grml.08
 Source: gspca (01.00.20-1)
 
 Status: install ok installed

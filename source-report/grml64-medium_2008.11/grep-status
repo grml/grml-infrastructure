@@ -209,7 +209,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.1.4
+Version: 1.2.1
 
 Status: install ok installed
 Package: xserver-xorg-video-sis
@@ -272,7 +272,7 @@ Version: 0.6.4-2
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.22
+Version: 0.23
 
 Status: install ok installed
 Package: libhd15
@@ -345,7 +345,7 @@ Version: 22.6-1
 
 Status: install ok installed
 Package: aufs-modules-2.6.26-grml64
-Version: 0+20080719-4+grml.07
+Version: 0+20080719-4+grml.08
 Source: aufs (0+20080719-4)
 
 Status: install ok installed
@@ -361,11 +361,6 @@ Status: install ok installed
 Package: bsdutils
 Version: 1:2.13.1.1-1
 Source: util-linux (2.13.1.1-1)
-
-Status: install ok installed
-Package: xbase-clients
-Version: 1:7.3+18
-Source: xorg
 
 Status: install ok installed
 Package: xserver-xorg-video-apm
@@ -702,10 +697,6 @@ Version: 1:6.9.0-1+lenny4
 Source: xserver-xorg-video-ati
 
 Status: install ok installed
-Package: x11-session-utils
-Version: 7.3+1
-
-Status: install ok installed
 Package: keychain
 Version: 2.6.8-2
 
@@ -771,7 +762,7 @@ Version: 0.49-1
 
 Status: install ok installed
 Package: live-initramfs
-Version: 1.139.1-4grml.01
+Version: 1.139.1-4grml.03
 
 Status: install ok installed
 Package: libxpm4
@@ -801,7 +792,7 @@ Version: 1.35.dfsg.1-1
 
 Status: install ok installed
 Package: grml-tips
-Version: 0.4.11
+Version: 0.4.12
 
 Status: install ok installed
 Package: eterm
@@ -809,7 +800,7 @@ Version: 0.9.5-2
 
 Status: install ok installed
 Package: atl2-modules-2.6.26-grml64
-Version: 2.0.5-1+grml.07
+Version: 2.0.5-1+grml.08
 Source: atl2 (2.0.5-1)
 
 Status: install ok installed
@@ -869,7 +860,7 @@ Source: xorg
 
 Status: install ok installed
 Package: linux-image-2.6.26-grml64
-Version: grml.07
+Version: grml.08
 Source: linux-source-2.6.26-grml64
 
 Status: install ok installed
@@ -921,12 +912,12 @@ Source: klibc
 
 Status: install ok installed
 Package: madwifi-modules-2.6.26-grml64
-Version: 1:0.9.4+r3772.20080716-1+grml.07
+Version: 1:0.9.4+r3772.20080716-1+grml.08
 Source: madwifi (1:0.9.4+r3772.20080716-1)
 
 Status: install ok installed
 Package: grml-terminalserver
-Version: 0.98
+Version: 0.99
 
 Status: install ok installed
 Package: libxv1
@@ -1284,6 +1275,11 @@ Version: 4.1.2-23
 Source: gcc-4.1
 
 Status: install ok installed
+Package: nfs-kernel-server
+Version: 1:1.1.4-1
+Source: nfs-utils
+
+Status: install ok installed
 Package: libcomerr2
 Version: 1.41.3-1
 Source: e2fsprogs
@@ -1349,10 +1345,6 @@ Version: 4.5.20-13
 Source: db4.5
 
 Status: install ok installed
-Package: x11-apps
-Version: 7.3+4
-
-Status: install ok installed
 Package: x11-common
 Version: 1:7.3+18
 Source: xorg
@@ -1382,11 +1374,6 @@ Status: install ok installed
 Package: libntfs10
 Version: 2.0.0-1
 Source: linux-ntfs
-
-Status: install ok installed
-Package: libfs6
-Version: 2:1.0.1-1
-Source: libfs
 
 Status: install ok installed
 Package: debconf-i18n
@@ -1851,7 +1838,7 @@ Version: 1.1.36-1.5
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.1.13
+Version: 1.1.14
 
 Status: install ok installed
 Package: xserver-xorg-video-intel
@@ -2091,6 +2078,10 @@ Version: 3.1.1-5
 Source: dhcp3
 
 Status: install ok installed
+Package: genext2fs
+Version: 1.4.1-2.1
+
+Status: install ok installed
 Package: libxxf86vm1
 Version: 1:1.0.2-1
 Source: libxxf86vm
@@ -2155,6 +2146,11 @@ Package: bash
 Version: 3.2-4
 
 Status: install ok installed
+Package: make
+Version: 3.81-5
+Source: make-dfsg
+
+Status: install ok installed
 Package: util-linux
 Version: 2.13.1.1-1
 
@@ -2167,11 +2163,6 @@ Status: install ok installed
 Package: libdsocksd0
 Version: 1.1.19.dfsg-2
 Source: dante
-
-Status: install ok installed
-Package: libxcursor1
-Version: 1:1.1.9-1
-Source: libxcursor
 
 Status: install ok installed
 Package: xfonts-utils
@@ -2232,10 +2223,6 @@ Status: install ok installed
 Package: libpcsclite1
 Version: 1.4.102-1
 Source: pcsc-lite
-
-Status: install ok installed
-Package: x11-xfs-utils
-Version: 7.3+1
 
 Status: install ok installed
 Package: xserver-xorg-video-i740
@@ -2306,7 +2293,7 @@ Source: libast
 
 Status: install ok installed
 Package: grml-saveconfig
-Version: 0.2.5
+Version: 0.2.6
 
 Status: install ok installed
 Package: libnet1
