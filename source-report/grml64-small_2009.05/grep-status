@@ -47,7 +47,7 @@ Source: freetype
 
 Status: install ok installed
 Package: debianutils
-Version: 3.1.2
+Version: 3.1.3
 
 Status: install ok installed
 Package: libsysfs2
@@ -104,7 +104,7 @@ Source: librpcsecgss
 
 Status: install ok installed
 Package: libdbus-1-3
-Version: 1.2.12-1
+Version: 1.2.14-2
 Source: dbus
 
 Status: install ok installed
@@ -173,7 +173,7 @@ Version: 0.6.9-2
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.26
+Version: 0.27
 
 Status: install ok installed
 Package: libhd15
@@ -182,7 +182,7 @@ Source: hwinfo
 
 Status: install ok installed
 Package: libgssapi-krb5-2
-Version: 1.6.dfsg.4~beta1-13
+Version: 1.7dfsg~beta1-4
 Source: krb5
 
 Status: install ok installed
@@ -205,7 +205,7 @@ Version: 0.3.6
 
 Status: install ok installed
 Package: ncurses-base
-Version: 5.7+20090502-1
+Version: 5.7+20090510-1
 Source: ncurses
 
 Status: install ok installed
@@ -239,7 +239,7 @@ Source: libgpg-error
 
 Status: install ok installed
 Package: psmisc
-Version: 22.6-1
+Version: 22.7-1
 
 Status: install ok installed
 Package: ucf
@@ -316,7 +316,7 @@ Source: vim
 
 Status: install ok installed
 Package: xfsprogs
-Version: 2.10.2-2
+Version: 3.0.2
 
 Status: install ok installed
 Package: linux-image-2.6.28-grml64
@@ -325,7 +325,7 @@ Source: linux-source-2.6.28-grml64
 
 Status: install ok installed
 Package: console-common
-Version: 0.7.80
+Version: 0.7.81
 
 Status: install ok installed
 Package: lvm2
@@ -338,7 +338,7 @@ Source: python2.5
 
 Status: install ok installed
 Package: ncurses-bin
-Version: 5.7+20090425-1
+Version: 5.7+20090502-1
 Source: ncurses
 
 Status: install ok installed
@@ -383,7 +383,7 @@ Version: 0.21-6
 
 Status: install ok installed
 Package: libk5crypto3
-Version: 1.6.dfsg.4~beta1-13
+Version: 1.7dfsg~beta1-4
 Source: krb5
 
 Status: install ok installed
@@ -400,7 +400,7 @@ Version: 4.34
 
 Status: install ok installed
 Package: libmagic1
-Version: 5.02-1
+Version: 5.03-1
 Source: file
 
 Status: install ok installed
@@ -409,7 +409,7 @@ Version: 1.0.15
 
 Status: install ok installed
 Package: whiptail
-Version: 0.52.10-2
+Version: 0.52.10-3
 Source: newt
 
 Status: install ok installed
@@ -450,7 +450,7 @@ Version: 0.6.8+nmu1
 
 Status: install ok installed
 Package: syslinux-common
-Version: 2:3.75+dfsg-1
+Version: 2:3.80+dfsg-1
 Source: syslinux
 
 Status: install ok installed
@@ -477,7 +477,7 @@ Version: 1.1.10-2
 
 Status: install ok installed
 Package: gawk
-Version: 1:3.1.5.dfsg-4.1
+Version: 1:3.1.6.dfsg-2
 
 Status: install ok installed
 Package: resolvconf
@@ -497,7 +497,7 @@ Version: 1.22-1
 
 Status: install ok installed
 Package: file
-Version: 5.02-1
+Version: 5.03-1
 
 Status: install ok installed
 Package: liburi-perl
@@ -556,8 +556,8 @@ Version: 0.7-3
 
 Status: install ok installed
 Package: libgcc1
-Version: 1:4.4.0-3
-Source: gcc-4.4 (4.4.0-3)
+Version: 1:4.4.0-4
+Source: gcc-4.4 (4.4.0-4)
 
 Status: install ok installed
 Package: libklibc
@@ -606,7 +606,7 @@ Source: readline5
 
 Status: install ok installed
 Package: libncurses5
-Version: 5.7+20090425-1
+Version: 5.7+20090502-1
 Source: ncurses
 
 Status: install ok installed
@@ -699,7 +699,7 @@ Version: 3.23-1
 
 Status: install ok installed
 Package: sed
-Version: 4.1.5-8
+Version: 4.2-1
 
 Status: install ok installed
 Package: grml2hd
@@ -755,7 +755,7 @@ Source: jed
 
 Status: install ok installed
 Package: libkrb5support0
-Version: 1.6.dfsg.4~beta1-13
+Version: 1.7dfsg~beta1-4
 Source: krb5
 
 Status: install ok installed
@@ -786,17 +786,12 @@ Version: 1.4.9-4
 
 Status: install ok installed
 Package: libnewt0.52
-Version: 0.52.10-2
+Version: 0.52.10-3
 Source: newt
 
 Status: install ok installed
 Package: debootstrap
 Version: 1.0.13
-
-Status: install ok installed
-Package: libdb4.2
-Version: 4.2.52+dfsg-5
-Source: db4.2
 
 Status: install ok installed
 Package: libdb4.6
@@ -845,7 +840,7 @@ Version: 2.5.4-4
 
 Status: install ok installed
 Package: libiw29
-Version: 29-1.1
+Version: 29-2
 Source: wireless-tools
 
 Status: install ok installed
@@ -858,7 +853,7 @@ Version: 0.3.67
 
 Status: install ok installed
 Package: libsasl2-2
-Version: 2.1.22.dfsg1-8
+Version: 2.1.22.dfsg1-25
 Source: cyrus-sasl2
 
 Status: install ok installed
@@ -988,7 +983,7 @@ Version: 2009.01.31
 
 Status: install ok installed
 Package: syslinux
-Version: 2:3.75+dfsg-1
+Version: 2:3.80+dfsg-1
 
 Status: install ok installed
 Package: gzip
@@ -1009,11 +1004,11 @@ Source: pcre3
 
 Status: install ok installed
 Package: mdadm
-Version: 2.6.9-2
+Version: 2.6.9-3
 
 Status: install ok installed
 Package: libncursesw5
-Version: 5.7+20090425-1
+Version: 5.7+20090502-1
 Source: ncurses
 
 Status: install ok installed
@@ -1096,7 +1091,7 @@ Source: xfonts-terminus
 
 Status: install ok installed
 Package: wireless-tools
-Version: 29-1.1
+Version: 29-2
 
 Status: install ok installed
 Package: lilo
@@ -1108,7 +1103,7 @@ Version: 2:1.0.6+20090405.svn49-1
 
 Status: install ok installed
 Package: unzip
-Version: 5.52-12
+Version: 6.0-1
 
 Status: install ok installed
 Package: statserial
@@ -1131,6 +1126,11 @@ Source: openldap
 Status: install ok installed
 Package: libvolume-id0
 Version: 0.125-6grml0
+Source: udev
+
+Status: install ok installed
+Package: libvolume-id1
+Version: 0.141-1grml.01
 Source: udev
 
 Status: install ok installed
@@ -1182,8 +1182,8 @@ Version: 2.1.0-5
 
 Status: install ok installed
 Package: libc6
-Version: 2.9-9
-Source: glibc
+Version: 2.9-12
+Source: eglibc
 
 Status: install ok installed
 Package: dhcp3-common
@@ -1202,7 +1202,7 @@ Source: apt
 
 Status: install ok installed
 Package: udev
-Version: 0.125-6grml0
+Version: 0.141-1grml.01
 
 Status: install ok installed
 Package: iptables
@@ -1247,7 +1247,7 @@ Version: 2.9.90-3
 
 Status: install ok installed
 Package: libstdc++6
-Version: 4.4.0-3
+Version: 4.4.0-4
 Source: gcc-4.4
 
 Status: install ok installed
@@ -1261,7 +1261,7 @@ Version: 3.0-1
 
 Status: install ok installed
 Package: busybox
-Version: 1:1.10.2-2
+Version: 1:1.13.3-1
 
 Status: install ok installed
 Package: agrep
@@ -1295,7 +1295,7 @@ Version: 0.2.8
 
 Status: install ok installed
 Package: libnet1
-Version: 1.1.2.1-4
+Version: 1.1.2.1-5
 Source: libnet
 
 Status: install ok installed
@@ -1344,7 +1344,7 @@ Version: 2007.06.10
 
 Status: install ok installed
 Package: gcc-4.4-base
-Version: 4.4.0-3
+Version: 4.4.0-4
 Source: gcc-4.4
 
 Status: install ok installed
@@ -1354,7 +1354,7 @@ Source: tcp-wrappers
 
 Status: install ok installed
 Package: libkrb5-3
-Version: 1.6.dfsg.4~beta1-13
+Version: 1.7dfsg~beta1-4
 Source: krb5
 
 Status: install ok installed
