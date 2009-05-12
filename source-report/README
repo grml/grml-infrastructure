@@ -1,0 +1,29 @@
+Creating a sourcereport is not that hard. Everything has to be done from sources@deb.grml.org.
+
+1) create a list of all packages:  grep-status -F Status -e '^install ok installed$' -s Status,Package,Version,Source
+   and save this into a new directory.
+2) create a yaml file which describes the release. If you are lazy copy the file from an old release and edit
+   everything that is release specific:
+
+	title: Grml 2009.05
+	statusfile: /home/sources/source-report/grml_2009.05/grep-status
+	sourceslist: /home/sources/source-report/grml_2009.05/sources.list
+	reportdir: /home/sources/reports/grml_2009.05/
+	sourcedir: /home/sources/reports/sources
+	baseurl: http://sources.grml.org/grml_2009.05/
+	updatesource: 1
+	chroot: /home/sources/chroot/sid
+	debug: 1
+	alternativeurl:
+		foo: http://bar
+
+   Just replace the title and every occurence of grml_2009.05 with your release. At last you only need
+   a sourceslist where you think it can satisfy all sources. Just copy it to $sourceslist. 
+
+3) run get_sources: perl get_source grml_2009.05/*yaml. you maybe want to save STDERR and STDOUT in
+   a file for later analysis. Now wait... 
+4) if this was the first run for a new release recreate the index with perl gen_index. 
+
+Hint: with an alternative url you can provide extra url for packages. In our example the link for package "foo"
+will be replaced with a link to http://bar.
+
