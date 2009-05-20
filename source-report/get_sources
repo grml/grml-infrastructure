@@ -149,6 +149,7 @@ foreach my $package (keys %{$package_tree}) {
 			my $filename = $2;
 			my $size = $3; 
 			my $md5sum = $4;
+			$md5sum =~ s/^MD5Sum://;
 			print "Filename: $filename\n" if $debug;
 			if (! -d $config->{reportdir}."/$source") {
 				mkdir ($config->{reportdir}."/$source") 
