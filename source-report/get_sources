@@ -140,6 +140,34 @@ foreach my $package (keys %{$package_tree}) {
 			next; 
 	}
 	$package_tree->{$package}->{'errors'} = (); 
+	my $fn; 
+	my $fversion = $version;; 
+	if ($version =~ /^\d+:(.*)/) {
+		$fn = $config->{sourcedir}."/$source/${source}_$1.dsc";
+		$fversion = $1; 
+	} else {
+		$fn = $config->{sourcedir}."/$source/${source}_$version.dsc"; 
+	}
+
+	if (-e	$fn) {
+		print "$fn found - skipping\n" if $debug;
+		$package_tree->{$package}->{'status'} = 'OK';
+		if (! -d $config->{reportdir}."/$source") {
+			mkdir ($config->{reportdir}."/$source")
+				or die "Could not create package dir '".$config->{reportdir}."/$source':$!";
+		}
+
+		if ($version =~ /^([^-]+)-/) {
+			link $config->{sourcedir}."/$source/${source}_${fversion}.dsc",$config->{reportdir}."/$source/${source}_${fversion}.dsc";
+			link $config->{sourcedir}."/$source/${source}_${fversion}.diff.gz",$config->{reportdir}."/$source/${source}_${fversion}.diff.gz";
+			link $config->{sourcedir}."/$source/${source}_$1.orig.tar.gz",$config->{reportdir}."/$source/${source}_$1.orig.tar.gz"; 
+		} else {
+			link $config->{sourcedir}."/$source/${source}_${fversion}.dsc",$config->{reportdir}."/$source/${source}_${fversion}.dsc";
+			link $config->{sourcedir}."/$source/${source}_${fversion}.tar.gz",$config->{reportdir}."/$source/${source}_${fversion}.tar.gz";
+		}
+		next; 
+	}
+	
 	open (my $fh, '-|', "apt-get -c=apt-config --print-uris -d source $source=$version 2>&1 ") 
 		or warn "Could not launch apt-get command:$!"; 
 	while (my $line = <$fh>) {
@@ -149,6 +177,7 @@ foreach my $package (keys %{$package_tree}) {
 			my $filename = $2;
 			my $size = $3; 
 			my $md5sum = $4;
+			$md5sum =~ s/^MD5Sum://;
 			print "Filename: $filename\n" if $debug;
 			if (! -d $config->{reportdir}."/$source") {
 				mkdir ($config->{reportdir}."/$source") 
@@ -162,6 +191,11 @@ foreach my $package (keys %{$package_tree}) {
 			if ( -e $config->{sourcedir}."/$source/$filename" ) {
 				if ($md5sum eq md5_from_file($config->{sourcedir}."/$source/$filename")) {
 					print $config->{sourcedir}."/$source/$filename already downloaded\n" if $debug;
+ 					open (my $urifh, '>', $config->{sourcedir}."/$source/$filename.md5")
+                                                or die "Could not open " . $config->{sourcedir}."/$source/$filename.md5 for writing: $!";
+                                        print $urifh $md5sum;
+                                        close $urifh;
+
 					$status = 1; 
 				} else { 
 					print $config->{sourcedir}."/$source/$filename corrupt - download again\n" if $debug; 
@@ -189,7 +223,8 @@ foreach my $package (keys %{$package_tree}) {
 				} else {
 					print STDERR "md5sum mismatch of $uri\n";
 					push @{$package_tree->{$package}->{'errors'}}, "$uri failed: md5sum mismatch";
-					$error =1; 
+					unlink $config->{sourcedir}."/$source/$filename.md5";
+					$error =1;
 				}
 			}
 			if (! $error) {
