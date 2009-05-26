@@ -51,6 +51,43 @@ Steps to follow to allow uploading for a new user:
 
 =========================================================
 
+.Wanna release? 
+=========================================================
+
+* Add the old distrіbution to /home/archive/grml-repo/archive/conf/distributions:
+
+...................................
+Origin: The grml project
+Label: grml
+Suite: grml-2008.11
+Codename: grml-2008.11
+Architectures: i386 amd64 powerpc arm source
+Components: main
+UDebComponents: main
+Description: GRML Stable Repository Release 2008.11
+SignWith: yes
+DebOverride: override.grml
+DscOverride: override.grml
+Contents: . .gz .bz2
+Tracking: all
+...................................
+
+* Copy grml-stable to the old release: `reprepro copyfilter grml-2008.11 grml-stable 'Architecture'` 
+
+* Clean old grml-stable: `reprepro grml-stable removefilter 'Architecture'`
+
+* Copy grml-testing to grml-stable: `reprepro copyfilter grml-stable grml-testing 'Architecture'`
+
+* [Optional] Create a distribution for the new release like the example above and copy everything from grml-stable the actual release: `reprepro copyfilter grml-2009.05 grml-stable 'Architecture'`
+
+* Run ~/bin/repodiff.pl: `repodiff.pl
+http://deb.grml.org/dists/grml-stable/main/source/Sources.gz
+http://deb.grml.org/dists/grml-testing/main/source/Sources.gz |grep -v 'is
+the same'`. to check if the source packages are identical. 
+* Do the same for Packages.gz from i386 and amd64. 
+* Write some news, celebrate and so on.
+
+=========================================================
 About this document
 -------------------
 
