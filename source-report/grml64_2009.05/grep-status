@@ -976,7 +976,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.2.1
+Version: 1.2.3
 
 Status: install ok installed
 Package: cvs
@@ -1819,7 +1819,7 @@ Version: 1.3.3-2.1
 
 Status: install ok installed
 Package: grml-autoconfig
-Version: 0.8.21
+Version: 0.8.23
 
 Status: install ok installed
 Package: csync2
@@ -3267,10 +3267,6 @@ Package: bsdgames
 Version: 2.17-16
 
 Status: install ok installed
-Package: snownews
-Version: 1.5.10-1
-
-Status: install ok installed
 Package: liblzo2-2
 Version: 2.03-1
 Source: lzo2
@@ -3329,10 +3325,6 @@ Status: install ok installed
 Package: libqt4-svg
 Version: 4.5.1-2
 Source: qt4-x11
-
-Status: install ok installed
-Package: ttf-bitstream-vera
-Version: 1.10-7
 
 Status: install ok installed
 Package: rxvt-beta
@@ -3666,6 +3658,11 @@ Version: 1.2-8
 Status: install ok installed
 Package: tar
 Version: 1.22-1
+
+Status: install ok installed
+Package: bitlbee
+Version: 1.2.3-1+b1
+Source: bitlbee (1.2.3-1)
 
 Status: install ok installed
 Package: liblockfile-simple-perl
@@ -4376,7 +4373,7 @@ Source: libpam-krb5 (3.13-2)
 
 Status: install ok installed
 Package: libklibc
-Version: 1.5.12-2
+Version: 1.5.15-1
 Source: klibc
 
 Status: install ok installed
@@ -5406,7 +5403,7 @@ Source: twolame
 
 Status: install ok installed
 Package: nsd
-Version: 2.3.7-2
+Version: 2.3.7-3
 
 Status: install ok installed
 Package: procmeter3
@@ -5657,7 +5654,7 @@ Version: 4.2-1
 
 Status: install ok installed
 Package: grml2hd
-Version: 1.2.0
+Version: 1.2.1
 
 Status: install ok installed
 Package: jp2a
@@ -5774,6 +5771,11 @@ Package: latencytop
 Version: 0.4
 
 Status: install ok installed
+Package: tor
+Version: 0.2.0.34-1+b1
+Source: tor (0.2.0.34-1)
+
+Status: install ok installed
 Package: python-pyao
 Version: 0.82-2.1
 Source: pyao
@@ -5885,6 +5887,11 @@ Version: 1:9.6.0.dfsg.P1-2
 Source: bind9
 
 Status: install ok installed
+Package: farpd
+Version: 0.2-9+b1
+Source: farpd (0.2-9)
+
+Status: install ok installed
 Package: madison-lite
 Version: 0.13
 
@@ -5961,7 +5968,7 @@ Source: mercurial
 
 Status: install ok installed
 Package: klibc-utils
-Version: 1.5.12-2
+Version: 1.5.15-1
 Source: klibc
 
 Status: install ok installed
@@ -6830,7 +6837,7 @@ Version: 0.9.60
 
 Status: install ok installed
 Package: racoon
-Version: 1:0.7.1-1.4
+Version: 1:0.7.1-1.5
 Source: ipsec-tools
 
 Status: install ok installed
@@ -6880,7 +6887,7 @@ Version: 1.6.11
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.69
+Version: 0.3.70
 
 Status: install ok installed
 Package: gparted
@@ -7185,12 +7192,12 @@ Version: 0.3.0
 
 Status: install ok installed
 Package: libsasl2-modules
-Version: 2.1.22.dfsg1-25
+Version: 2.1.23.dfsg1-1
 Source: cyrus-sasl2
 
 Status: install ok installed
 Package: libsasl2-2
-Version: 2.1.22.dfsg1-25
+Version: 2.1.23.dfsg1-1
 Source: cyrus-sasl2
 
 Status: install ok installed
@@ -7711,6 +7718,10 @@ Package: aview
 Version: 1.3.0rc1-8.1
 
 Status: install ok installed
+Package: u3-tool
+Version: 0.0~svn5-1
+
+Status: install ok installed
 Package: wmaloader
 Version: 0.1-4.1
 
@@ -7767,7 +7778,7 @@ Source: adns
 
 Status: install ok installed
 Package: ipsec-tools
-Version: 1:0.7.1-1.4
+Version: 1:0.7.1-1.5
 
 Status: install ok installed
 Package: crack-common
@@ -8009,13 +8020,13 @@ Version: 2.2-1+b1
 Source: links2 (2.2-1)
 
 Status: install ok installed
+Package: tsocks
+Version: 1.8beta5-9.1
+
+Status: install ok installed
 Package: ttf-dejavu-extra
 Version: 2.29-2
 Source: ttf-dejavu
-
-Status: install ok installed
-Package: tsocks
-Version: 1.8beta5-9.1
 
 Status: install ok installed
 Package: libterm-readline-gnu-perl
@@ -8220,10 +8231,6 @@ Source: xar
 Status: install ok installed
 Package: hotkey-setup
 Version: 0.1-23
-
-Status: install ok installed
-Package: nttcp
-Version: 1.47-12
 
 Status: install ok installed
 Package: poppler-utils
@@ -8531,7 +8538,7 @@ Source: zsh
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.5
+Version: 0.9.6
 
 Status: install ok installed
 Package: userinfo
@@ -8574,6 +8581,11 @@ Version: 1:3.6.7-1
 Status: install ok installed
 Package: detachtty
 Version: 9
+
+Status: install ok installed
+Package: dnsproxy
+Version: 1.15-6+b1
+Source: dnsproxy (1.15-6)
 
 Status: install ok installed
 Package: libavahi-compat-libdnssd1
@@ -8717,10 +8729,6 @@ Status: install ok installed
 Package: libfreebob0
 Version: 1.0.11-1
 Source: libfreebob
-
-Status: install ok installed
-Package: lmbench
-Version: 3.0-a7-1
 
 Status: install ok installed
 Package: wprint
@@ -9309,7 +9317,7 @@ Version: 1.5c.debian.1-3
 
 Status: install ok installed
 Package: lilo
-Version: 1:22.6.1-9.3
+Version: 1:22.8-7
 
 Status: install ok installed
 Package: libopenipmi0
@@ -9639,10 +9647,6 @@ Version: 2.3.8-4
 Status: install ok installed
 Package: bluez-utils
 Version: 3.36-3
-
-Status: install ok installed
-Package: ifupdown-scripts-zg2
-Version: 0.3-2
 
 Status: install ok installed
 Package: apel
@@ -10246,6 +10250,11 @@ Version: 1.4.4-1
 Status: install ok installed
 Package: wput
 Version: 0.6-1.1
+
+Status: install ok installed
+Package: trickle
+Version: 1.07-7+b1
+Source: trickle (1.07-7)
 
 Status: install ok installed
 Package: xcb
@@ -10917,10 +10926,6 @@ Package: cereal
 Version: 0.24-1
 
 Status: install ok installed
-Package: open-vm-tools
-Version: 2009.03.18-154848-2
-
-Status: install ok installed
 Package: pekwm
 Version: 0.1.10-1
 
@@ -10981,6 +10986,11 @@ Version: 4.5.18-1
 Status: install ok installed
 Package: star
 Version: 1.5final-2
+
+Status: install ok installed
+Package: tor-geoipdb
+Version: 0.2.0.34-1
+Source: tor
 
 Status: install ok installed
 Package: vim-tiny
@@ -11057,7 +11067,7 @@ Version: 0.14-11
 
 Status: install ok installed
 Package: grml-live
-Version: 0.9.15
+Version: 0.9.17
 
 Status: install ok installed
 Package: igal2
@@ -11271,11 +11281,6 @@ Source: alsa-driver
 Status: install ok installed
 Package: libcap2
 Version: 1:2.16-5
-
-Status: install ok installed
-Package: libcap1
-Version: 1:1.10-14
-Source: libcap
 
 Status: install ok installed
 Package: libapr1

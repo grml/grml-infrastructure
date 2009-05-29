@@ -129,7 +129,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.2.1
+Version: 1.2.3
 
 Status: install ok installed
 Package: inetutils-inetd
@@ -260,7 +260,7 @@ Version: 0.12.21-4.1
 
 Status: install ok installed
 Package: grml-autoconfig
-Version: 0.8.21
+Version: 0.8.23
 
 Status: install ok installed
 Package: hwinfo
@@ -551,7 +551,7 @@ Source: gcc-4.4 (4.4.0-5)
 
 Status: install ok installed
 Package: libklibc
-Version: 1.5.12-2
+Version: 1.5.15-1
 Source: klibc
 
 Status: install ok installed
@@ -698,7 +698,7 @@ Version: 4.2-1
 
 Status: install ok installed
 Package: grml2hd
-Version: 1.2.0
+Version: 1.2.1
 
 Status: install ok installed
 Package: ddrescue
@@ -731,7 +731,7 @@ Version: 2.17-45
 
 Status: install ok installed
 Package: klibc-utils
-Version: 1.5.12-2
+Version: 1.5.15-1
 Source: klibc
 
 Status: install ok installed
@@ -849,7 +849,7 @@ Version: 1:2.4.43-2
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.69
+Version: 0.3.70
 
 Status: install ok installed
 Package: gcc-4.2-base
@@ -858,7 +858,7 @@ Source: gcc-4.2
 
 Status: install ok installed
 Package: libsasl2-2
-Version: 2.1.22.dfsg1-25
+Version: 2.1.23.dfsg1-1
 Source: cyrus-sasl2
 
 Status: install ok installed
@@ -935,7 +935,7 @@ Version: 6+20090307-1
 
 Status: install ok installed
 Package: ipsec-tools
-Version: 1:0.7.1-1.4
+Version: 1:0.7.1-1.5
 
 Status: install ok installed
 Package: jed
@@ -1021,7 +1021,7 @@ Version: 1.05-4
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.5
+Version: 0.9.6
 
 Status: install ok installed
 Package: openssh-blacklist
