@@ -3565,7 +3565,7 @@ Source: libstatgrab
 
 Status: install ok installed
 Package: live-initramfs
-Version: 1.157.1-1grml.04
+Version: 1.157.1-1grml.05
 
 Status: install ok installed
 Package: libdpkg-ruby1.8
@@ -6887,7 +6887,7 @@ Version: 1.6.11
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.70
+Version: 0.3.71
 
 Status: install ok installed
 Package: gparted
