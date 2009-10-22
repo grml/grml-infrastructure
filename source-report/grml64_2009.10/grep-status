@@ -1006,7 +1006,7 @@ Version: 0.41-10
 
 Status: install ok installed
 Package: awesome
-Version: 3.3.4-1
+Version: 3.4-1
 
 Status: install ok installed
 Package: libuuid1
@@ -4104,7 +4104,7 @@ Version: 2.4.6-2.2
 
 Status: install ok installed
 Package: librpmio0
-Version: 4.7.1-7
+Version: 4.7.1-9
 Source: rpm
 
 Status: install ok installed
@@ -8023,6 +8023,11 @@ Package: libterm-readline-gnu-perl
 Version: 1.19-2
 
 Status: install ok installed
+Package: liblzma0
+Version: 4.999.9beta+20091004-1
+Source: xz-utils
+
+Status: install ok installed
 Package: sfind
 Version: 1.2-7
 
@@ -9975,6 +9980,11 @@ Version: 2.59-2
 Status: install ok installed
 Package: durep
 Version: 0.9-1
+
+Status: install ok installed
+Package: libxcb-shape0
+Version: 1.4-1
+Source: libxcb
 
 Status: install ok installed
 Package: xul-ext-webdeveloper
