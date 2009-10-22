@@ -1,0 +1,11 @@
+title: Grml 2009.05
+statusfile: /home/sources/source-report/grml_2009.05/grep-status
+sourceslist: /home/sources/source-report/grml_2009.05/sources.list
+reportdir: /home/sources/reports/grml_2009.05/
+sourcedir: /home/sources/reports/sources
+baseurl: http://sources.grml.org/grml_2009.05/
+updatesource: 1
+chroot: /home/sources/chroot/sid
+debug: 1
+alternativeurl:
+        linux-source-2.6.28-grml: http://deb.grml.org/pool/main/l/linux-source-2.6.28-grml/linux-source-2.6.28-grml_grml.03_all.deb

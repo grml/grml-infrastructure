@@ -1,0 +1,11 @@
+title: GRML Medium 2008.11
+statusfile: /home/sources/source-report/grml-medium_2008.11/grep-status
+sourceslist: /home/sources/source-report/grml-medium_2008.11/sources.list
+reportdir: /home/sources/reports/grml-medium_2008.11/
+sourcedir: /home/sources/reports/sources
+baseurl: http://sources.grml.org/grml-medium_2008.11/
+updatesource: 1
+chroot: /home/sources/chroot/sid
+debug: 1
+alternativeurl:
+        foo: http://bar

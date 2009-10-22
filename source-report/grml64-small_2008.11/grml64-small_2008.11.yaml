@@ -1,0 +1,12 @@
+title: Grml64-small 2008.11
+statusfile: /home/sources/source-report/grml64-small_2008.11/grep-status
+sourceslist: /home/sources/source-report/grml64-small_2008.11/sources.list
+reportdir: /home/sources/reports/grml64-small_2008.11/
+sourcedir: /home/sources/reports/sources
+baseurl: http://sources.grml.org/grml64-small_2008.11/
+updatesource: 1
+chroot: /home/sources/chroot/sid
+debug: 1
+alternativeurl:
+        foo: http://bar
+        thinkfinger: https://launchpad.net/ubuntu/hardy/+source/thinkfinger/0.3-2/+files/thinkfinger_0.3-2.dsc
