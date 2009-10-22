@@ -45,7 +45,7 @@ foreach my $releasefile (@status_files) {
 		if (/^Packages: (.*)$/) { $packages = $1; next; }
 		if (/^Baseurl: (.*)$/) { $baseurl = $1; next; }
 	}
-	$t->addRow(     "<a href='$baseurl'>$release</a>", 
+	$t->addRow(     "<a href='$baseurl'>".lc($release)."</a>", 
 			"$packages", 
 			"$sources",
 			"$errors", 
