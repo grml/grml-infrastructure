@@ -1042,7 +1042,7 @@ Version: 0.41-10
 
 Status: install ok installed
 Package: awesome
-Version: 3.3.4-1
+Version: 3.4-1
 
 Status: install ok installed
 Package: libuuid1
@@ -1253,7 +1253,7 @@ Version: 1.28
 
 Status: install ok installed
 Package: texi2html
-Version: 1.78-1
+Version: 1.82-1
 
 Status: install ok installed
 Package: procps
@@ -3445,7 +3445,7 @@ Version: 1.1.10-2
 
 Status: install ok installed
 Package: libgstreamer-plugins-base0.10-0
-Version: 0.10.25-1
+Version: 0.10.25-3
 Source: gst-plugins-base0.10
 
 Status: install ok installed
@@ -3663,7 +3663,7 @@ Version: 0.71-4
 
 Status: install ok installed
 Package: pssh
-Version: 1.4.3-1
+Version: 1.4.3-2
 
 Status: install ok installed
 Package: libtdb1
@@ -3848,7 +3848,7 @@ Source: liblinux-inotify2-perl (1:1.1-2.1)
 
 Status: install ok installed
 Package: posh
-Version: 0.8.3
+Version: 0.8.4
 
 Status: install ok installed
 Package: linuxlogo
@@ -9223,7 +9223,7 @@ Version: 1:1.2.0-1
 
 Status: install ok installed
 Package: ifplugd
-Version: 0.28-15
+Version: 0.28-16
 
 Status: install ok installed
 Package: libbz2-1.0
@@ -9893,7 +9893,7 @@ Source: qt4-x11
 
 Status: install ok installed
 Package: dar
-Version: 2.3.9-1
+Version: 2.3.9-2
 
 Status: install ok installed
 Package: bluez-utils
@@ -10202,6 +10202,11 @@ Version: 2.59-2
 Status: install ok installed
 Package: durep
 Version: 0.9-1
+
+Status: install ok installed
+Package: libxcb-shape0
+Version: 1.4-1
+Source: libxcb
 
 Status: install ok installed
 Package: xul-ext-webdeveloper
@@ -11024,7 +11029,7 @@ Version: 1.00-1.1
 
 Status: install ok installed
 Package: s3cmd
-Version: 0.9.9-2
+Version: 0.9.9.91-1
 
 Status: install ok installed
 Package: liblist-moreutils-perl
@@ -11473,7 +11478,7 @@ Version: 0.5-3
 
 Status: install ok installed
 Package: libdar64-4
-Version: 2.3.9-1
+Version: 2.3.9-2
 Source: dar
 
 Status: install ok installed

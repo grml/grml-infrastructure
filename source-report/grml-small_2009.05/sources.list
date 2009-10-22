@@ -1,0 +1,5 @@
+deb     http://ftp.de.debian.org/debian sid main contrib non-free
+deb-src http://ftp.de.debian.org/debian sid main contrib non-free
+
+deb-src http://deb.grml.org/ grml-stable main
+deb-src http://deb.grml.org/ grml-testing main

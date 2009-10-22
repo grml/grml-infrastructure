@@ -1222,7 +1222,7 @@ Version: 1.28
 
 Status: install ok installed
 Package: texi2html
-Version: 1.78-1
+Version: 1.82-1
 
 Status: install ok installed
 Package: procps
@@ -3377,7 +3377,7 @@ Version: 1.1.10-2
 
 Status: install ok installed
 Package: libgstreamer-plugins-base0.10-0
-Version: 0.10.25-3
+Version: 0.10.25-4
 Source: gst-plugins-base0.10
 
 Status: install ok installed
@@ -3592,7 +3592,7 @@ Version: 0.71-4
 
 Status: install ok installed
 Package: pssh
-Version: 1.4.3-1
+Version: 1.4.3-2
 
 Status: install ok installed
 Package: libtdb1
@@ -10769,7 +10769,7 @@ Source: powernowd (1.00-1.1)
 
 Status: install ok installed
 Package: s3cmd
-Version: 0.9.9-2
+Version: 0.9.9.91-1
 
 Status: install ok installed
 Package: liblist-moreutils-perl
