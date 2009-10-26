@@ -227,7 +227,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.2.4
+Version: 1.2.5
 
 Status: install ok installed
 Package: xserver-xorg-video-sis
@@ -307,7 +307,7 @@ Version: 1.2.2-23
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.30
+Version: 0.31
 
 Status: install ok installed
 Package: libhd16
@@ -335,7 +335,7 @@ Source: fuse
 
 Status: install ok installed
 Package: firmware-ralink
-Version: 0.18
+Version: 0.21
 Source: firmware-nonfree
 
 Status: install ok installed
@@ -378,10 +378,6 @@ Status: install ok installed
 Package: libusb-0.1-4
 Version: 2:0.1.12-13
 Source: libusb
-
-Status: install ok installed
-Package: grml-terminalserver-data
-Version: 0.63
 
 Status: install ok installed
 Package: libgpg-error0
@@ -428,7 +424,7 @@ Version: 0.12.21-4.1
 
 Status: install ok installed
 Package: grml-autoconfig
-Version: 0.8.37
+Version: 0.8.40
 
 Status: install ok installed
 Package: hwinfo
@@ -574,7 +570,7 @@ Version: 0.7.24
 
 Status: install ok installed
 Package: aufs-modules-2.6.31-grml64
-Version: 0+20090302-3+grml.02
+Version: 0+20090302-3+grml.03
 Source: aufs (0+20090302-3)
 
 Status: install ok installed
@@ -597,7 +593,7 @@ Source: dbus-glib
 
 Status: install ok installed
 Package: grub-common
-Version: 1.97~beta4-1
+Version: 1.97-1
 Source: grub2
 
 Status: install ok installed
@@ -918,7 +914,7 @@ Version: 1.37+dfsg-1
 
 Status: install ok installed
 Package: grml-tips
-Version: 0.4.17
+Version: 0.4.19
 
 Status: install ok installed
 Package: libnl1
@@ -1041,13 +1037,13 @@ Version: 1.5.15-1
 Source: klibc
 
 Status: install ok installed
-Package: grml-terminalserver
-Version: 0.99.4
-
-Status: install ok installed
 Package: libxv1
 Version: 2:1.0.4-1
 Source: libxv
+
+Status: install ok installed
+Package: grml-terminalserver
+Version: 0.99.7
 
 Status: install ok installed
 Package: curl
@@ -1907,7 +1903,7 @@ Version: 1.15.4.1
 
 Status: install ok installed
 Package: grub-pc
-Version: 1.97~beta4-1
+Version: 1.97-1
 Source: grub2
 
 Status: install ok installed
@@ -1940,7 +1936,7 @@ Version: 1.05-6
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.13
+Version: 0.9.15
 
 Status: install ok installed
 Package: xbitmaps
@@ -2049,7 +2045,7 @@ Version: 1.1.36-1.5
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.1.27
+Version: 1.1.28
 
 Status: install ok installed
 Package: xserver-xorg-video-intel
@@ -2065,7 +2061,7 @@ Version: 0.4.5
 
 Status: install ok installed
 Package: linux-image-2.6.31-grml64
-Version: grml.02
+Version: grml.03
 Source: linux-source-2.6.31-grml64
 
 Status: install ok installed
@@ -2130,7 +2126,7 @@ Version: 1.1-22
 
 Status: install ok installed
 Package: firmware-iwlwifi
-Version: 0.18
+Version: 0.21
 Source: firmware-nonfree
 
 Status: install ok installed
@@ -2341,11 +2337,6 @@ Version: 0.7.24
 Source: apt
 
 Status: install ok installed
-Package: ash
-Version: 0.5.5.1-3
-Source: dash
-
-Status: install ok installed
 Package: xserver-xorg-input-evtouch
 Version: 0.8.8-1
 Source: xf86-input-evtouch
@@ -2418,7 +2409,7 @@ Version: 1.962.2+dfsg-1
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.1.25
+Version: 1.1.27
 
 Status: install ok installed
 Package: reiserfsprogs
@@ -2523,7 +2514,7 @@ Version: 2.20-1
 
 Status: install ok installed
 Package: grml-live
-Version: 0.9.24
+Version: 0.9.27
 
 Status: install ok installed
 Package: nvi
