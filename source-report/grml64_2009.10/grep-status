@@ -929,7 +929,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.2.4
+Version: 1.2.5
 
 Status: install ok installed
 Package: cvs
@@ -1027,7 +1027,7 @@ Version: 1.1.2-1
 
 Status: install ok installed
 Package: kqemu-modules-2.6.31-grml64
-Version: 1.4.0~pre1-3+grml.02
+Version: 1.4.0~pre1-3+grml.03
 Source: kqemu (1.4.0~pre1-3)
 
 Status: install ok installed
@@ -1222,7 +1222,7 @@ Version: 1.28
 
 Status: install ok installed
 Package: texi2html
-Version: 1.78-1
+Version: 1.82-1
 
 Status: install ok installed
 Package: procps
@@ -1272,7 +1272,7 @@ Source: geoip
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.30
+Version: 0.31
 
 Status: install ok installed
 Package: dnsutils
@@ -1476,7 +1476,7 @@ Version: 0.6.1-6
 
 Status: install ok installed
 Package: firmware-ralink
-Version: 0.18
+Version: 0.21
 Source: firmware-nonfree
 
 Status: install ok installed
@@ -1634,10 +1634,6 @@ Version: 2:0.1.12-13
 Source: libusb
 
 Status: install ok installed
-Package: grml-terminalserver-data
-Version: 0.63
-
-Status: install ok installed
 Package: libgpg-error0
 Version: 1.6-1
 Source: libgpg-error
@@ -1766,7 +1762,7 @@ Version: 1.3.3-3
 
 Status: install ok installed
 Package: grml-autoconfig
-Version: 0.8.37
+Version: 0.8.40
 
 Status: install ok installed
 Package: csync2
@@ -1774,7 +1770,7 @@ Version: 1.34-2.2
 
 Status: install ok installed
 Package: linux-doc-2.6.31-grml64
-Version: grml.02
+Version: grml.03
 Source: linux-source-2.6.31-grml64
 
 Status: install ok installed
@@ -1871,6 +1867,10 @@ Version: 2.10-21
 Status: install ok installed
 Package: aamath
 Version: 0.3-4
+
+Status: install ok installed
+Package: guymager
+Version: 0.4.2-1
 
 Status: install ok installed
 Package: xserver-xorg-video-voodoo
@@ -2423,7 +2423,7 @@ Source: libmtp
 
 Status: install ok installed
 Package: aufs-modules-2.6.31-grml64
-Version: 0+20090302-3+grml.02
+Version: 0+20090302-3+grml.03
 Source: aufs (0+20090302-3)
 
 Status: install ok installed
@@ -2647,7 +2647,7 @@ Version: 1.0.17-2
 
 Status: install ok installed
 Package: grub-common
-Version: 1.97~beta4-1
+Version: 1.97-1
 Source: grub2
 
 Status: install ok installed
@@ -2964,7 +2964,7 @@ Source: jade (1.2.1-47)
 
 Status: install ok installed
 Package: loop-aes-modules-2.6.31-grml64
-Version: 3.2g-1+grml.02
+Version: 3.2g-1+grml.03
 Source: loop-aes (3.2g-1)
 
 Status: install ok installed
@@ -3377,7 +3377,7 @@ Version: 1.1.10-2
 
 Status: install ok installed
 Package: libgstreamer-plugins-base0.10-0
-Version: 0.10.25-3
+Version: 0.10.25-4
 Source: gst-plugins-base0.10
 
 Status: install ok installed
@@ -3592,7 +3592,7 @@ Version: 0.71-4
 
 Status: install ok installed
 Package: pssh
-Version: 1.4.3-1
+Version: 1.4.3-2
 
 Status: install ok installed
 Package: libtdb1
@@ -3662,7 +3662,7 @@ Version: 1.37+dfsg-1
 
 Status: install ok installed
 Package: grml-tips
-Version: 0.4.17
+Version: 0.4.19
 
 Status: install ok installed
 Package: gaffitter
@@ -3755,7 +3755,7 @@ Version: 1.6.5dfsg-1
 
 Status: install ok installed
 Package: aria2
-Version: 1.6.2-2
+Version: 1.6.2-3
 
 Status: install ok installed
 Package: testdisk
@@ -4350,13 +4350,13 @@ Version: 4.7.1-9
 Source: rpm
 
 Status: install ok installed
-Package: grml-terminalserver
-Version: 0.99.4
-
-Status: install ok installed
 Package: libxv1
 Version: 2:1.0.4-1
 Source: libxv
+
+Status: install ok installed
+Package: grml-terminalserver
+Version: 0.99.7
 
 Status: install ok installed
 Package: libdv4
@@ -5549,6 +5549,11 @@ Package: sendfile
 Version: 2.1b.20080616-2
 
 Status: install ok installed
+Package: libqt4-dbus
+Version: 4:4.5.3-4
+Source: qt4-x11
+
+Status: install ok installed
 Package: yasr
 Version: 0.6.9-1
 
@@ -5749,6 +5754,10 @@ Source: pyao
 Status: install ok installed
 Package: tofrodos
 Version: 1.7.8.debian.1-1
+
+Status: install ok installed
+Package: fio
+Version: 1.33.1-1
 
 Status: install ok installed
 Package: libswscale0
@@ -6848,7 +6857,7 @@ Version: 1:2.4.44-1
 
 Status: install ok installed
 Package: speakup-modules-2.6.31-grml64
-Version: 3.1.3-3+grml.02
+Version: 3.1.3-3+grml.03
 Source: speakup (3.1.3-3)
 
 Status: install ok installed
@@ -7180,7 +7189,7 @@ Version: 3.0-beta3-1
 
 Status: install ok installed
 Package: ndiswrapper-modules-2.6.31-grml64
-Version: 1.54-2+grml.02
+Version: 1.54-2+grml.03
 Source: ndiswrapper (1.54-2)
 
 Status: install ok installed
@@ -7786,7 +7795,7 @@ Source: tidy
 
 Status: install ok installed
 Package: sysprof-module-2.6.31-grml64
-Version: 1.0.12-1+grml.02
+Version: 1.0.12-1+grml.03
 Source: sysprof (1.0.12-1)
 
 Status: install ok installed
@@ -8308,7 +8317,7 @@ Version: 1.15.4.1
 
 Status: install ok installed
 Package: grub-pc
-Version: 1.97~beta4-1
+Version: 1.97-1
 Source: grub2
 
 Status: install ok installed
@@ -8465,6 +8474,10 @@ Package: x-ttcidfont-conf
 Version: 32
 
 Status: install ok installed
+Package: libguytools1
+Version: 1.0.4-1
+
+Status: install ok installed
 Package: mdadm
 Version: 3.0-3.1
 
@@ -8545,7 +8558,7 @@ Source: zsh
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.13
+Version: 0.9.15
 
 Status: install ok installed
 Package: userinfo
@@ -9000,7 +9013,7 @@ Source: iputils
 
 Status: install ok installed
 Package: linux-headers-2.6.31-grml64
-Version: grml.02
+Version: grml.03
 Source: linux-source-2.6.31-grml64
 
 Status: install ok installed
@@ -9096,7 +9109,7 @@ Source: gnutls26
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.1.27
+Version: 1.1.28
 
 Status: install ok installed
 Package: scalpel
@@ -9167,7 +9180,7 @@ Source: pkcs11-helper
 
 Status: install ok installed
 Package: linux-image-2.6.31-grml64
-Version: grml.02
+Version: grml.03
 Source: linux-source-2.6.31-grml64
 
 Status: install ok installed
@@ -9492,7 +9505,7 @@ Version: 1.1-22
 
 Status: install ok installed
 Package: firmware-iwlwifi
-Version: 0.18
+Version: 0.21
 Source: firmware-nonfree
 
 Status: install ok installed
@@ -10223,8 +10236,8 @@ Version: 1.3.0-1.2
 
 Status: install ok installed
 Package: drbd8-2.6.31-grml64
-Version: 2:8.3.2-3+grml.02
-Source: drbd8 (2:8.3.2-3)
+Version: 2:8.3.4-1+grml.03
+Source: drbd8 (2:8.3.4-1)
 
 Status: install ok installed
 Package: liblinux-lvm-perl
@@ -10430,11 +10443,6 @@ Status: install ok installed
 Package: apt-utils
 Version: 0.7.24
 Source: apt
-
-Status: install ok installed
-Package: ash
-Version: 0.5.5.1-3
-Source: dash
 
 Status: install ok installed
 Package: gfs-tools
@@ -10670,6 +10678,11 @@ Package: libio-stty-perl
 Version: 0.02-10
 
 Status: install ok installed
+Package: ewf-tools
+Version: 20091003-1
+Source: libewf
+
+Status: install ok installed
 Package: patchutils
 Version: 0.3.1-2
 
@@ -10752,7 +10765,7 @@ Version: 1.962.2+dfsg-1
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.1.25
+Version: 1.1.27
 
 Status: install ok installed
 Package: dupload
@@ -10769,7 +10782,7 @@ Source: powernowd (1.00-1.1)
 
 Status: install ok installed
 Package: s3cmd
-Version: 0.9.9-2
+Version: 0.9.9.91-1
 
 Status: install ok installed
 Package: liblist-moreutils-perl
@@ -11021,7 +11034,7 @@ Version: 4.17-7
 
 Status: install ok installed
 Package: firmware-qlogic
-Version: 0.18
+Version: 0.21
 Source: firmware-nonfree
 
 Status: install ok installed
@@ -11140,7 +11153,7 @@ Version: 3.10.2+debian-8
 
 Status: install ok installed
 Package: grml-live
-Version: 0.9.24
+Version: 0.9.27
 
 Status: install ok installed
 Package: igal2
@@ -11488,7 +11501,7 @@ Version: 4.81.dfsg.1-1
 
 Status: install ok installed
 Package: python-pysqlite2
-Version: 2.5.5-2
+Version: 2.5.5-3
 
 Status: install ok installed
 Package: liblockfile1
