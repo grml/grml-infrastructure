@@ -1303,7 +1303,7 @@ Source: geoip
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.31
+Version: 0.32
 
 Status: install ok installed
 Package: dnsutils
@@ -1811,7 +1811,7 @@ Version: 1.3.3-3
 
 Status: install ok installed
 Package: grml-autoconfig
-Version: 0.8.40
+Version: 0.9.0
 
 Status: install ok installed
 Package: retty
@@ -3732,7 +3732,7 @@ Version: 1.37+dfsg-1
 
 Status: install ok installed
 Package: grml-tips
-Version: 0.4.19
+Version: 0.4.20
 
 Status: install ok installed
 Package: gaffitter
@@ -4456,7 +4456,7 @@ Source: libxv
 
 Status: install ok installed
 Package: grml-terminalserver
-Version: 0.99.7
+Version: 0.99.9
 
 Status: install ok installed
 Package: libdv4
@@ -5759,7 +5759,7 @@ Version: 4.2.1-3
 
 Status: install ok installed
 Package: grml2hd
-Version: 1.2.6
+Version: 1.3.2
 
 Status: install ok installed
 Package: jp2a
@@ -7844,7 +7844,7 @@ Version: 0.5.hg20081120-1
 
 Status: install ok installed
 Package: xtables-addons-common
-Version: 1.18-1
+Version: 1.19-1
 Source: xtables-addons
 
 Status: install ok installed
@@ -8743,7 +8743,7 @@ Source: zsh
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.15
+Version: 0.9.17
 
 Status: install ok installed
 Package: userinfo
@@ -9302,7 +9302,7 @@ Source: gnutls26
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.1.28
+Version: 1.2.0
 
 Status: install ok installed
 Package: scalpel
@@ -10784,8 +10784,8 @@ Version: 0.9-18.1
 
 Status: install ok installed
 Package: xtables-addons-modules-2.6.31-grml
-Version: 1.18-1+grml.02
-Source: xtables-addons (1.18-1)
+Version: 1.19-2+grml.03
+Source: xtables-addons (1.19-2)
 
 Status: install ok installed
 Package: libdjvulibre21
@@ -11026,7 +11026,7 @@ Version: 1.962.2+dfsg-1
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.1.27
+Version: 1.1.28
 
 Status: install ok installed
 Package: dupload
@@ -11425,7 +11425,7 @@ Version: 3.10.2+debian-8
 
 Status: install ok installed
 Package: grml-live
-Version: 0.9.27
+Version: 0.9.29
 
 Status: install ok installed
 Package: igal2
