@@ -489,7 +489,7 @@ Version: 2:3.4.7~dfsg-1
 
 Status: install ok installed
 Package: sysprof-module-2.6.33-grml64
-Version: 1.0.12-1+grml.01
+Version: 1.0.12-1+grml.02
 Source: sysprof (1.0.12-1)
 
 Status: install ok installed
@@ -952,7 +952,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.3.0
+Version: 1.3.1
 
 Status: install ok installed
 Package: cvs
@@ -2667,7 +2667,7 @@ Source: xosd
 
 Status: install ok installed
 Package: iscsitarget-module-2.6.33-grml64
-Version: 0.4.17+svn307-1.1+grml.01
+Version: 0.4.17+svn307-1.1+grml.02
 Source: iscsitarget (0.4.17+svn307-1.1)
 
 Status: install ok installed
@@ -2760,7 +2760,7 @@ Version: 7.2-3
 
 Status: install ok installed
 Package: linux-doc-2.6.33-grml64
-Version: grml.01
+Version: grml.02
 Source: linux-source-2.6.33-grml64
 
 Status: install ok installed
@@ -3037,7 +3037,7 @@ Version: 1:0.39-1
 
 Status: install ok installed
 Package: grml-udev-config
-Version: 0.0.3
+Version: 0.0.4
 
 Status: install ok installed
 Package: enscribe
@@ -3145,7 +3145,7 @@ Version: 1.01-1
 
 Status: install ok installed
 Package: loop-aes-modules-2.6.33-grml64
-Version: 3.2h-1+grml.01
+Version: 3.2h-1+grml.02
 Source: loop-aes (3.2h-1)
 
 Status: install ok installed
@@ -3533,7 +3533,7 @@ Source: libstatgrab
 
 Status: install ok installed
 Package: live-initramfs
-Version: 1.177.1-1grml.00
+Version: 1.177.1-1grml.03
 
 Status: install ok installed
 Package: libdpkg-ruby1.8
@@ -4461,7 +4461,7 @@ Version: 0.4.3
 
 Status: install ok installed
 Package: grml-x
-Version: 0.5.0
+Version: 0.5.1
 
 Status: install ok installed
 Package: libieee1284-3
@@ -5215,7 +5215,7 @@ Version: 0.10
 
 Status: install ok installed
 Package: grml-network
-Version: 0.3.1
+Version: 0.3.2
 
 Status: install ok installed
 Package: libopenjpeg2
@@ -5605,7 +5605,7 @@ Version: 4.2.1-6
 
 Status: install ok installed
 Package: grml2hd
-Version: 1.3.4
+Version: 1.3.5
 
 Status: install ok installed
 Package: jp2a
@@ -6333,7 +6333,7 @@ Source: directfb (1.2.10really1.2.8-1)
 
 Status: install ok installed
 Package: grml-quickconfig-standard
-Version: 0.4
+Version: 0.6
 Source: grml-quickconfig
 
 Status: install ok installed
@@ -6557,7 +6557,7 @@ Source: db4.7
 
 Status: install ok installed
 Package: linux-image-2.6.33-grml64
-Version: grml.01
+Version: grml.02
 Source: linux-source-2.6.33-grml64
 
 Status: install ok installed
@@ -7098,7 +7098,7 @@ Version: 0.9.0-2
 
 Status: install ok installed
 Package: speakup-modules-2.6.33-grml64
-Version: 3.1.4.dfsg.1-1+grml.01
+Version: 3.1.4.dfsg.1-1+grml.02
 Source: speakup (3.1.4.dfsg.1-1)
 
 Status: install ok installed
@@ -7759,7 +7759,7 @@ Source: john
 
 Status: install ok installed
 Package: grml-quickconfig
-Version: 0.4
+Version: 0.6
 
 Status: install ok installed
 Package: ethtool
@@ -8571,7 +8571,7 @@ Source: zsh
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.22
+Version: 0.9.23
 
 Status: install ok installed
 Package: userinfo
@@ -9123,7 +9123,7 @@ Source: gnutls26
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.3.0
+Version: 1.3.1
 
 Status: install ok installed
 Package: scalpel
@@ -9169,7 +9169,7 @@ Source: dotconf
 
 Status: install ok installed
 Package: perf
-Version: 2.6.33-1
+Version: 2.6.33.1-1
 
 Status: install ok installed
 Package: automake
@@ -9317,7 +9317,7 @@ Version: 3.72-9
 
 Status: install ok installed
 Package: xtables-addons-modules-2.6.33-grml64
-Version: 1.23-1+grml.01
+Version: 1.23-1+grml.02
 Source: xtables-addons (1.23-1)
 
 Status: install ok installed
@@ -9821,7 +9821,7 @@ Version: 0.6.3-9.1
 
 Status: install ok installed
 Package: linux-headers-2.6.33-grml64
-Version: grml.01
+Version: grml.02
 Source: linux-source-2.6.33-grml64
 
 Status: install ok installed
@@ -10361,7 +10361,7 @@ Version: 1.60.3
 
 Status: install ok installed
 Package: ndiswrapper-modules-2.6.33-grml64
-Version: 1.56-1+grml.01
+Version: 1.56-1+grml.02
 Source: ndiswrapper (1.56-1)
 
 Status: install ok installed
@@ -10824,7 +10824,7 @@ Version: 1.964+dfsg-1
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.1.34
+Version: 1.1.35
 
 Status: install ok installed
 Package: dupload
@@ -11207,7 +11207,7 @@ Version: 3.10.2+debian-9
 
 Status: install ok installed
 Package: grml-live
-Version: 0.9.39
+Version: 0.9.40
 
 Status: install ok installed
 Package: nvi
