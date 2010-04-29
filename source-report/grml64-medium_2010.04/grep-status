@@ -988,7 +988,7 @@ Source: libxv
 
 Status: install ok installed
 Package: grml-terminalserver
-Version: 0.99.9
+Version: 0.99.10
 
 Status: install ok installed
 Package: curl
@@ -1247,7 +1247,7 @@ Version: 4.2.1-6
 
 Status: install ok installed
 Package: grml2hd
-Version: 1.3.5
+Version: 1.3.6
 
 Status: install ok installed
 Package: libidn11
@@ -1863,7 +1863,7 @@ Source: xapian-bindings
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.23
+Version: 0.9.25
 
 Status: install ok installed
 Package: xbitmaps
