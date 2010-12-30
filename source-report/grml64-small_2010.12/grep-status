@@ -1,0 +1,1469 @@
+Status: install ok installed
+Package: tcpd
+Version: 7.6.q-19
+Source: tcp-wrappers
+
+Status: install ok installed
+Package: libtext-wrapi18n-perl
+Version: 0.06-7
+
+Status: install ok installed
+Package: grub-imageboot
+Version: 0.3
+
+Status: install ok installed
+Package: jfsutils
+Version: 1.1.12-2.1
+
+Status: install ok installed
+Package: debconf
+Version: 1.5.37
+
+Status: install ok installed
+Package: dash
+Version: 0.5.5.1-7.4
+
+Status: install ok installed
+Package: vlan
+Version: 1.9-3
+
+Status: install ok installed
+Package: coreutils
+Version: 8.5-1
+
+Status: install ok installed
+Package: sudo
+Version: 1.7.4p4-5
+
+Status: install ok installed
+Package: libfreetype6
+Version: 2.4.2-2.1
+Source: freetype
+
+Status: install ok installed
+Package: debianutils
+Version: 3.4.2
+
+Status: install ok installed
+Package: libsysfs2
+Version: 2.1.0+repack-1
+Source: sysfsutils
+
+Status: install ok installed
+Package: bridge-utils
+Version: 1.4-5
+
+Status: install ok installed
+Package: initramfs-tools
+Version: 0.98.7
+
+Status: install ok installed
+Package: makedev
+Version: 2.3.1-89
+
+Status: install ok installed
+Package: laptop-detect
+Version: 0.13.7
+
+Status: install ok installed
+Package: most
+Version: 5.0.0a-2
+
+Status: install ok installed
+Package: rungetty
+Version: 1.2-15
+
+Status: install ok installed
+Package: telnet
+Version: 0.17-36
+Source: netkit-telnet
+
+Status: install ok installed
+Package: login
+Version: 1:4.1.4.2+svn3283-2
+Source: shadow
+
+Status: install ok installed
+Package: chntpw
+Version: 0.99.6-2
+
+Status: install ok installed
+Package: gpgv
+Version: 1.4.10-4
+Source: gnupg
+
+Status: install ok installed
+Package: librpcsecgss3
+Version: 0.19-2
+Source: librpcsecgss
+
+Status: install ok installed
+Package: libdbus-1-3
+Version: 1.2.24-4
+Source: dbus
+
+Status: install ok installed
+Package: gettext-base
+Version: 0.18.1.1-3
+Source: gettext
+
+Status: install ok installed
+Package: module-init-tools
+Version: 3.12-1
+
+Status: install ok installed
+Package: libgdbm3
+Version: 1.8.3-9
+Source: gdbm
+
+Status: install ok installed
+Package: sharutils
+Version: 1:4.9-1
+
+Status: install ok installed
+Package: libgcrypt11
+Version: 1.4.5-2
+
+Status: install ok installed
+Package: file-rc
+Version: 0.8.12
+
+Status: install ok installed
+Package: buffer
+Version: 1.19-10
+
+Status: install ok installed
+Package: grml-docs
+Version: 1.4.0
+
+Status: install ok installed
+Package: inetutils-inetd
+Version: 2:1.8-3
+Source: inetutils
+
+Status: install ok installed
+Package: isc-dhcp-common
+Version: 4.1.1-P1-15
+Source: isc-dhcp
+
+Status: install ok installed
+Package: lzma
+Version: 4.43-14
+
+Status: install ok installed
+Package: libuuid1
+Version: 2.17.2-3.3
+Source: util-linux
+
+Status: install ok installed
+Package: libtasn1-3
+Version: 2.7-1
+
+Status: install ok installed
+Package: lsb-base
+Version: 3.2-26
+Source: lsb
+
+Status: install ok installed
+Package: libparted0debian1
+Version: 2.3-5
+Source: parted
+
+Status: install ok installed
+Package: procps
+Version: 1:3.2.8-10
+
+Status: install ok installed
+Package: mksh
+Version: 39.3.20101101-1
+
+Status: install ok installed
+Package: wpasupplicant
+Version: 0.6.10-2.1
+
+Status: install ok installed
+Package: grml-debootstrap
+Version: 0.42
+
+Status: install ok installed
+Package: libhd16
+Version: 16.0-2
+Source: hwinfo
+
+Status: install ok installed
+Package: libgssapi-krb5-2
+Version: 1.8.3+dfsg-4
+Source: krb5
+
+Status: install ok installed
+Package: python-minimal
+Version: 2.6.6-3+squeeze3
+Source: python-defaults
+
+Status: install ok installed
+Package: libfuse2
+Version: 2.8.4-1.1
+Source: fuse
+
+Status: install ok installed
+Package: grml-hwinfo
+Version: 0.4.1
+
+Status: install ok installed
+Package: ncurses-base
+Version: 5.7+20100313-4
+Source: ncurses
+
+Status: install ok installed
+Package: libpopt0
+Version: 1.16-1
+Source: popt
+
+Status: install ok installed
+Package: libpam0g
+Version: 1.1.1-6.1
+Source: pam
+
+Status: install ok installed
+Package: procinfo
+Version: 1:2.0.304-1
+
+Status: install ok installed
+Package: libpci3
+Version: 1:3.1.7-6
+Source: pciutils
+
+Status: install ok installed
+Package: libusb-0.1-4
+Version: 2:0.1.12-16
+Source: libusb
+
+Status: install ok installed
+Package: libgpg-error0
+Version: 1.6-1
+Source: libgpg-error
+
+Status: install ok installed
+Package: psmisc
+Version: 22.13-1
+
+Status: install ok installed
+Package: ucf
+Version: 3.0025+nmu1
+
+Status: install ok installed
+Package: perl-modules
+Version: 5.10.1-16
+Source: perl
+
+Status: install ok installed
+Package: bsdutils
+Version: 1:2.17.2-3.3
+Source: util-linux (2.17.2-3.3)
+
+Status: install ok installed
+Package: sensible-utils
+Version: 0.0.6
+
+Status: install ok installed
+Package: iw
+Version: 0.9.19-1
+
+Status: install ok installed
+Package: lrzsz
+Version: 0.12.21-5
+
+Status: install ok installed
+Package: grml-autoconfig
+Version: 0.9.26
+
+Status: install ok installed
+Package: hwinfo
+Version: 16.0-2
+
+Status: install ok installed
+Package: zoo
+Version: 2.10-22
+
+Status: install ok installed
+Package: install-info
+Version: 4.13a.dfsg.1-6
+Source: texinfo
+
+Status: install ok installed
+Package: socket
+Version: 1.1-10
+
+Status: install ok installed
+Package: update-inetd
+Version: 4.38
+
+Status: install ok installed
+Package: ser2net
+Version: 2.6-1
+
+Status: install ok installed
+Package: dctrl-tools
+Version: 2.14.5
+
+Status: install ok installed
+Package: grml2hd-utils
+Version: 0.2.15
+
+Status: install ok installed
+Package: libssl0.9.8
+Version: 0.9.8o-4
+Source: openssl
+
+Status: install ok installed
+Package: nfs-common
+Version: 1:1.2.2-4
+Source: nfs-utils
+
+Status: install ok installed
+Package: bzip2
+Version: 1.0.5-6
+
+Status: install ok installed
+Package: vim-common
+Version: 2:7.3.035+hg~8fdc12103333-1
+Source: vim
+
+Status: install ok installed
+Package: xfsprogs
+Version: 3.1.4
+
+Status: install ok installed
+Package: lvm2
+Version: 2.02.66-4
+
+Status: install ok installed
+Package: linux-image-2.6.36-grml64
+Version: grml.02
+Source: linux-source-2.6.36-grml64
+
+Status: install ok installed
+Package: ncurses-bin
+Version: 5.7+20100313-4
+Source: ncurses
+
+Status: install ok installed
+Package: perl-base
+Version: 5.10.1-16
+Source: perl
+
+Status: install ok installed
+Package: apt
+Version: 0.8.10
+
+Status: install ok installed
+Package: dmraid
+Version: 1.0.0.rc16-4.1
+
+Status: install ok installed
+Package: pciutils
+Version: 1:3.1.7-6
+
+Status: install ok installed
+Package: grub-common
+Version: 1.99~20101221-1
+Source: grub2
+
+Status: install ok installed
+Package: mtools
+Version: 4.0.12-1
+
+Status: install ok installed
+Package: libgssglue1
+Version: 0.1-4
+Source: libgssglue
+
+Status: install ok installed
+Package: mtr-tiny
+Version: 0.80-1
+Source: mtr
+
+Status: install ok installed
+Package: ufsutils
+Version: 7.3-1+b1
+Source: ufsutils (7.3-1)
+
+Status: install ok installed
+Package: wipe
+Version: 0.21-9
+
+Status: install ok installed
+Package: libk5crypto3
+Version: 1.8.3+dfsg-4
+Source: krb5
+
+Status: install ok installed
+Package: bc
+Version: 1.06.95-2
+
+Status: install ok installed
+Package: grml-crypt
+Version: 0.20
+
+Status: install ok installed
+Package: netbase
+Version: 4.44
+
+Status: install ok installed
+Package: live-boot-initramfs-tools
+Version: 2.0.12-1+grml.04
+Source: live-boot
+
+Status: install ok installed
+Package: libmagic1
+Version: 5.04-5
+Source: file
+
+Status: install ok installed
+Package: unp
+Version: 2.0~pre5
+
+Status: install ok installed
+Package: whiptail
+Version: 0.52.11-2
+Source: newt
+
+Status: install ok installed
+Package: libsepol1
+Version: 2.0.41-1
+Source: libsepol
+
+Status: install ok installed
+Package: dmidecode
+Version: 2.9-1.2
+
+Status: install ok installed
+Package: libpam-modules
+Version: 1.1.1-6.1
+Source: pam
+
+Status: install ok installed
+Package: tzdata
+Version: 2010o-1
+
+Status: install ok installed
+Package: libudev0
+Version: 164-3
+Source: udev
+
+Status: install ok installed
+Package: python
+Version: 2.6.6-3+squeeze3
+Source: python-defaults
+
+Status: install ok installed
+Package: grml-udev-config
+Version: 0.0.7
+
+Status: install ok installed
+Package: ncftp
+Version: 2:3.2.4-1
+
+Status: install ok installed
+Package: ifupdown
+Version: 0.6.10
+
+Status: install ok installed
+Package: syslinux-common
+Version: 2:4.02+dfsg-7
+Source: syslinux
+
+Status: install ok installed
+Package: keychain
+Version: 2.6.8-2
+
+Status: install ok installed
+Package: liblzo2-2
+Version: 2.03-2
+Source: lzo2
+
+Status: install ok installed
+Package: dhcp3-client
+Version: 4.1.1-P1-15
+Source: isc-dhcp
+
+Status: install ok installed
+Package: console-data
+Version: 2:1.10-8
+
+Status: install ok installed
+Package: diffutils
+Version: 1:3.0-1
+
+Status: install ok installed
+Package: mbr
+Version: 1.1.10-2
+
+Status: install ok installed
+Package: gawk
+Version: 1:3.1.7.dfsg-5
+
+Status: install ok installed
+Package: resolvconf
+Version: 1.47
+
+Status: install ok installed
+Package: grml-paste
+Version: 0.6
+
+Status: install ok installed
+Package: guessnet
+Version: 0.53-2
+
+Status: install ok installed
+Package: slsh
+Version: 2.2.2-4
+Source: slang2
+
+Status: install ok installed
+Package: tar
+Version: 1.25-3
+
+Status: install ok installed
+Package: file
+Version: 5.04-5
+
+Status: install ok installed
+Package: liburi-perl
+Version: 1.56-1
+
+Status: install ok installed
+Package: grml-tips
+Version: 0.5.0
+
+Status: install ok installed
+Package: libnl1
+Version: 1.1-6
+Source: libnl
+
+Status: install ok installed
+Package: libshishi0
+Version: 1.0.0-1
+Source: shishi
+
+Status: install ok installed
+Package: zlib1g
+Version: 1:1.2.3.4.dfsg-3
+Source: zlib
+
+Status: install ok installed
+Package: md5deep
+Version: 3.6-1
+
+Status: install ok installed
+Package: ipw-firmware
+Version: 0.4
+
+Status: install ok installed
+Package: adduser
+Version: 3.112+nmu2
+
+Status: install ok installed
+Package: dante-client
+Version: 1.1.19.dfsg-3+b2
+Source: dante (1.1.19.dfsg-3)
+
+Status: install ok installed
+Package: e3
+Version: 1:2.71-1
+
+Status: install ok installed
+Package: traceroute
+Version: 1:2.0.15-1
+
+Status: install ok installed
+Package: python2.6
+Version: 2.6.6-8
+
+Status: install ok installed
+Package: ed
+Version: 1.4-3
+
+Status: install ok installed
+Package: libgcc1
+Version: 1:4.4.5-10
+Source: gcc-4.4 (4.4.5-10)
+
+Status: install ok installed
+Package: libklibc
+Version: 1.5.20-1
+Source: klibc
+
+Status: install ok installed
+Package: realpath
+Version: 1.15
+
+Status: install ok installed
+Package: htop
+Version: 0.8.3-1
+
+Status: install ok installed
+Package: grub
+Version: 0.97-64
+
+Status: install ok installed
+Package: base-files
+Version: 6.0
+
+Status: install ok installed
+Package: mount
+Version: 2.17.2-3.3
+Source: util-linux
+
+Status: install ok installed
+Package: knockd
+Version: 0.5-3
+
+Status: install ok installed
+Package: libsqlite3-0
+Version: 3.7.4-1
+Source: sqlite3
+
+Status: install ok installed
+Package: libtext-iconv-perl
+Version: 1.7-2
+
+Status: install ok installed
+Package: aufs-tools
+Version: 20100601-1
+
+Status: install ok installed
+Package: console-setup
+Version: 1.63
+
+Status: install ok installed
+Package: libreadline5
+Version: 5.2-7
+Source: readline5
+
+Status: install ok installed
+Package: libreadline6
+Version: 6.1-3
+Source: readline6
+
+Status: install ok installed
+Package: libncurses5
+Version: 5.7+20100313-4
+Source: ncurses
+
+Status: install ok installed
+Package: portmap
+Version: 6.0.0-2
+
+Status: install ok installed
+Package: rsync
+Version: 3.0.7-2
+
+Status: install ok installed
+Package: lockfile-progs
+Version: 0.1.15
+
+Status: install ok installed
+Package: ppp
+Version: 2.4.5-4
+
+Status: install ok installed
+Package: libkeyutils1
+Version: 1.4-1
+Source: keyutils
+
+Status: install ok installed
+Package: parted
+Version: 2.3-5
+
+Status: install ok installed
+Package: logrotate
+Version: 3.7.8-6
+
+Status: install ok installed
+Package: libexpat1
+Version: 2.0.1-7
+Source: expat
+
+Status: install ok installed
+Package: memtester
+Version: 4.2.1-1
+
+Status: install ok installed
+Package: iproute
+Version: 20100519-3
+
+Status: install ok installed
+Package: libterm-readkey-perl
+Version: 2.30-4
+
+Status: install ok installed
+Package: grml-network
+Version: 0.4.1
+
+Status: install ok installed
+Package: patch
+Version: 2.6-3
+
+Status: install ok installed
+Package: libevent-1.4-2
+Version: 1.4.13-stable-1
+Source: libevent
+
+Status: install ok installed
+Package: usbutils
+Version: 0.87-5
+
+Status: install ok installed
+Package: libdevmapper1.02.1
+Version: 2:1.02.48-4
+Source: lvm2 (2.02.66-4)
+
+Status: install ok installed
+Package: libhal1
+Version: 0.5.14-3
+Source: hal
+
+Status: install ok installed
+Package: libattr1
+Version: 1:2.4.44-2
+Source: attr
+
+Status: install ok installed
+Package: libpcap0.8
+Version: 1.1.1-2
+Source: libpcap
+
+Status: install ok installed
+Package: libhtml-tree-perl
+Version: 4.1-1
+
+Status: install ok installed
+Package: sed
+Version: 4.2.1-8
+
+Status: install ok installed
+Package: grml2hd
+Version: 1.5.3
+
+Status: install ok installed
+Package: libidn11
+Version: 1.18-1
+Source: libidn
+
+Status: install ok installed
+Package: ddrescue
+Version: 1.14-1
+
+Status: install ok installed
+Package: hdparm
+Version: 9.32-1
+
+Status: install ok installed
+Package: tcpdump
+Version: 4.1.1-1
+
+Status: install ok installed
+Package: tofrodos
+Version: 1.7.8.debian.1-2
+
+Status: install ok installed
+Package: grml-shlib
+Version: 1.03.1
+
+Status: install ok installed
+Package: ntfsprogs
+Version: 2.0.0-1+b1
+Source: linux-ntfs (2.0.0-1)
+
+Status: install ok installed
+Package: setserial
+Version: 2.17-45.2
+
+Status: install ok installed
+Package: klibc-utils
+Version: 1.5.20-1
+Source: klibc
+
+Status: install ok installed
+Package: e2fslibs
+Version: 1.41.12-2
+Source: e2fsprogs
+
+Status: install ok installed
+Package: jed-common
+Version: 1:0.99.19-2
+Source: jed
+
+Status: install ok installed
+Package: libkrb5support0
+Version: 1.8.3+dfsg-4
+Source: krb5
+
+Status: install ok installed
+Package: wget
+Version: 1.12-2.1
+
+Status: install ok installed
+Package: base-passwd
+Version: 3.5.22
+
+Status: install ok installed
+Package: libcomerr2
+Version: 1.41.12-2
+Source: e2fsprogs
+
+Status: install ok installed
+Package: grml-quickconfig-standard
+Version: 0.9
+Source: grml-quickconfig
+
+Status: install ok installed
+Package: mawk
+Version: 1.3.3-15
+
+Status: install ok installed
+Package: links
+Version: 2.3~pre1-1
+Source: links2
+
+Status: install ok installed
+Package: gnupg
+Version: 1.4.10-4
+
+Status: install ok installed
+Package: libnewt0.52
+Version: 0.52.11-2
+Source: newt
+
+Status: install ok installed
+Package: debootstrap
+Version: 1.0.26
+
+Status: install ok installed
+Package: libdb4.7
+Version: 4.7.25-10
+Source: db4.7
+
+Status: install ok installed
+Package: libdb4.8
+Version: 4.8.30-3
+Source: db4.8
+
+Status: install ok installed
+Package: net-tools
+Version: 1.60-23
+
+Status: install ok installed
+Package: grml-usleep
+Version: 0.2.1
+
+Status: install ok installed
+Package: libslang2-modules
+Version: 2.2.2-4
+Source: slang2
+
+Status: install ok installed
+Package: grml-rebuildfstab
+Version: 0.4.6
+
+Status: install ok installed
+Package: libntfs10
+Version: 2.0.0-1+b1
+Source: linux-ntfs (2.0.0-1)
+
+Status: install ok installed
+Package: debconf-i18n
+Version: 1.5.37
+Source: debconf
+
+Status: install ok installed
+Package: acpid
+Version: 1:2.0.7-1
+
+Status: install ok installed
+Package: grep
+Version: 2.6.3-3
+
+Status: install ok installed
+Package: attr
+Version: 1:2.4.44-2
+
+Status: install ok installed
+Package: grml-etc-core
+Version: 0.3.88
+
+Status: install ok installed
+Package: gcc-4.2-base
+Version: 4.2.4-6
+Source: gcc-4.2
+
+Status: install ok installed
+Package: kbd
+Version: 1.15.2-2
+
+Status: install ok installed
+Package: keyboard-configuration
+Version: 1.63
+Source: console-setup
+
+Status: install ok installed
+Package: libsasl2-2
+Version: 2.1.23.dfsg1-6
+Source: cyrus-sasl2
+
+Status: install ok installed
+Package: passwd
+Version: 1:4.1.4.2+svn3283-2
+Source: shadow
+
+Status: install ok installed
+Package: bsdmainutils
+Version: 8.0.17
+
+Status: install ok installed
+Package: hostname
+Version: 3.05
+
+Status: install ok installed
+Package: xkb-data
+Version: 1.8-2
+Source: xkeyboard-config
+
+Status: install ok installed
+Package: libacl1
+Version: 2.2.49-4
+Source: acl
+
+Status: install ok installed
+Package: python2.6-minimal
+Version: 2.6.6-8
+Source: python2.6
+
+Status: install ok installed
+Package: screen
+Version: 4.0.3-14
+
+Status: install ok installed
+Package: libpam-runtime
+Version: 1.1.1-6.1
+Source: pam
+
+Status: install ok installed
+Package: sysvinit
+Version: 2.88dsf-13
+
+Status: install ok installed
+Package: kexec-tools
+Version: 1:2.0.1-4
+
+Status: install ok installed
+Package: libslang2
+Version: 2.2.2-4
+Source: slang2
+
+Status: install ok installed
+Package: initscripts
+Version: 2.88dsf-13
+Source: sysvinit
+
+Status: install ok installed
+Package: libblkid1
+Version: 2.17.2-3.3
+Source: util-linux
+
+Status: install ok installed
+Package: gpm
+Version: 1.20.4-3.3
+
+Status: install ok installed
+Package: libss2
+Version: 1.41.12-2
+Source: e2fsprogs
+
+Status: install ok installed
+Package: findutils
+Version: 4.4.2-1+b1
+Source: findutils (4.4.2-1)
+
+Status: install ok installed
+Package: libbsd0
+Version: 0.2.0-1
+Source: libbsd
+
+Status: install ok installed
+Package: libnfsidmap2
+Version: 0.23-2
+Source: libnfsidmap
+
+Status: install ok installed
+Package: xz-utils
+Version: 5.0.0-2
+
+Status: install ok installed
+Package: dosfstools
+Version: 3.0.9-1
+
+Status: install ok installed
+Package: grml-quickconfig
+Version: 0.9
+
+Status: install ok installed
+Package: ethtool
+Version: 1:2.6.34-3
+
+Status: install ok installed
+Package: ipsec-tools
+Version: 1:0.7.3-12
+
+Status: install ok installed
+Package: jed
+Version: 1:0.99.19-2
+
+Status: install ok installed
+Package: e2fsprogs
+Version: 1.41.12-2
+
+Status: install ok installed
+Package: symlinks
+Version: 1.2-6
+
+Status: install ok installed
+Package: openssh-server
+Version: 1:5.5p1-5+b1
+Source: openssh (1:5.5p1-5)
+
+Status: install ok installed
+Package: vlock
+Version: 2.2.2-3
+
+Status: install ok installed
+Package: liblzma2
+Version: 5.0.0-2
+Source: xz-utils
+
+Status: install ok installed
+Package: bing
+Version: 1.1.3-2
+
+Status: install ok installed
+Package: netcat-traditional
+Version: 1.10-38
+Source: netcat
+
+Status: install ok installed
+Package: acpi-support-base
+Version: 0.138-4
+Source: acpi-support
+
+Status: install ok installed
+Package: libgnutls26
+Version: 2.8.6-1
+Source: gnutls26
+
+Status: install ok installed
+Package: lzop
+Version: 1.02~rc1-2
+
+Status: install ok installed
+Package: libgpm2
+Version: 1.20.4-3.3
+Source: gpm
+
+Status: install ok installed
+Package: debian-archive-keyring
+Version: 2010.08.28
+
+Status: install ok installed
+Package: syslinux
+Version: 2:4.02+dfsg-7
+
+Status: install ok installed
+Package: gzip
+Version: 1.3.12-9
+
+Status: install ok installed
+Package: libwww-perl
+Version: 5.837-1
+
+Status: install ok installed
+Package: dpkg
+Version: 1.15.8.7
+
+Status: install ok installed
+Package: grub-pc
+Version: 1.99~20101221-1
+Source: grub2
+
+Status: install ok installed
+Package: grml-rescueboot
+Version: 0.1.0
+
+Status: install ok installed
+Package: libpcre3
+Version: 8.02-1.1
+Source: pcre3
+
+Status: install ok installed
+Package: mdadm
+Version: 3.1.4-1+8efb9d1
+
+Status: install ok installed
+Package: libncursesw5
+Version: 5.7+20100313-4
+Source: ncurses
+
+Status: install ok installed
+Package: liblocale-gettext-perl
+Version: 1.05-6
+
+Status: install ok installed
+Package: grml2usb
+Version: 0.9.29
+
+Status: install ok installed
+Package: openssh-blacklist
+Version: 0.4.1
+
+Status: install ok installed
+Package: libdmraid1.0.0.rc16
+Version: 1.0.0.rc16-4.1
+Source: dmraid
+
+Status: install ok installed
+Package: grml-policyrcd
+Version: 0.3.0
+
+Status: install ok installed
+Package: dmsetup
+Version: 2:1.02.48-4
+Source: lvm2 (2.02.66-4)
+
+Status: install ok installed
+Package: eject
+Version: 2.1.5+deb1+cvs20081104-7
+
+Status: install ok installed
+Package: libcap-ng0
+Version: 0.6.5-1
+Source: libcap-ng
+
+Status: install ok installed
+Package: libfile-copy-recursive-perl
+Version: 0.38-1
+
+Status: install ok installed
+Package: dialog
+Version: 1.1-20100428-1
+
+Status: install ok installed
+Package: iputils-ping
+Version: 3:20100418-3
+Source: iputils
+
+Status: install ok installed
+Package: libbz2-1.0
+Version: 1.0.5-6
+Source: bzip2
+
+Status: install ok installed
+Package: grml-scripts
+Version: 1.4.0
+
+Status: install ok installed
+Package: perl
+Version: 5.10.1-16
+
+Status: install ok installed
+Package: libhtml-parser-perl
+Version: 3.68-1
+
+Status: install ok installed
+Package: console-terminus
+Version: 4.30-2
+Source: xfonts-terminus
+
+Status: install ok installed
+Package: wireless-tools
+Version: 30~pre9-5
+
+Status: install ok installed
+Package: lilo
+Version: 1:22.8-10
+
+Status: install ok installed
+Package: cryptsetup
+Version: 2:1.1.3-4
+
+Status: install ok installed
+Package: unzip
+Version: 6.0-4
+
+Status: install ok installed
+Package: statserial
+Version: 1.1-22
+
+Status: install ok installed
+Package: libc-bin
+Version: 2.11.2-7
+Source: eglibc
+
+Status: install ok installed
+Package: dselect
+Version: 1.15.8.7
+Source: dpkg
+
+Status: install ok installed
+Package: mime-support
+Version: 3.51-1
+
+Status: install ok installed
+Package: libldap-2.4-2
+Version: 2.4.23-7
+Source: openldap
+
+Status: install ok installed
+Package: sysvinit-utils
+Version: 2.88dsf-13
+Source: sysvinit
+
+Status: install ok installed
+Package: cron
+Version: 3.0pl1-116
+
+Status: install ok installed
+Package: libedit2
+Version: 2.11-20080614-2
+Source: libedit
+
+Status: install ok installed
+Package: fuse-utils
+Version: 2.8.4-1.1
+Source: fuse
+
+Status: install ok installed
+Package: libselinux1
+Version: 2.0.96-1
+Source: libselinux
+
+Status: install ok installed
+Package: mpack
+Version: 1.6-6
+
+Status: install ok installed
+Package: openssh-client
+Version: 1:5.5p1-5+b1
+Source: openssh (1:5.5p1-5)
+
+Status: install ok installed
+Package: libiw30
+Version: 30~pre9-5
+Source: wireless-tools
+
+Status: install ok installed
+Package: ntpdate
+Version: 1:4.2.6.p2+dfsg-1+b1
+Source: ntp (1:4.2.6.p2+dfsg-1)
+
+Status: install ok installed
+Package: sysfsutils
+Version: 2.1.0+repack-1
+
+Status: install ok installed
+Package: shishi-common
+Version: 1.0.0-1
+Source: shishi
+
+Status: install ok installed
+Package: libc6
+Version: 2.11.2-7
+Source: eglibc
+
+Status: install ok installed
+Package: libpng12-0
+Version: 1.2.44-1
+Source: libpng
+
+Status: install ok installed
+Package: apt-utils
+Version: 0.8.10
+Source: apt
+
+Status: install ok installed
+Package: udev
+Version: 164-3
+
+Status: install ok installed
+Package: iptables
+Version: 1.4.10-1
+
+Status: install ok installed
+Package: live-boot
+Version: 2.0.12-1+grml.04
+
+Status: install ok installed
+Package: bash
+Version: 4.1-3
+
+Status: install ok installed
+Package: util-linux
+Version: 2.17.2-3.3
+
+Status: install ok installed
+Package: libdsocksd0
+Version: 1.1.19.dfsg-3+b2
+Source: dante (1.1.19.dfsg-3)
+
+Status: install ok installed
+Package: grml-etc
+Version: 1.2.10
+
+Status: install ok installed
+Package: reiserfsprogs
+Version: 1:3.6.21-1
+
+Status: install ok installed
+Package: libonig2
+Version: 5.9.1-1
+Source: libonig
+
+Status: install ok installed
+Package: pump
+Version: 0.8.24-7
+
+Status: install ok installed
+Package: zsh
+Version: 4.3.11-1
+
+Status: install ok installed
+Package: rsyslog
+Version: 4.6.4-2
+
+Status: install ok installed
+Package: cpio
+Version: 2.11-5
+
+Status: install ok installed
+Package: libstdc++6
+Version: 4.4.5-10
+Source: gcc-4.4
+
+Status: install ok installed
+Package: libpcsclite1
+Version: 1.5.5-3
+Source: pcsc-lite
+
+Status: install ok installed
+Package: zip
+Version: 3.0-3
+
+Status: install ok installed
+Package: busybox
+Version: 1:1.17.1-8
+
+Status: install ok installed
+Package: agrep
+Version: 4.17-7
+
+Status: install ok installed
+Package: libhtml-tagset-perl
+Version: 3.20-2
+
+Status: install ok installed
+Package: isc-dhcp-client
+Version: 4.1.1-P1-15
+Source: isc-dhcp
+
+Status: install ok installed
+Package: strace
+Version: 4.5.20-2
+
+Status: install ok installed
+Package: vim-tiny
+Version: 2:7.3.035+hg~8fdc12103333-1
+Source: vim
+
+Status: install ok installed
+Package: atftpd
+Version: 0.7.dfsg-9.2
+Source: atftp
+
+Status: install ok installed
+Package: binutils
+Version: 2.20.1-15
+
+Status: install ok installed
+Package: libnet1
+Version: 1.1.4-2
+Source: libnet
+
+Status: install ok installed
+Package: less
+Version: 436-1
+
+Status: install ok installed
+Package: atftp
+Version: 0.7.dfsg-9.2
+
+Status: install ok installed
+Package: deborphan
+Version: 1.7.28.3
+
+Status: install ok installed
+Package: libtext-charwidth-perl
+Version: 0.04-6
+
+Status: install ok installed
+Package: readline-common
+Version: 6.1-3
+Source: readline6
+
+Status: install ok installed
+Package: libcap2
+Version: 1:2.19-3
+
+Status: install ok installed
+Package: libnfnetlink0
+Version: 1.0.0-1
+Source: libnfnetlink
+
+Status: install ok installed
+Package: grml-vpn
+Version: 0.17
+
+Status: install ok installed
+Package: grml-debian-keyring
+Version: 2007.06.10
+
+Status: install ok installed
+Package: gcc-4.4-base
+Version: 4.4.5-10
+Source: gcc-4.4
+
+Status: install ok installed
+Package: libwrap0
+Version: 7.6.q-19
+Source: tcp-wrappers
+
+Status: install ok installed
+Package: libkrb5-3
+Version: 1.8.3+dfsg-4
+Source: krb5
+
+Status: install ok installed
+Package: netcat
+Version: 1.10-38
+
+Status: install ok installed
+Package: smartmontools
+Version: 5.39.1+svn3124-2
+
+Status: install ok installed
+Package: lsof
+Version: 4.81.dfsg.1-1
+
+Status: install ok installed
+Package: liblockfile1
+Version: 1.08-4
+Source: liblockfile
+

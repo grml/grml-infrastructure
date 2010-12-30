@@ -1,0 +1,17 @@
+deb     http://ftp.de.debian.org/debian sid main contrib non-free
+deb-src http://ftp.de.debian.org/debian sid main contrib non-free
+
+deb     http://ftp.de.debian.org/debian testing main contrib non-free
+deb-src http://ftp.de.debian.org/debian testing main contrib non-free
+
+deb     http://ftp.de.debian.org/debian stable main contrib non-free
+deb-src http://ftp.de.debian.org/debian stable main contrib non-free
+
+deb     http://ftp.de.debian.org/debian experimental main contrib non-free
+deb-src http://ftp.de.debian.org/debian experimental main contrib non-free
+
+deb-src http://snapshot.debian.org/archive/debian/20101215T205429Z/ main
+deb-src http://snapshot.debian.org/archive/debian/20101229T212510Z/ main
+
+deb-src http://deb.grml.org/ grml-stable main
+deb-src http://deb.grml.org/ grml-testing main
