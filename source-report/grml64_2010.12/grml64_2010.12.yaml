@@ -9,3 +9,5 @@ chroot: /home/sources/chroot/sid
 debug: 1
 alternativeurl:
         linux-source-2.6.36-grml64: http://deb.grml.org/pool/main/l/linux-source-2.6.36-grml64/linux-source-2.6.36-grml64_grml.02_all.deb
+        speakup-modules-2.6.36-grml64: http://deb.grml.org/pool/main/s/speakup/speakup-source_3.1.5.dfsg.1-1.1_all.deb
+        ndiswrapper-modules-2.6.36-grml64: http://deb.grml.org/pool/main/n/ndiswrapper/ndiswrapper-source_1.56-3.1_all.deb

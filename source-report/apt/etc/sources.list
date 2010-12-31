@@ -1,6 +1,16 @@
-deb http://ftp.de.debian.org/debian sarge main
-deb http://grml.org/repos/ ./
+deb     http://ftp.de.debian.org/debian sid main contrib non-free
+deb-src http://ftp.de.debian.org/debian sid main contrib non-free
 
-deb http://security.debian.org/ sarge/updates main contrib non-free
-#backports.org
-deb-src http://www.backports.org/debian sarge-backports main contrib non-free
+#deb     http://ftp.de.debian.org/debian testing main contrib non-free
+#deb-src http://ftp.de.debian.org/debian testing main contrib non-free
+#deb     http://ftp.de.debian.org/debian stable main contrib non-free
+#deb-src http://ftp.de.debian.org/debian stable main contrib non-free
+
+deb     http://ftp.de.debian.org/debian experimental main contrib non-free
+deb-src http://ftp.de.debian.org/debian experimental main contrib non-free
+
+deb-src http://snapshot.debian.org/archive/debian/20101215T205429Z/ sid main
+deb-src http://snapshot.debian.org/archive/debian/20101229T212510Z/ sid main
+
+deb-src http://deb.grml.org/ grml-stable main
+deb-src http://deb.grml.org/ grml-testing main

@@ -1,25 +1,25 @@
 #!/usr/bin/perl
-# Filename:      get_sources 
-# Purpose:       Fetches sources and creates to report 
+# Filename:      get_sources
+# Purpose:       Fetches sources and creates to report
 # Authors:       grml-team (grml.org), (c) Alexander Wirt
 # Bug-Reports:   see http://grml.org/bugs/
 # License:       This file is licensed under the GPL v2.
 # Latest change: So Mai 06 02:18:45 CEST 2007 [formorer]
 ################################################################################
 
-use strict; 
+use strict;
 use warnings;
 use English;
 
 use LWP::Simple qw(!head);
-use Data::Dumper; 
+use Data::Dumper;
 use HTML::Table;
 use CGI qw/:standard/;
 use YAML qw( LoadFile );
 use Params::Validate qw(:all);
 use File::Copy;
-use Digest::MD5; 
-
+use Digest::MD5;
+use JSON;
 
 #validates the configfile
 sub validate_config ($) {
@@ -29,12 +29,12 @@ sub validate_config ($) {
 				title => { type => SCALAR },
 				statusfile => { type => SCALAR },
 				sourcedir => { type => SCALAR },
-				sourceslist => { type => SCALAR }, 
+				sourceslist => { type => SCALAR },
 				baseurl => { type => SCALAR },
 				chroot => { type => SCALAR },
 				reportdir => { type => SCALAR },
 				debug => { type => SCALAR, regex => qr/^(1|0)$/, optional => 1},
-				alternativeurl => { type => HASHREF, optional => 1}, 
+				alternativeurl => { type => HASHREF, optional => 1},
 				updatesource => { type => SCALAR, regex => qr/^(1|0)$/, optional => 1},
 				},
 			on_fail => sub { print STDERR "Could not validate configfile: @_"; exit -1},
@@ -46,70 +46,105 @@ sub md5_from_file($) {
 	my $file = shift;
 	die "'$file' does not exist" unless -f $file;
 	open(my $fh, '<', $file)
-		or die "Can't open '$file': $!";     
-	binmode($fh); 
+		or die "Can't open '$file': $!";
+	binmode($fh);
 	my $md5sum = Digest::MD5->new->addfile(*$fh)->hexdigest;
-	return $md5sum; 
+	return $md5sum;
 }
 
-my $configfile = shift; 
-die "Usage: $0 <configfile>" unless $configfile && -f $configfile; 
+sub try_snapshot ($$) {
+	my $package = shift;
+	my $version = shift;
+	my $content =
+		get("http://snapshot.debian.org/mr/package/$package/");
+	if (!defined $content) {
+		print "$package not found on snapshots\n";
+		return 0;
+	}
+	my $versions = from_json($content) or die "Could not encode json: $!";
+	my $found;
+	foreach my $v (@{$versions->{'result'}}) {
+		if ($v->{'version'} eq  "$version") {
+			$found = 1;
+			last;
+		}
+	}
+	if (! $found) {
+		print "Package $package has no version $version\n";
+		return 0;
+	}
+	$content = undef;
+	$content =
+	  get("http://snapshot.debian.org/mr/package/$package/$version/srcfiles?fileinfo=1");
+	if (!defined $content) {
+		print "Sourceinfo for $package ($version) not found on snapshots\n";
+		return 0;
+	}
+	my $srcfiles= from_json($content) or die "Could not encode json: $!";
+	foreach my $hash (keys(%{$srcfiles->{'fileinfo'}})) {
+		print "Downloading " .
+		$srcfiles->{'fileinfo'}->{$hash}->[0]->{'name'} . " from
+		snapshots\n";
+	}
+}
+my $configfile = shift;
+die "Usage: $0 <configfile>" unless $configfile && -f $configfile;
 
-my $config = LoadFile($configfile); 
-validate_config($config); 
-my $debug = $config->{debug} || 0; 
+my $config = LoadFile($configfile);
+validate_config($config);
+my $debug = $config->{debug} || 0;
 
-# if we can't write our reports and packages we can die soon ;) 
+# if we can't write our reports and packages we can die soon ;)
 if (! -d $config->{reportdir}) {
 	mkdir $config->{reportdir}
-		or die "Could not create reportdir '".$config->{reportdir}."':$!"; 
+		or die "Could not create reportdir '".$config->{reportdir}."':$!";
 } else {
     #if the sourcedir already exists we have to clean it up first
-    system("rm -rf ".$config->{reportdir}."/*"); 
+    system("rm -rf ".$config->{reportdir}."/*");
     if ($? == -1) {
-	die "Could not remove old reportdir '".$config->{reportdir}.":$!"; 
+	die "Could not remove old reportdir '".$config->{reportdir}.":$!";
     }
 }
 
 if (! -d $config->{sourcedir}) {
 	mkdir $config->{sourcedir}
-		or die "Could not create sourcedir '".$config->{sourcedir}."':$!"; 
+		or die "Could not create sourcedir '".$config->{sourcedir}."':$!";
 }
 
-#fsrst build a package tree 
-die "Status file '".$config->{statusfile}."' not found" unless -f $config->{statusfile}; 
+#fsrst build a package tree
+die "Status file '".$config->{statusfile}."' not found" unless -f $config->{statusfile};
 
 open (my $fh, '<', $config->{statusfile}) or die "Could not open status file '".$config->{statusfile}."': $!";
-my ($package_tree, $package, $version, $source); 
-my $linenum = 0; 
+my ($package_tree, $package, $version, $source);
+my $linenum = 0;
 while (my $line = <$fh>) {
-	$linenum++; 
-	chomp $line; 
+	$linenum++;
+	chomp $line;
 	if ($line =~ /^Package: (.*)/) {
-		$package = $1; 
+		$package = $1;
 	} elsif ($line =~ /^Version: (.*)/){
-		$version = $1; 
+		$version = $1;
 	} elsif ($line =~ /Source: (.*)/){
 		if ($1 =~ /^(\S+) \(([^)]+)\)$/) {
-			$source = $1; 
-			$version = $2; 
+			$source = $1;
+			$version = $2;
 		} else {
-			$source = $1; 
+			$source = $1;
 		}
 	} elsif ($line =~ /^$/) { #finalizing
-		$source = $source || $package; 
-	
-				#filter out binary nmus 
+		$source = $source || $package;
+
+				#filter out binary nmus
 		if ($version =~ /^(.*)\+b/) {
 			$version = $1;
-		} elsif ($version =~ /(.*-.*)\.0\.\d+$/) { #old bin nmu 
-			$version = $1; 
-		} elsif ($version =~ /(.*-.*\.0)\.\d+$/) { #also old binnmu 
-			$version = $1; 
+		} elsif ($version =~ /(.*-.*)\.0\.\d+$/) { #old bin nmu
+			$version = $1;
+		} elsif ($version =~ /(.*-.*\.0)\.\d+$/) { #also old binnmu
+			$version = $1;
 		}
 		if ($version && $source && $package) {
 			$package_tree->{$package}->{'version'} = $version;
-			$package_tree->{$package}->{'source'} = $source; 
+			$package_tree->{$package}->{'source'} = $source;
 		} else {
 			print STDERR "Finalizing of ($linenum) not possible: package='$package', source='$source', version='$version'";
 		}
@@ -117,36 +152,36 @@ while (my $line = <$fh>) {
 	}
 }
 
-close ($fh); 
+close ($fh);
 
 #if we provide our own sources list it will be copied into the chroot
 if ($config->{sourceslist} && -f $config->{sourceslist}) {
-	print "Copy sourceslist into chroot\n" if $debug; 
+	print "Copy sourceslist into chroot\n" if $debug;
 	copy($config->{sourceslist},"apt/etc/sources.list") or die "Sources list cannot be copied: $!";
 }
 
 #update chroot
-system ("apt-get -c=apt-config update") if $config->{updatesource}; 
+system ("apt-get -c=apt-config update") if $config->{updatesource};
 
 foreach my $package (keys %{$package_tree}) {
 	print "Working on $package\n" if $debug;
-	my $error = 0; 
-	my $version = $package_tree->{$package}->{'version'}; 
-	my $source = $package_tree->{$package}->{'source'}; 
+	my $error = 0;
+	my $version = $package_tree->{$package}->{'version'};
+	my $source = $package_tree->{$package}->{'source'};
 	if (exists $config->{alternativeurl}->{$source}) {
 			print "Alternativ URL for $source => " . $config->{alternativeurl}->{$source} . "\n" if $debug;
 			$package_tree->{$package}->{'status'} = 'OK/External';
 			$package_tree->{$package}->{'url'} = $config->{alternativeurl}->{$source};
-			next; 
+			next;
 	}
-	$package_tree->{$package}->{'errors'} = (); 
-	my $fn; 
-	my $fversion = $version;; 
+	$package_tree->{$package}->{'errors'} = ();
+	my $fn;
+	my $fversion = $version;;
 	if ($version =~ /^\d+:(.*)/) {
 		$fn = $config->{sourcedir}."/$source/${source}_$1.dsc";
-		$fversion = $1; 
+		$fversion = $1;
 	} else {
-		$fn = $config->{sourcedir}."/$source/${source}_$version.dsc"; 
+		$fn = $config->{sourcedir}."/$source/${source}_$version.dsc";
 	}
 
 	if (-e	$fn) {
@@ -160,34 +195,34 @@ foreach my $package (keys %{$package_tree}) {
 		if ($version =~ /^([^-]+)-/) {
 			link $config->{sourcedir}."/$source/${source}_${fversion}.dsc",$config->{reportdir}."/$source/${source}_${fversion}.dsc";
 			link $config->{sourcedir}."/$source/${source}_${fversion}.diff.gz",$config->{reportdir}."/$source/${source}_${fversion}.diff.gz";
-			link $config->{sourcedir}."/$source/${source}_$1.orig.tar.gz",$config->{reportdir}."/$source/${source}_$1.orig.tar.gz"; 
+			link $config->{sourcedir}."/$source/${source}_$1.orig.tar.gz",$config->{reportdir}."/$source/${source}_$1.orig.tar.gz";
 		} else {
 			link $config->{sourcedir}."/$source/${source}_${fversion}.dsc",$config->{reportdir}."/$source/${source}_${fversion}.dsc";
 			link $config->{sourcedir}."/$source/${source}_${fversion}.tar.gz",$config->{reportdir}."/$source/${source}_${fversion}.tar.gz";
 		}
-		next; 
+		next;
 	}
-	
-	open (my $fh, '-|', "apt-get -c=apt-config --print-uris -d source $source=$version 2>&1 ") 
-		or warn "Could not launch apt-get command:$!"; 
+
+	open (my $fh, '-|', "apt-get -c=apt-config --print-uris -d source $source=$version 2>&1 ")
+		or warn "Could not launch apt-get command:$!";
 	while (my $line = <$fh>) {
 		chomp $line;
 		if ($line =~ /^'([^']+)'\s+(\S+)\s+(\S+)\s+(\S+)/) {
 			my $uri = $1;
 			my $filename = $2;
-			my $size = $3; 
+			my $size = $3;
 			my $md5sum = $4;
 			$md5sum =~ s/^MD5Sum://;
 			print "Filename: $filename\n" if $debug;
 			if (! -d $config->{reportdir}."/$source") {
-				mkdir ($config->{reportdir}."/$source") 
-					or die "Could not create package dir '".$config->{reportdir}."/$source':$!"; 
+				mkdir ($config->{reportdir}."/$source")
+					or die "Could not create package dir '".$config->{reportdir}."/$source':$!";
 			}
 			if (! -d $config->{sourcedir}."/$source") {
-				mkdir ($config->{sourcedir}."/$source") 
-					or die "Could not create package dir '".$config->{sourcedir}."/$source':$!"; 
+				mkdir ($config->{sourcedir}."/$source")
+					or die "Could not create package dir '".$config->{sourcedir}."/$source':$!";
 			}
-			my $status = 0; 
+			my $status = 0;
 			if ( -e $config->{sourcedir}."/$source/$filename" ) {
 				if ($md5sum eq md5_from_file($config->{sourcedir}."/$source/$filename")) {
 					print $config->{sourcedir}."/$source/$filename already downloaded\n" if $debug;
@@ -196,30 +231,30 @@ foreach my $package (keys %{$package_tree}) {
                                         print $urifh $md5sum;
                                         close $urifh;
 
-					$status = 1; 
-				} else { 
-					print $config->{sourcedir}."/$source/$filename corrupt - download again\n" if $debug; 
+					$status = 1;
+				} else {
+					print $config->{sourcedir}."/$source/$filename corrupt - download again\n" if $debug;
 				}
-			
+
 			}
 			if ($status == 0)  {
 				print "Getting uri '$uri' to ".$config->{sourcedir}. "/$source/$filename\n" if $debug;
 				my $ret = getstore($uri, $config->{sourcedir}."/$source/$filename");
 				if ($ret != 200) {
-					print STDERR "Could not download $uri - Server returned: " . status_message($ret) . "\n"; 
-					push @{$package_tree->{$package}->{'errors'}}, "$uri failed: " . status_message($ret); 
-					$error =1; 
-				} 
+					print STDERR "Could not download $uri - Server returned: " . status_message($ret) . "\n";
+					push @{$package_tree->{$package}->{'errors'}}, "$uri failed: " . status_message($ret);
+					$error =1;
+				}
 
 				if ($md5sum eq md5_from_file($config->{sourcedir}."/$source/$filename") ) {
-					open (my $urifh, '>', $config->{sourcedir}."/$source/$filename.md5") 
+					open (my $urifh, '>', $config->{sourcedir}."/$source/$filename.md5")
 						or die "Could not open " . $config->{sourcedir}."/$source/$filename.md5 for writing: $!";
-					print $urifh $md5sum; 
+					print $urifh $md5sum;
 					close $urifh;
 					open ($urifh, '>', $config->{sourcedir}."/$source/$filename.uri")
 						or die "Could not open " . $config->{sourcedir}."/$source/$filename.uri for writing: $!";
 					print $urifh "$uri\n";
-					close $urifh; 
+					close $urifh;
 				} else {
 					print STDERR "md5sum mismatch of $uri\n";
 					push @{$package_tree->{$package}->{'errors'}}, "$uri failed: md5sum mismatch";
@@ -228,7 +263,7 @@ foreach my $package (keys %{$package_tree}) {
 				}
 			}
 			if (! $error) {
-				print "Creating links\n" if $debug; 
+				print "Creating links\n" if $debug;
 				link $config->{sourcedir}."/$source/$filename",$config->{reportdir}."/$source/$filename";
 				link $config->{sourcedir}."/$source/$filename.uri",$config->{reportdir}."/$source/$filename.uri";
 				link $config->{sourcedir}."/$source/$filename.md5",$config->{reportdir}."/$source/$filename.md5";
@@ -236,7 +271,7 @@ foreach my $package (keys %{$package_tree}) {
 		} elsif ($line =~ /^E: (.*)/) {
 			push @{$package_tree->{$package}->{'errors'}}, "$1";
 			print STDERR "Got an error from apt-get for package $package (Source: $source, Version: $version): $1\n";
-			$error = 1; 
+			$error = 1;
 		}
 	}
 	close ($fh);
@@ -246,12 +281,12 @@ foreach my $package (keys %{$package_tree}) {
 		$package_tree->{$package}->{'status'} = 'FAILED';
 	} else {
 		print "Package $package successfull\n" if $debug;
-		$package_tree->{$package}->{'status'} = 'OK'; 
+		$package_tree->{$package}->{'status'} = 'OK';
 	}
 }
 
-my $t = new HTML::Table( 
-				-cols => 4, 
+my $t = new HTML::Table(
+				-cols => 4,
 				-border=>1,
 				-head=> ['Package','Source','Version', 'Status'],
 			);
@@ -263,14 +298,14 @@ foreach my $package (sort(keys %{$package_tree})) {
 			$package_tree->{$package}->{'status'}
 		);
 	} elsif ($package_tree->{$package}->{'status'} eq 'FAILED') {
-		open (my $fh, '>', $config->{reportdir}."/$package-error.html") 
-			or die "Could not create error file '".$config->{reportdir}."/$package-error.html': $!"; 
+		open (my $fh, '>', $config->{reportdir}."/$package-error.html")
+			or die "Could not create error file '".$config->{reportdir}."/$package-error.html': $!";
 		print $fh start_html("Errors for $package (" . $package_tree->{$package}->{'version'} . ")");
 		print $fh "<h2>Errors for $package (". $package_tree->{$package}->{'version'} . ")</h2>";
-		print $fh join("<br>\n", @{$package_tree->{$package}->{'errors'}}); 
+		print $fh join("<br>\n", @{$package_tree->{$package}->{'errors'}});
 		print $fh "<br><br><a href='index.html'>Back to index</a>";
-		print $fh end_html; 
-		close ($fh); 
+		print $fh end_html;
+		close ($fh);
 		$t->addRow(	$package,
 				$package_tree->{$package}->{'source'},
 				$package_tree->{$package}->{'version'},
@@ -288,39 +323,39 @@ foreach my $package (sort(keys %{$package_tree})) {
 
 copy("apt/etc/sources.list", $config->{reportdir}."/sources.list") or die "Sources list cannot be copied: $!";
 
-#first some statistics 
-my $pnum = keys(%{$package_tree}); 
-my %s_hash; 
+#first some statistics
+my $pnum = keys(%{$package_tree});
+my %s_hash;
 my $errors = 0;
 foreach my $package (keys(%{$package_tree})) {
-	$errors++ if $package_tree->{$package}->{'status'} !~ /^OK/; 
+	$errors++ if $package_tree->{$package}->{'status'} !~ /^OK/;
 	if (! exists  $s_hash{ $package_tree->{$package}->{'source'} }) {
-		$s_hash{$package_tree->{$package}->{'source'}} = 1; 
+		$s_hash{$package_tree->{$package}->{'source'}} = 1;
 	}
 }
 
-my $snum = keys(%s_hash); 
+my $snum = keys(%s_hash);
 open ($fh, '>', $config->{reportdir}."/index.html") or die "Could not create indexfile '".$config->{reportdir}."/index.html': $!";
-print $fh start_html("Report for " . $config->{title}); 
+print $fh start_html("Report for " . $config->{title});
 print $fh "<center><h2>Report for " . $config->{title} . "</h2>";
-print $fh "<b>Packages:</b> $pnum<br>"; 
+print $fh "<b>Packages:</b> $pnum<br>";
 print $fh "<b>Sources:</b> $snum<br>";
-print $fh "<b>Errors:</b> $errors (" . $errors/$snum*100 . "%)<br>"; 
-print $fh "<a href='sources.list'>Sources list of the chroot</a><br><br>"; 
-print $fh "<b>Use:</b><i> deb-src " . $config->{'baseurl'} . " ./</i><br> "; 
+print $fh "<b>Errors:</b> $errors (" . $errors/$snum*100 . "%)<br>";
+print $fh "<a href='sources.list'>Sources list of the chroot</a><br><br>";
+print $fh "<b>Use:</b><i> deb-src " . $config->{'baseurl'} . " ./</i><br> ";
 print $fh "in your sources.list to get files via apt-get<br><br>";
 print $fh $t;
 print $fh end_html;
-close ($fh); 
+close ($fh);
 
-open ($fh, '>', $config->{reportdir}."/status.txt") 
+open ($fh, '>', $config->{reportdir}."/status.txt")
 	or die "Could not create statusfile '".$config->{reportdir}."/status.txt': $!";
 
-print $fh "Updated: " . localtime() . "\n"; 
-print $fh "Title: " . $config->{title} . "\n"; 
-print $fh "Baseurl: " . $config->{baseurl} . "\n"; 
+print $fh "Updated: " . localtime() . "\n";
+print $fh "Title: " . $config->{title} . "\n";
+print $fh "Baseurl: " . $config->{baseurl} . "\n";
 print $fh "Packages: $pnum\n";
 print $fh "Sources: $snum\n";
-print $fh "Errors: $errors\n"; 
+print $fh "Errors: $errors\n";
 
 system ("cd " . $config->{reportdir} . "; dpkg-scansources . | gzip -9 > Sources.gz");

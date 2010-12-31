@@ -8,4 +8,4 @@ updatesource: 1
 chroot: /home/sources/chroot/sid
 debug: 1
 alternativeurl:
-  linux-source-2.6.28-grml: http://deb.grml.org/pool/main/l/linux-source-2.6.28-grml/linux-source-2.6.28-grml_grml.03_all.deb
+    linux-source-2.6.31-grml: http://deb.grml.org/pool/main/l/linux-source-2.6.31-grml/linux-source-2.6.31-grml_grml.03_all.deb

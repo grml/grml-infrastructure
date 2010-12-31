@@ -8,4 +8,5 @@ updatesource: 1
 chroot: /home/sources/chroot/sid
 debug: 1
 alternativeurl:
-        linux-source-2.6.28-grml64: http://deb.grml.org/pool/main/l/linux-source-2.6.28-grml64/linux-source-2.6.28-grml64_grml.03_all.deb
+       linux-source-2.6.31-grml: http://deb.grml.org/pool/main/l/linux-source-2.6.31-grml/linux-source-2.6.31-grml_grml.03_all.deb
+       openafs-modules: http://sources.grml.org/grml_2009.10/openafs/
