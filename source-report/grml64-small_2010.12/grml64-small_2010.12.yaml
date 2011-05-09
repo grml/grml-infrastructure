@@ -1,9 +1,9 @@
-title: Grml64 2010.12
-statusfile: /home/sources/source-report/grml64_2010.12/grep-status
-sourceslist: /home/sources/source-report/grml64_2010.12/sources.list
-reportdir: /home/sources/reports/grml64_2010.12/
+title: Grml64-small 2010.12
+statusfile: /home/sources/source-report/grml64-small_2010.12/grep-status
+sourceslist: /home/sources/source-report/grml64-small_2010.12/sources.list
+reportdir: /home/sources/reports/grml64-small_2010.12/
 sourcedir: /home/sources/reports/sources
-baseurl: http://sources.grml.org/grml64_2010.12/
+baseurl: http://sources.grml.org/grml64-small_2010.12/
 updatesource: 1
 chroot: /home/sources/chroot/sid
 debug: 1

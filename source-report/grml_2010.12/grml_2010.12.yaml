@@ -1,14 +1,14 @@
-title: Grml64 2010.12
-statusfile: /home/sources/source-report/grml64_2010.12/grep-status
-sourceslist: /home/sources/source-report/grml64_2010.12/sources.list
-reportdir: /home/sources/reports/grml64_2010.12/
+title: Grml 2010.12
+statusfile: /home/sources/source-report/grml_2010.12/grep-status
+sourceslist: /home/sources/source-report/grml_2010.12/sources.list
+reportdir: /home/sources/reports/grml_2010.12/
 sourcedir: /home/sources/reports/sources
-baseurl: http://sources.grml.org/grml64_2010.12/
+baseurl: http://sources.grml.org/grml_2010.12/
 updatesource: 1
 chroot: /home/sources/chroot/sid
 debug: 1
 alternativeurl:
-        linux-source-2.6.36-grml64: http://deb.grml.org/pool/main/l/linux-source-2.6.36-grml64/linux-source-2.6.36-grml64_grml.02_all.deb
+        linux-source-2.6.36-grml: http://deb.grml.org/pool/main/l/linux-source-2.6.36-grml/linux-source-2.6.36-grml_grml.02_all.deb
         speakup: http://deb.grml.org/pool/main/s/speakup/speakup-source_3.1.5.dfsg.1-1.1_all.deb
         ndiswrapper: http://deb.grml.org/pool/main/n/ndiswrapper/ndiswrapper-source_1.56-3.1_all.deb
         openafs-modules: http://sources.grml.org/sources/openafs/openafs_1.5.77.orig.tar.gz
