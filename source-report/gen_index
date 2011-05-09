@@ -32,7 +32,9 @@ my $t = new HTML::Table(
 				'Errors', 'Last updated', 'sources.list entry'],
                         );
 
-foreach my $releasefile (@status_files) {
+use Sort::Naturally;
+
+foreach my $releasefile (nsort(@status_files)) {
 	open (my $pfh, '<', "$releasefile") 
 		or die "Could not open statusfile '$releasefile': $!"; 
 	my ($release, $packages, $sources, $errors, $lastupdated, $baseurl);
