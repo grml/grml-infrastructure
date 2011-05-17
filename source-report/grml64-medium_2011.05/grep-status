@@ -65,7 +65,7 @@ Source: libxdmcp
 
 Status: install ok installed
 Package: fai-client
-Version: 3.4.7
+Version: 3.4.8
 Source: fai
 
 Status: install ok installed
@@ -110,7 +110,7 @@ Version: 2.1.45
 
 Status: install ok installed
 Package: initramfs-tools
-Version: 0.98.8+grml01
+Version: 0.99
 
 Status: install ok installed
 Package: makedev
@@ -293,7 +293,7 @@ Version: 1.2.2-24
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.44
+Version: 0.45
 
 Status: install ok installed
 Package: libhd16
@@ -304,11 +304,6 @@ Status: install ok installed
 Package: libgssapi-krb5-2
 Version: 1.9+dfsg-1+b1
 Source: krb5 (1.9+dfsg-1)
-
-Status: install ok installed
-Package: libxcb-util0
-Version: 0.3.8-1
-Source: xcb-util
 
 Status: install ok installed
 Package: python-minimal
@@ -327,7 +322,7 @@ Source: firmware-nonfree
 
 Status: install ok installed
 Package: grml-hwinfo
-Version: 0.4.1
+Version: 0.4.2
 
 Status: install ok installed
 Package: ncurses-base
@@ -388,6 +383,11 @@ Status: install ok installed
 Package: bsdutils
 Version: 1:2.17.2-9.1
 Source: util-linux (2.17.2-9.1)
+
+Status: install ok installed
+Package: firmware-realtek
+Version: 0.29
+Source: firmware-nonfree
 
 Status: install ok installed
 Package: xserver-xorg-video-apm
@@ -605,7 +605,7 @@ Version: 1.06.95-2
 
 Status: install ok installed
 Package: grml-crypt
-Version: 0.21
+Version: 0.22
 
 Status: install ok installed
 Package: powertop
@@ -632,7 +632,7 @@ Source: libdrm
 
 Status: install ok installed
 Package: fai-server
-Version: 3.4.7
+Version: 3.4.8
 Source: fai
 
 Status: install ok installed
@@ -686,7 +686,7 @@ Version: 2011g-1
 
 Status: install ok installed
 Package: libudev0
-Version: 168-1
+Version: 168-2
 Source: udev
 
 Status: install ok installed
@@ -970,7 +970,7 @@ Version: 3.0.0-7
 
 Status: install ok installed
 Package: locales
-Version: 2.13-2
+Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
@@ -1019,7 +1019,7 @@ Source: libxv
 
 Status: install ok installed
 Package: grml-terminalserver
-Version: 0.99.12
+Version: 0.99.13
 
 Status: install ok installed
 Package: curl
@@ -1139,11 +1139,6 @@ Package: rsync
 Version: 3.0.8-1
 
 Status: install ok installed
-Package: libxcb-dri2-0
-Version: 1.7-2
-Source: libxcb
-
-Status: install ok installed
 Package: lockfile-progs
 Version: 0.1.15
 
@@ -1180,8 +1175,7 @@ Source: expat
 
 Status: install ok installed
 Package: postfix
-Version: 2.8.2-1+b1
-Source: postfix (2.8.2-1)
+Version: 2.8.3-1
 
 Status: install ok installed
 Package: memtester
@@ -1416,7 +1410,7 @@ Source: e2fsprogs
 
 Status: install ok installed
 Package: grml-quickconfig-standard
-Version: 0.9
+Version: 0.10
 Source: grml-quickconfig
 
 Status: install ok installed
@@ -1545,7 +1539,7 @@ Version: 1:4.2-1
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.88
+Version: 0.3.89
 
 Status: install ok installed
 Package: libx86-1
@@ -1657,7 +1651,7 @@ Source: pam
 
 Status: install ok installed
 Package: sysvinit
-Version: 2.88dsf-13.2
+Version: 2.88dsf-13.6+grml01
 
 Status: install ok installed
 Package: xauth
@@ -1674,7 +1668,7 @@ Source: slang2
 
 Status: install ok installed
 Package: initscripts
-Version: 2.88dsf-13.2
+Version: 2.88dsf-13.6+grml01
 Source: sysvinit
 
 Status: install ok installed
@@ -1936,7 +1930,7 @@ Source: liblocale-gettext-perl (1.05-6)
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.31
+Version: 0.9.33
 
 Status: install ok installed
 Package: xbitmaps
@@ -2035,11 +2029,11 @@ Source: xserver-xorg-video-chips (1:1.2.4-1)
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.4.3
+Version: 1.4.4
 
 Status: install ok installed
 Package: xserver-xorg-video-intel
-Version: 2:2.15.0-2
+Version: 2:2.15.0-3
 
 Status: install ok installed
 Package: perl
@@ -2087,12 +2081,7 @@ Source: libio-pty-perl (1:1.08-1)
 
 Status: install ok installed
 Package: cryptsetup
-Version: 2:1.2.0-2
-
-Status: install ok installed
-Package: libx11-xcb1
-Version: 2:1.4.3-1
-Source: libx11
+Version: 2:1.3.0-2
 
 Status: install ok installed
 Package: unzip
@@ -2119,7 +2108,7 @@ Source: avahi
 
 Status: install ok installed
 Package: libc-bin
-Version: 2.13-2
+Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
@@ -2197,7 +2186,7 @@ Source: fuse
 
 Status: install ok installed
 Package: libcryptsetup1
-Version: 2:1.2.0-2
+Version: 2:1.3.0-2
 Source: cryptsetup
 
 Status: install ok installed
@@ -2282,7 +2271,7 @@ Source: shishi
 
 Status: install ok installed
 Package: libc6
-Version: 2.13-2
+Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
@@ -2311,7 +2300,7 @@ Source: apt
 
 Status: install ok installed
 Package: udev
-Version: 168-1
+Version: 168-2
 
 Status: install ok installed
 Package: sshfs
@@ -2437,7 +2426,7 @@ Version: 1:1.18.4-2
 
 Status: install ok installed
 Package: linux-image-2.6.38-grml64
-Version: 1:2.6.38-0grml.01
+Version: 1:2.6.38-0grml.02
 Source: linux-source-2.6.38-grml64
 
 Status: install ok installed
@@ -2496,7 +2485,7 @@ Version: 2.21.51.20110421-4
 
 Status: install ok installed
 Package: grml-live
-Version: 0.13.3
+Version: 0.14.0
 
 Status: install ok installed
 Package: nvi

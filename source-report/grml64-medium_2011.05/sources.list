@@ -15,3 +15,4 @@ deb-src http://snapshot.debian.org/archive/debian/20110509T100937Z/ sid main
 
 deb-src http://deb.grml.org/ grml-stable main
 deb-src http://deb.grml.org/ grml-testing main
+deb-src http://deb.grml.org/ grml-live main
