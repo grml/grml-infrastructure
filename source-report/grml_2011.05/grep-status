@@ -319,7 +319,7 @@ Version: 0.2.0
 
 Status: install ok installed
 Package: fai-client
-Version: 3.4.7
+Version: 3.4.8
 Source: fai
 
 Status: install ok installed
@@ -568,7 +568,7 @@ Version: 2.5-3
 
 Status: install ok installed
 Package: initramfs-tools
-Version: 0.98.8+grml01
+Version: 0.99
 
 Status: install ok installed
 Package: bitlbee-common
@@ -989,7 +989,7 @@ Version: 1.1-4
 
 Status: install ok installed
 Package: linux-image-2.6.38-grml
-Version: 1:2.6.38-0grml.01
+Version: 1:2.6.38-0grml.02
 Source: linux-source-2.6.38-grml
 
 Status: install ok installed
@@ -1253,7 +1253,7 @@ Source: geoip
 
 Status: install ok installed
 Package: grml-debootstrap
-Version: 0.44
+Version: 0.45
 
 Status: install ok installed
 Package: dnsutils
@@ -1300,7 +1300,7 @@ Version: 1.1.1-1
 
 Status: install ok installed
 Package: fai-setup-storage
-Version: 3.4.7
+Version: 3.4.8
 Source: fai
 
 Status: install ok installed
@@ -1459,7 +1459,7 @@ Version: 0.5.5.0-2
 
 Status: install ok installed
 Package: grml-hwinfo
-Version: 0.4.1
+Version: 0.4.2
 
 Status: install ok installed
 Package: expect
@@ -1521,7 +1521,7 @@ Source: pam
 
 Status: install ok installed
 Package: thc-ipv6
-Version: 0.7-5
+Version: 1.4-1
 
 Status: install ok installed
 Package: libterm-size-perl
@@ -1651,6 +1651,11 @@ Version: 1.07-6
 Status: install ok installed
 Package: dpkg-sig
 Version: 0.13.1
+
+Status: install ok installed
+Package: firmware-realtek
+Version: 0.29
+Source: firmware-nonfree
 
 Status: install ok installed
 Package: xbase-clients
@@ -2039,7 +2044,7 @@ Version: 2.4.4-3
 
 Status: install ok installed
 Package: libc6-dev
-Version: 2.13-2
+Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
@@ -2065,11 +2070,6 @@ Status: install ok installed
 Package: nfs-common
 Version: 1:1.2.3-2
 Source: nfs-utils
-
-Status: install ok installed
-Package: 3270-common
-Version: 3.3.10ga4-2+b1
-Source: ibm-3270 (3.3.10ga4-2)
 
 Status: install ok installed
 Package: fwlogwatch
@@ -2694,7 +2694,7 @@ Version: 1.3rc1-8
 
 Status: install ok installed
 Package: grml-crypt
-Version: 0.21
+Version: 0.22
 
 Status: install ok installed
 Package: libdirac-encoder0
@@ -2752,12 +2752,12 @@ Version: 0.34-6
 
 Status: install ok installed
 Package: fai-doc
-Version: 3.4.7
+Version: 3.4.8
 Source: fai
 
 Status: install ok installed
 Package: fai-server
-Version: 3.4.7
+Version: 3.4.8
 Source: fai
 
 Status: install ok installed
@@ -2918,7 +2918,7 @@ Version: 0.5-1
 
 Status: install ok installed
 Package: libudev0
-Version: 168-1
+Version: 168-2
 Source: udev
 
 Status: install ok installed
@@ -3155,8 +3155,8 @@ Source: centerim
 
 Status: install ok installed
 Package: postfix-pcre
-Version: 2.8.2-1+b1
-Source: postfix (2.8.2-1)
+Version: 2.8.3-1
+Source: postfix
 
 Status: install ok installed
 Package: xulrunner-1.9.1
@@ -3174,7 +3174,7 @@ Source: imagemagick (8:6.6.0.4-3)
 
 Status: install ok installed
 Package: libc-dev-bin
-Version: 2.13-2
+Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
@@ -3786,7 +3786,7 @@ Source: libapt-pkg-perl (0.1.24)
 
 Status: install ok installed
 Package: linux-doc-2.6.38-grml
-Version: 1:2.6.38-0grml.01
+Version: 1:2.6.38-0grml.02
 Source: linux-source-2.6.38-grml
 
 Status: install ok installed
@@ -3973,7 +3973,7 @@ Source: gsmlib
 
 Status: install ok installed
 Package: locales
-Version: 2.13-2
+Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
@@ -4175,7 +4175,7 @@ Version: 1.3.4.1-2
 
 Status: install ok installed
 Package: libklibc
-Version: 1.5.21-1
+Version: 1.5.21-1+grml101
 Source: klibc
 
 Status: install ok installed
@@ -4222,7 +4222,7 @@ Source: libxv
 
 Status: install ok installed
 Package: grml-terminalserver
-Version: 0.99.12
+Version: 0.99.13
 
 Status: install ok installed
 Package: hunspell-de-de
@@ -4689,11 +4689,6 @@ Package: libfile-tail-perl
 Version: 0.99.3-4
 
 Status: install ok installed
-Package: libxcb-dri2-0
-Version: 1.7-2
-Source: libxcb
-
-Status: install ok installed
 Package: partimage-server
 Version: 0.6.8-2
 Source: partimage
@@ -4895,8 +4890,7 @@ Source: opensp
 
 Status: install ok installed
 Package: postfix
-Version: 2.8.2-1+b1
-Source: postfix (2.8.2-1)
+Version: 2.8.3-1
 
 Status: install ok installed
 Package: ht
@@ -5120,7 +5114,7 @@ Version: 1.0b6-3
 
 Status: install ok installed
 Package: virtualbox-ose-guest-modules-2.6.38-grml
-Version: 1:4.0.4-dfsg-1+2.6.38-0grml.01
+Version: 1:4.0.4-dfsg-1+2.6.38-0grml.02
 Source: virtualbox-ose (4.0.4-dfsg-1)
 
 Status: install ok installed
@@ -5498,7 +5492,7 @@ Version: 1.4.4-10
 
 Status: install ok installed
 Package: nbd-server
-Version: 1:2.9.20-2
+Version: 1:2.9.21-1
 Source: nbd
 
 Status: install ok installed
@@ -5731,7 +5725,7 @@ Source: mercurial
 
 Status: install ok installed
 Package: klibc-utils
-Version: 1.5.21-1
+Version: 1.5.21-1+grml101
 Source: klibc
 
 Status: install ok installed
@@ -6127,7 +6121,7 @@ Source: e2fsprogs
 
 Status: install ok installed
 Package: grml-quickconfig-standard
-Version: 0.9
+Version: 0.10
 Source: grml-quickconfig
 
 Status: install ok installed
@@ -6661,7 +6655,7 @@ Version: 1.6.13+nmu1
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.88
+Version: 0.3.89
 
 Status: install ok installed
 Package: gparted
@@ -7089,6 +7083,10 @@ Version: 2.6.6-10
 Source: python2.6
 
 Status: install ok installed
+Package: grml-scripts-core
+Version: 1.4.3
+
+Status: install ok installed
 Package: screen
 Version: 4.0.3-14
 
@@ -7165,7 +7163,7 @@ Version: 0.9.2-1
 
 Status: install ok installed
 Package: sysvinit
-Version: 2.88dsf-13.2
+Version: 2.88dsf-13.6+grml01
 
 Status: install ok installed
 Package: xauth
@@ -7255,7 +7253,7 @@ Source: p3scan (2:2.3.2-7)
 
 Status: install ok installed
 Package: initscripts
-Version: 2.88dsf-13.2
+Version: 2.88dsf-13.6+grml01
 Source: sysvinit
 
 Status: install ok installed
@@ -7747,7 +7745,7 @@ Source: ndiswrapper
 
 Status: install ok installed
 Package: ndiswrapper-modules-2.6.38-grml
-Version: 1:1.56+r2729-1+2.6.38-0grml.01
+Version: 1:1.56+r2729-1+2.6.38-0grml.02
 Source: ndiswrapper (1.56+r2729-1)
 
 Status: install ok installed
@@ -8155,7 +8153,7 @@ Version: 0.25-1.1
 
 Status: install ok installed
 Package: nbd-client
-Version: 1:2.9.20-2
+Version: 1:2.9.21-1
 Source: nbd
 
 Status: install ok installed
@@ -8185,8 +8183,8 @@ Version: 32+nmu2
 
 Status: install ok installed
 Package: sysprof-module-2.6.38-grml
-Version: 1:1.0.12-4+2.6.38-0grml.01
-Source: sysprof (1.0.12-4)
+Version: 1:1.0.12-5+2.6.38-0grml.02
+Source: sysprof (1.0.12-5)
 
 Status: install ok installed
 Package: libguytools1
@@ -8279,7 +8277,7 @@ Source: zsh
 
 Status: install ok installed
 Package: grml2usb
-Version: 0.9.31
+Version: 0.9.33
 
 Status: install ok installed
 Package: userinfo
@@ -8791,7 +8789,7 @@ Source: gnutls26 (2.10.5-1)
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.4.2
+Version: 1.4.4
 
 Status: install ok installed
 Package: scalpel
@@ -8812,7 +8810,7 @@ Source: gsl
 
 Status: install ok installed
 Package: xserver-xorg-video-intel
-Version: 2:2.15.0-2
+Version: 2:2.15.0-3
 
 Status: install ok installed
 Package: keepalived
@@ -9003,7 +9001,7 @@ Source: python-apt
 
 Status: install ok installed
 Package: linux-headers-2.6.38-grml
-Version: 1:2.6.38-0grml.01
+Version: 1:2.6.38-0grml.02
 Source: linux-source-2.6.38-grml
 
 Status: install ok installed
@@ -9080,16 +9078,11 @@ Version: 0.6.2-9
 
 Status: install ok installed
 Package: cryptsetup
-Version: 2:1.2.0-2
+Version: 2:1.3.0-2
 
 Status: install ok installed
 Package: btrfs-tools
 Version: 0.19+20100601-3
-
-Status: install ok installed
-Package: libx11-xcb1
-Version: 2:1.4.3-1
-Source: libx11
 
 Status: install ok installed
 Package: libvorbis0a
@@ -9192,7 +9185,7 @@ Source: avahi
 
 Status: install ok installed
 Package: libc-bin
-Version: 2.13-2
+Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
@@ -9387,11 +9380,6 @@ Package: nbtscan
 Version: 1.5.1-6
 
 Status: install ok installed
-Package: c3270
-Version: 3.3.10ga4-2+b1
-Source: ibm-3270 (3.3.10ga4-2)
-
-Status: install ok installed
 Package: libmail-sendmail-perl
 Version: 0.79.16-1
 
@@ -9572,7 +9560,7 @@ Version: 2.2.14p2-2
 
 Status: install ok installed
 Package: libcryptsetup1
-Version: 2:1.2.0-2
+Version: 2:1.3.0-2
 Source: cryptsetup
 
 Status: install ok installed
@@ -9898,7 +9886,7 @@ Source: gkrellm
 
 Status: install ok installed
 Package: libc6
-Version: 2.13-2
+Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
@@ -9996,6 +9984,10 @@ Version: 1.61-3
 Status: install ok installed
 Package: athcool
 Version: 0.3.12-3
+
+Status: install ok installed
+Package: ratpoison
+Version: 1.4.5-2
 
 Status: install ok installed
 Package: trickle
@@ -10129,7 +10121,7 @@ Version: 1.2.4-4
 
 Status: install ok installed
 Package: udev
-Version: 168-1
+Version: 168-2
 
 Status: install ok installed
 Package: setcd
@@ -10188,7 +10180,7 @@ Version: 3.e-bf3-1
 
 Status: install ok installed
 Package: tp-smapi-modules-2.6.38-grml
-Version: 1:0.40-9+2.6.38-0grml.01
+Version: 1:0.40-9+2.6.38-0grml.02
 Source: tp-smapi (0.40-9)
 
 Status: install ok installed
@@ -10798,7 +10790,7 @@ Version: 3.10.2+debian-10
 
 Status: install ok installed
 Package: grml-live
-Version: 0.13.3
+Version: 0.14.0
 
 Status: install ok installed
 Package: nvi
@@ -11107,7 +11099,7 @@ Source: krb5 (1.9+dfsg-1)
 
 Status: install ok installed
 Package: rinse
-Version: 1.7-1
+Version: 1.8-1
 
 Status: install ok installed
 Package: netcat
