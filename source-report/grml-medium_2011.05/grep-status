@@ -327,7 +327,7 @@ Source: fuse
 
 Status: install ok installed
 Package: firmware-ralink
-Version: 0.29
+Version: 0.30
 Source: firmware-nonfree
 
 Status: install ok installed
@@ -396,7 +396,7 @@ Source: util-linux (2.17.2-9.1)
 
 Status: install ok installed
 Package: firmware-realtek
-Version: 0.29
+Version: 0.30
 Source: firmware-nonfree
 
 Status: install ok installed
@@ -1018,6 +1018,11 @@ Package: grml-files
 Version: 1.5.0
 
 Status: install ok installed
+Package: virtualbox-ose-guest-x11
+Version: 4.0.4-dfsg-2
+Source: virtualbox-ose
+
+Status: install ok installed
 Package: libxcomposite1
 Version: 1:0.4.3-1
 Source: libxcomposite
@@ -1242,8 +1247,8 @@ Version: 1.31-1
 
 Status: install ok installed
 Package: virtualbox-ose-guest-modules-2.6.38-grml
-Version: 1:4.0.4-dfsg-1+2.6.38-0grml.02
-Source: virtualbox-ose (4.0.4-dfsg-1)
+Version: 1:4.0.4-dfsg-2+2.6.38-0grml.02
+Source: virtualbox-ose (4.0.4-dfsg-2)
 
 Status: install ok installed
 Package: libevent-1.4-2
@@ -1311,7 +1316,7 @@ Version: 4.2.1-9
 
 Status: install ok installed
 Package: grml2hd
-Version: 1.5.4
+Version: 1.5.5
 
 Status: install ok installed
 Package: libidn11
@@ -1362,10 +1367,6 @@ Status: install ok installed
 Package: ntfsprogs
 Version: 2.0.0-1+b1
 Source: linux-ntfs (2.0.0-1)
-
-Status: install ok installed
-Package: linux-kernel-headers-grml
-Version: 0.4
 
 Status: install ok installed
 Package: setserial
@@ -2024,8 +2025,8 @@ Version: 1.1-20100428-1
 
 Status: install ok installed
 Package: virtualbox-ose-guest-utils
-Version: 4.0.4-dfsg-1+b1
-Source: virtualbox-ose (4.0.4-dfsg-1)
+Version: 4.0.4-dfsg-2
+Source: virtualbox-ose
 
 Status: install ok installed
 Package: iputils-ping
@@ -2123,7 +2124,7 @@ Version: 1.1-22
 
 Status: install ok installed
 Package: firmware-iwlwifi
-Version: 0.29
+Version: 0.30
 Source: firmware-nonfree
 
 Status: install ok installed

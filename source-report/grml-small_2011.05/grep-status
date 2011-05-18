@@ -787,7 +787,7 @@ Version: 4.2.1-9
 
 Status: install ok installed
 Package: grml2hd
-Version: 1.5.4
+Version: 1.5.5
 
 Status: install ok installed
 Package: libidn11
