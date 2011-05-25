@@ -78,7 +78,7 @@ Version: 1.3-1
 
 Status: install ok installed
 Package: ndiswrapper-modules-2.6.38-grml64
-Version: 1:1.56+r2729-1+2.6.38-0grml.02
+Version: 1:1.56+r2729-1+2.6.38-0grml.03
 Source: ndiswrapper (1.56+r2729-1)
 
 Status: install ok installed
@@ -1562,7 +1562,7 @@ Version: 1.24-3
 
 Status: install ok installed
 Package: virtualbox-ose-guest-modules-2.6.38-grml64
-Version: 1:4.0.4-dfsg-2+2.6.38-0grml.02
+Version: 1:4.0.4-dfsg-2+2.6.38-0grml.03
 Source: virtualbox-ose (4.0.4-dfsg-2)
 
 Status: install ok installed
@@ -1612,10 +1612,6 @@ Status: install ok installed
 Package: libgssrpc4
 Version: 1.9+dfsg-1+b1
 Source: krb5 (1.9+dfsg-1)
-
-Status: install ok installed
-Package: arping
-Version: 2.09-2
 
 Status: install ok installed
 Package: iotop
@@ -1767,7 +1763,7 @@ Version: 0.5.6-0.1
 
 Status: install ok installed
 Package: linux-doc-2.6.38-grml64
-Version: 1:2.6.38-0grml.02
+Version: 1:2.6.38-0grml.03
 Source: linux-source-2.6.38-grml64
 
 Status: install ok installed
@@ -2552,7 +2548,7 @@ Version: 1.0.17-4
 
 Status: install ok installed
 Package: grub-common
-Version: 1.99~rc1-13
+Version: 1.99-4
 Source: grub2
 
 Status: install ok installed
@@ -2902,7 +2898,7 @@ Version: 0.5-1
 
 Status: install ok installed
 Package: libudev0
-Version: 168-2
+Version: 170-1
 Source: udev
 
 Status: install ok installed
@@ -2993,6 +2989,11 @@ Status: install ok installed
 Package: postgresql-client-common
 Version: 114
 Source: postgresql-common
+
+Status: install ok installed
+Package: grub-pc-bin
+Version: 1.99-4
+Source: grub2
 
 Status: install ok installed
 Package: libaprutil1-dbd-sqlite3
@@ -3259,6 +3260,11 @@ Version: 0.3.6-1
 Source: xcb-util
 
 Status: install ok installed
+Package: libxcb-icccm4
+Version: 0.3.8-1
+Source: xcb-util-wm
+
+Status: install ok installed
 Package: console-data
 Version: 2:1.10-9
 
@@ -3416,6 +3422,10 @@ Status: install ok installed
 Package: libsmi2ldbl
 Version: 0.4.8+dfsg2-3
 Source: libsmi
+
+Status: install ok installed
+Package: moblin-icon-theme
+Version: 0.10.0-1
 
 Status: install ok installed
 Package: rpcbind
@@ -4072,7 +4082,7 @@ Source: gcc-4.6 (4.6.0-7)
 
 Status: install ok installed
 Package: grml-files
-Version: 1.5.0
+Version: 1.6.0
 
 Status: install ok installed
 Package: id3v2
@@ -4089,8 +4099,8 @@ Source: mixmaster (3.0.0-4)
 
 Status: install ok installed
 Package: virtualbox-ose-guest-x11
-Version: 4.0.4-dfsg-2
-Source: virtualbox-ose
+Version: 4.0.4-dfsg-2+b1
+Source: virtualbox-ose (4.0.4-dfsg-2)
 
 Status: install ok installed
 Package: input-utils
@@ -6388,6 +6398,11 @@ Version: 5.4.4-9
 Source: etherboot
 
 Status: install ok installed
+Package: xtightvncviewer
+Version: 1.3.9-6.2
+Source: tightvnc
+
+Status: install ok installed
 Package: ccache
 Version: 3.1.4-3
 
@@ -7303,6 +7318,11 @@ Version: 0.6.9-1+b1
 Source: zfs-fuse (0.6.9-1)
 
 Status: install ok installed
+Package: xtables-addons-common
+Version: 1.35-1
+Source: xtables-addons
+
+Status: install ok installed
 Package: fakechroot
 Version: 2.14-1
 
@@ -7962,7 +7982,7 @@ Version: 1.16.0.3
 
 Status: install ok installed
 Package: grub-pc
-Version: 1.99~rc1-13
+Version: 1.99-4
 Source: grub2
 
 Status: install ok installed
@@ -8297,7 +8317,7 @@ Version: 1.2.1-6
 
 Status: install ok installed
 Package: sysprof-module-2.6.38-grml64
-Version: 1:1.0.12-5+2.6.38-0grml.02
+Version: 1:1.0.12-5+2.6.38-0grml.03
 Source: sysprof (1.0.12-5)
 
 Status: install ok installed
@@ -8592,8 +8612,8 @@ Source: xfonts-bolkhov
 
 Status: install ok installed
 Package: virtualbox-ose-guest-utils
-Version: 4.0.4-dfsg-2
-Source: virtualbox-ose
+Version: 4.0.4-dfsg-2+b1
+Source: virtualbox-ose (4.0.4-dfsg-2)
 
 Status: install ok installed
 Package: iputils-ping
@@ -8710,7 +8730,7 @@ Version: 1.20
 
 Status: install ok installed
 Package: linux-headers-2.6.38-grml64
-Version: 1:2.6.38-0grml.02
+Version: 1:2.6.38-0grml.03
 Source: linux-source-2.6.38-grml64
 
 Status: install ok installed
@@ -9537,7 +9557,7 @@ Source: esound
 
 Status: install ok installed
 Package: tp-smapi-modules-2.6.38-grml64
-Version: 1:0.40-9+2.6.38-0grml.02
+Version: 1:0.40-9+2.6.38-0grml.03
 Source: tp-smapi (0.40-9)
 
 Status: install ok installed
@@ -9598,6 +9618,11 @@ Source: libao
 Status: install ok installed
 Package: rootsh
 Version: 1.5.2-1
+
+Status: install ok installed
+Package: libgtk2.0-bin
+Version: 2.24.4-3
+Source: gtk+2.0
 
 Status: install ok installed
 Package: m17n-contrib
@@ -9985,6 +10010,11 @@ Version: 1:1.0-8
 Source: geeqie
 
 Status: install ok installed
+Package: grub2-common
+Version: 1.99-4
+Source: grub2
+
+Status: install ok installed
 Package: libxxf86vm1
 Version: 1:1.1.1-1
 Source: libxxf86vm
@@ -10005,6 +10035,11 @@ Version: 0.9.25-6
 Status: install ok installed
 Package: renameutils
 Version: 0.10.0-5
+
+Status: install ok installed
+Package: libmtp-runtime
+Version: 1.0.6-6
+Source: libmtp
 
 Status: install ok installed
 Package: tcl
@@ -10066,7 +10101,7 @@ Version: 1.2.4-4
 
 Status: install ok installed
 Package: udev
-Version: 168-2
+Version: 170-1
 
 Status: install ok installed
 Package: setcd
@@ -10120,6 +10155,11 @@ Package: urlview
 Version: 0.9-19
 
 Status: install ok installed
+Package: i3-wm
+Version: 3.e-bf3-1+b1
+Source: i3-wm (3.e-bf3-1)
+
+Status: install ok installed
 Package: tcpick
 Version: 0.2.1-6
 
@@ -10168,6 +10208,11 @@ Version: 2.4-1
 Status: install ok installed
 Package: fail2ban
 Version: 0.8.4+svn20110323-1
+
+Status: install ok installed
+Package: libyajl1
+Version: 1.0.8-1
+Source: yajl
 
 Status: install ok installed
 Package: python-setuptools
@@ -10349,7 +10394,7 @@ Version: 1.965001+dfsg-1
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.2.10
+Version: 1.2.11
 
 Status: install ok installed
 Package: dupload
@@ -10358,11 +10403,6 @@ Version: 2.7.0
 Status: install ok installed
 Package: libterm-readline-zoid-perl
 Version: 0.07-2
-
-Status: install ok installed
-Package: powernowd
-Version: 1.00-1.1+b1
-Source: powernowd (1.00-1.1)
 
 Status: install ok installed
 Package: s3cmd
@@ -10472,7 +10512,7 @@ Version: 1.4.16-1
 
 Status: install ok installed
 Package: grml-desktop
-Version: 0.3.6
+Version: 0.3.7
 
 Status: install ok installed
 Package: libpalm-perl
@@ -10569,6 +10609,11 @@ Package: x11-xfs-utils
 Version: 7.6+1
 
 Status: install ok installed
+Package: xserver-xorg-video-i740
+Version: 1:1.3.2-4+b1
+Source: xserver-xorg-video-i740 (1:1.3.2-4)
+
+Status: install ok installed
 Package: zip
 Version: 3.0-3
 
@@ -10590,8 +10635,13 @@ Version: 3.1.3-1
 
 Status: install ok installed
 Package: linux-image-2.6.38-grml64
-Version: 1:2.6.38-0grml.02
+Version: 1:2.6.38-0grml.03
 Source: linux-source-2.6.38-grml64
+
+Status: install ok installed
+Package: iputils-arping
+Version: 3:20101006-1+b1
+Source: iputils (3:20101006-1)
 
 Status: install ok installed
 Package: agrep
@@ -10910,7 +10960,7 @@ Version: 0.1.4-2
 
 Status: install ok installed
 Package: openbox
-Version: 3.4.11.1-1
+Version: 3.4.11.2-1
 
 Status: install ok installed
 Package: pwman3
@@ -10959,6 +11009,11 @@ Status: install ok installed
 Package: libtorrent13
 Version: 0.12.7-5+b1
 Source: libtorrent (0.12.7-5)
+
+Status: install ok installed
+Package: xtables-addons-modules-2.6.38-grml64
+Version: 1:1.35-1+2.6.38-0grml.03
+Source: xtables-addons (1.35-1)
 
 Status: install ok installed
 Package: libcupsimage2

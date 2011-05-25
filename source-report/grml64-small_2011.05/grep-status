@@ -381,7 +381,7 @@ Version: 1:3.1.7-9
 
 Status: install ok installed
 Package: grub-common
-Version: 1.99~rc1-13
+Version: 1.99-4
 Source: grub2
 
 Status: install ok installed
@@ -463,7 +463,7 @@ Version: 2011g-1
 
 Status: install ok installed
 Package: libudev0
-Version: 168-2
+Version: 170-1
 Source: udev
 
 Status: install ok installed
@@ -487,6 +487,11 @@ Status: install ok installed
 Package: syslinux-common
 Version: 2:4.03+dfsg-12
 Source: syslinux
+
+Status: install ok installed
+Package: grub-pc-bin
+Version: 1.99-4
+Source: grub2
 
 Status: install ok installed
 Package: libusb-1.0-0
@@ -1135,7 +1140,7 @@ Version: 1.16.0.3
 
 Status: install ok installed
 Package: grub-pc
-Version: 1.99~rc1-13
+Version: 1.99-4
 Source: grub2
 
 Status: install ok installed
@@ -1339,6 +1344,11 @@ Version: 2.13-4
 Source: eglibc
 
 Status: install ok installed
+Package: grub2-common
+Version: 1.99-4
+Source: grub2
+
+Status: install ok installed
 Package: libpng12-0
 Version: 1.2.44-2
 Source: libpng
@@ -1350,7 +1360,7 @@ Source: apt
 
 Status: install ok installed
 Package: udev
-Version: 168-2
+Version: 170-1
 
 Status: install ok installed
 Package: iptables
@@ -1375,7 +1385,7 @@ Source: dante (1.1.19.dfsg-3)
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.2.10
+Version: 1.2.11
 
 Status: install ok installed
 Package: reiserfsprogs
@@ -1422,7 +1432,7 @@ Version: 1:1.18.4-2
 
 Status: install ok installed
 Package: linux-image-2.6.38-grml64
-Version: 1:2.6.38-0grml.02
+Version: 1:2.6.38-0grml.03
 Source: linux-source-2.6.38-grml64
 
 Status: install ok installed

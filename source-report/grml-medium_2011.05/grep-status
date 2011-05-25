@@ -234,7 +234,7 @@ Source: isc-dhcp
 
 Status: install ok installed
 Package: linux-image-2.6.38-grml
-Version: 1:2.6.38-0grml.02
+Version: 1:2.6.38-0grml.03
 Source: linux-source-2.6.38-grml
 
 Status: install ok installed
@@ -246,11 +246,6 @@ Status: install ok installed
 Package: libuuid1
 Version: 2.17.2-9.1
 Source: util-linux
-
-Status: install ok installed
-Package: mkisofs
-Version: 9:2.01.01~a58-1
-Source: schilyutils (20090510-pre9-1)
 
 Status: install ok installed
 Package: libtasn1-3
@@ -563,7 +558,7 @@ Version: 1:3.1.7-9
 
 Status: install ok installed
 Package: grub-common
-Version: 1.99~rc1-13
+Version: 1.99-4
 Source: grub2
 
 Status: install ok installed
@@ -696,7 +691,7 @@ Version: 2011g-1
 
 Status: install ok installed
 Package: libudev0
-Version: 168-2
+Version: 170-1
 Source: udev
 
 Status: install ok installed
@@ -725,6 +720,11 @@ Status: install ok installed
 Package: syslinux-common
 Version: 2:4.03+dfsg-12
 Source: syslinux
+
+Status: install ok installed
+Package: grub-pc-bin
+Version: 1.99-4
+Source: grub2
 
 Status: install ok installed
 Package: libxext6
@@ -852,6 +852,10 @@ Package: guessnet
 Version: 0.53-2
 
 Status: install ok installed
+Package: moblin-icon-theme
+Version: 0.10.0-1
+
+Status: install ok installed
 Package: rpcbind
 Version: 0.2.0-6
 
@@ -899,11 +903,6 @@ Status: install ok installed
 Package: libdrm-radeon1
 Version: 2.4.24-2
 Source: libdrm
-
-Status: install ok installed
-Package: schilylibs
-Version: 20090510-pre9-1
-Source: schilyutils
 
 Status: install ok installed
 Package: libshishi0
@@ -1015,7 +1014,7 @@ Source: gcc-4.6 (4.6.0-7)
 
 Status: install ok installed
 Package: grml-files
-Version: 1.5.0
+Version: 1.6.0
 
 Status: install ok installed
 Package: virtualbox-ose-guest-x11
@@ -1247,7 +1246,7 @@ Version: 1.31-1
 
 Status: install ok installed
 Package: virtualbox-ose-guest-modules-2.6.38-grml
-Version: 1:4.0.4-dfsg-2+2.6.38-0grml.02
+Version: 1:4.0.4-dfsg-2+2.6.38-0grml.03
 Source: virtualbox-ose (4.0.4-dfsg-2)
 
 Status: install ok installed
@@ -1309,6 +1308,11 @@ Source: libpcap
 Status: install ok installed
 Package: libhtml-tree-perl
 Version: 4.2-1
+
+Status: install ok installed
+Package: genisoimage
+Version: 9:1.1.11-1
+Source: cdrkit
 
 Status: install ok installed
 Package: sed
@@ -1417,6 +1421,11 @@ Version: 1.12-3.1
 Status: install ok installed
 Package: base-passwd
 Version: 3.5.22
+
+Status: install ok installed
+Package: librsvg2-2
+Version: 2.32.1-1
+Source: librsvg
 
 Status: install ok installed
 Package: nfs-kernel-server
@@ -1843,6 +1852,11 @@ Version: 1.10-39
 Source: netcat
 
 Status: install ok installed
+Package: libcroco3
+Version: 0.6.2-1
+Source: libcroco
+
+Status: install ok installed
 Package: libavahi-common3
 Version: 0.6.30-3
 Source: avahi
@@ -1909,7 +1923,7 @@ Version: 1.16.0.3
 
 Status: install ok installed
 Package: grub-pc
-Version: 1.99~rc1-13
+Version: 1.99-4
 Source: grub2
 
 Status: install ok installed
@@ -2235,6 +2249,11 @@ Version: 0.7.100.3+b1
 Source: python-apt (0.7.100.3)
 
 Status: install ok installed
+Package: libgtk2.0-bin
+Version: 2.24.4-3
+Source: gtk+2.0
+
+Status: install ok installed
 Package: libatk1.0-data
 Version: 2.0.0-1
 Source: atk1.0
@@ -2310,6 +2329,11 @@ Package: genext2fs
 Version: 1.4.1-2.2
 
 Status: install ok installed
+Package: grub2-common
+Version: 1.99-4
+Source: grub2
+
+Status: install ok installed
 Package: libxxf86vm1
 Version: 1:1.1.1-1
 Source: libxxf86vm
@@ -2326,7 +2350,7 @@ Source: apt
 
 Status: install ok installed
 Package: udev
-Version: 168-2
+Version: 170-1
 
 Status: install ok installed
 Package: sshfs
@@ -2383,11 +2407,7 @@ Version: 1:7.6~1
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.2.10
-
-Status: install ok installed
-Package: powernowd
-Version: 1.00-1.1
+Version: 1.2.11
 
 Status: install ok installed
 Package: reiserfsprogs
@@ -2412,7 +2432,7 @@ Version: 4.3.11-5
 
 Status: install ok installed
 Package: grml-desktop
-Version: 0.3.6
+Version: 0.3.7
 
 Status: install ok installed
 Package: libfontenc1
