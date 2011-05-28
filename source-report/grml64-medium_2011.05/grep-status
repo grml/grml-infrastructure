@@ -1563,7 +1563,7 @@ Version: 1:4.2-1
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.89
+Version: 0.3.90
 
 Status: install ok installed
 Package: libx86-1
@@ -2401,7 +2401,7 @@ Version: 1:7.6~1
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.2.11
+Version: 1.2.13
 
 Status: install ok installed
 Package: reiserfsprogs

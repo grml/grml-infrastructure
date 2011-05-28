@@ -6647,7 +6647,7 @@ Version: 1.6.13+nmu1
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.89
+Version: 0.3.90
 
 Status: install ok installed
 Package: gparted
@@ -6771,7 +6771,7 @@ Source: libxdamage
 
 Status: install ok installed
 Package: libobrender21
-Version: 3.4.11.1-1
+Version: 3.4.11.2-2
 Source: openbox
 
 Status: install ok installed
@@ -9684,7 +9684,7 @@ Source: webdeveloper
 
 Status: install ok installed
 Package: libobparser21
-Version: 3.4.11.1-1
+Version: 3.4.11.2-2
 Source: openbox
 
 Status: install ok installed
@@ -10430,7 +10430,7 @@ Version: 1.965001+dfsg-1
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.2.11
+Version: 1.2.13
 
 Status: install ok installed
 Package: dupload

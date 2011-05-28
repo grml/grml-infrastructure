@@ -939,7 +939,7 @@ Version: 1:2.4.44-2
 
 Status: install ok installed
 Package: grml-etc-core
-Version: 0.3.89
+Version: 0.3.90
 
 Status: install ok installed
 Package: kbd
@@ -1385,7 +1385,7 @@ Source: dante (1.1.19.dfsg-3)
 
 Status: install ok installed
 Package: grml-etc
-Version: 1.2.11
+Version: 1.2.13
 
 Status: install ok installed
 Package: reiserfsprogs
