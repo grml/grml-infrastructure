@@ -15,11 +15,12 @@ use LWP::Simple qw(!head);
 use Data::Dumper;
 use HTML::Table;
 use CGI qw/:standard/;
-use YAML qw( LoadFile );
+use YAML::Syck qw( LoadFile );
 use Params::Validate qw(:all);
 use File::Copy;
 use Digest::MD5;
 use JSON;
+use File::Basename; 
 
 #validates the configfile
 sub validate_config ($) {
@@ -192,14 +193,20 @@ foreach my $package (keys %{$package_tree}) {
 				or die "Could not create package dir '".$config->{reportdir}."/$source':$!";
 		}
 
-		if ($version =~ /^([^-]+)-/) {
-			link $config->{sourcedir}."/$source/${source}_${fversion}.dsc",$config->{reportdir}."/$source/${source}_${fversion}.dsc";
-			link $config->{sourcedir}."/$source/${source}_${fversion}.diff.gz",$config->{reportdir}."/$source/${source}_${fversion}.diff.gz";
-			link $config->{sourcedir}."/$source/${source}_$1.orig.tar.gz",$config->{reportdir}."/$source/${source}_$1.orig.tar.gz";
-		} else {
-			link $config->{sourcedir}."/$source/${source}_${fversion}.dsc",$config->{reportdir}."/$source/${source}_${fversion}.dsc";
-			link $config->{sourcedir}."/$source/${source}_${fversion}.tar.gz",$config->{reportdir}."/$source/${source}_${fversion}.tar.gz";
+		open (my $dcmd, '-|', "dcmd " .
+			$config->{sourcedir}."/$source/${source}_${fversion}.dsc")
+			or die "Could not open dsc: " .
+				$config->{sourcedir}."/$source/${source}_${fversion}.dsc";
+
+		while (my $file = <$dcmd>) {
+			chomp($file);
+			my $basename = basename($file);
+			next if -e
+			$config->{reportdir}."/$source/$basename";
+			link $file, $config->{reportdir}."/$source/$basename"
+				or die "Could not link $file: $!";
 		}
+
 		next;
 	}
 
