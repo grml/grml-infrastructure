@@ -413,7 +413,7 @@ Version: 0.12.21-5
 
 Status: install ok installed
 Package: grml-autoconfig
-Version: 0.9.28
+Version: 0.9.29
 
 Status: install ok installed
 Package: libxapian22
@@ -2069,7 +2069,7 @@ Source: xserver-xorg-video-chips (1:1.2.4-1)
 
 Status: install ok installed
 Package: grml-scripts
-Version: 1.4.4
+Version: 1.4.5
 
 Status: install ok installed
 Package: xserver-xorg-video-intel
