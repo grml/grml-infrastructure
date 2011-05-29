@@ -211,7 +211,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.4.0
+Version: 1.5.0
 
 Status: install ok installed
 Package: xserver-xorg-video-sis
@@ -2535,7 +2535,7 @@ Version: 2.21.51.20110421-4
 
 Status: install ok installed
 Package: grml-live
-Version: 0.14.0
+Version: 0.14.1
 
 Status: install ok installed
 Package: nvi

@@ -938,7 +938,7 @@ Version: 1.19-10
 
 Status: install ok installed
 Package: grml-docs
-Version: 1.4.0
+Version: 1.5.0
 
 Status: install ok installed
 Package: cvs
@@ -10767,7 +10767,7 @@ Version: 3.10.2+debian-10
 
 Status: install ok installed
 Package: grml-live
-Version: 0.14.0
+Version: 0.14.1
 
 Status: install ok installed
 Package: nvi
