@@ -1,0 +1,44 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use v5.10;
+use File::HomeDir;
+use File::Slurp qw ( slurp );
+use Data::Dumper;
+use Net::GitHub;
+
+
+my $token = slurp(File::HomeDir->my_home . "/.github-token");
+
+my $gh = Net::GitHub->new(  # Net::GitHub::V3
+    access_token => $token
+);
+
+my @repos = $gh->repos->list_org('grml');
+
+foreach my $repo (@repos) {
+    say $repo->{name};
+    say "-" x length($repo->{name});
+    my @hooks = $gh->repos->hooks('grml', $repo->{name});
+    my $found = 0;
+    foreach my $hook (@hooks) {
+        #warn Dumper($hook);
+        next unless $hook->{name} eq 'web';
+        next unless $hook->{config}->{url} eq "http://git.grml.org/github";
+        $found = 1;
+    }
+    if ($found) {
+        say "git.grml.org hook already configured";
+    } else {
+        my $rc = $gh->repos->create_hook('grml', $repo->{name}, {
+                name => 'web',
+                active => 1,
+                config => {
+                    'content_type' => 'form',
+                    'url' => 'http://git.grml.org/github'
+                }
+            });
+        say "Hook created" if $rc->{config}->{url} eq "http://git.grml.org/github";
+    }
+}
