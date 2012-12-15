@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-
 use strict;
 use warnings;
 use v5.10;
@@ -41,4 +40,5 @@ foreach my $repo (@repos) {
             });
         say "Hook created" if $rc->{config}->{url} eq "http://git.grml.org/github";
     }
+    say;
 }
